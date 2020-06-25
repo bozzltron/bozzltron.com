@@ -1,0 +1,15 @@
+{
+    "prod": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-bozzltroncom-prod-64138-authRole",
+            "UnauthRoleArn": "arn:aws:iam::346920067321:role/amplify-bozzltroncom-prod-64138-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::346920067321:role/amplify-bozzltroncom-prod-64138-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-bozzltroncom-prod-64138-deployment",
+            "UnauthRoleName": "amplify-bozzltroncom-prod-64138-unauthRole",
+            "StackName": "amplify-bozzltroncom-prod-64138",
+            "StackId": "arn:aws:cloudformation:us-east-1:346920067321:stack/amplify-bozzltroncom-prod-64138/d632dc30-b6d8-11ea-a42f-0ad9172a6ca8",
+            "AmplifyAppId": "d18eqth9buafhr"
+        }
+    }
+}

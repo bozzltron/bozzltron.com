@@ -1,0 +1,19 @@
+
+
+<article class="post tag-getting-started">
+	<div class="inner">
+		<div class="box post-box">
+      <h2 class="post-title">
+        <a href="<%- url_for(post.link) %>"><%= post.title %></a>
+      </h2>
+			<span class="post-meta">
+				By
+				<a href="#">bozzltron</a>
+				<!-- in <a class="post-meta-tag" href="/tag/getting-started/">Getting Started</a> -->
+        on 
+        <%- partial('post/date', {class_name: 'archive-article-date', date_format: 'MMM D'}) %>
+			</span>
+			<p class="post-excerpt"><%- post.excerpt %>&hellip;</p>
+		</div>
+	</div>
+</article>

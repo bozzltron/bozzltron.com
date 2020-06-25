@@ -35,17 +35,17 @@
 <div class="nav-header">
   <nav class="nav-wrapper">
     <ul role="navigation" aria-label="Navigation">
-      <li class="nav-home active" role="presentation"><a href="<%- url_for() %>"><span>Home</span></a></li>
-      <li class="nav-archives" role="presentation"><a
+      <li class="nav-home <% if (path === 'index.html'){ %>active<% } %>" role="presentation"><a href="<%- url_for() %>"><span>Home</span></a></li>
+      <li class="nav-archives <% if (path === 'archives/index.html'){ %>active<% } %>" role="presentation"><a
           href="/archives/"><span>Archives</span></a></li>
     </ul>
 
     <ul class="nav-side">
-      <li class="nav-twitter"><a title="Twitter" href="https://twitter.com/bozzltron" title="@bozzltron"
+      <li class="nav-twitter"><a title="Twitter" href="https://twitter.com/bozzltron" 
           target="_blank"><i class="icon icon-twitter"></i><span>Twitter</span></a></li>
-      <li class="nav-github"><a title="Github" href="https://www.github.com/bozzltron" title="bozzltron"
+      <li class="nav-github"><a title="Github" href="https://www.github.com/bozzltron" 
           target="_blank"><i class="icon icon-github"></i><span>Github</span></a></li>
-      <li class="nav-linkedin"><a title="Github" href="https://www.linkedin.com/in/michael-bosworth-11084324/" title="bozzltron"
+      <li class="nav-linkedin"><a title="Github" href="https://www.linkedin.com/in/michael-bosworth-11084324/" 
         target="_blank"><i class="icon icon-linkedin"></i><span></span></a></li>
       <% if (theme.rss){ %>
       <a id="nav-rss-link" class="nav-icon" href="<%- url_for(theme.rss) %>" title="<%= __('rss_feed') %>"></a>

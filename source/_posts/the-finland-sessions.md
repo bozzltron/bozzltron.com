@@ -15,6 +15,8 @@ It began with watching [*Inside Bill's Brain \<Decoding Bill Gates\>*](https://w
 
 <!-- more -->
 
+![Inside Bill's Brain \<Decoding Bill Gates\>!](/images/posts/inside-bills-brain.jpg "Inside Bill's Brain \<Decoding Bill Gates\>")
+
 Ever since making music gripped me as a passion, I've dreamed of stealing away to some remote studio to completely emerse myself in the writing process.  To have all the tools I needed in the space that I needed them and, most important of all, the time to let the creative process happen.  With life only getting more complicated as an adult, it seemed as good a time as any.  But how do you find the right space?
 
 I wanted something fairly remote.  The ability to be violently loud and not concern anyone, to cook, sleep, and some electricity to power my creative tools were neccesary.  An environment that spoke to me and set me on the right creative trajectory would be the cherry on top.  

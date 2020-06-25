@@ -9,11 +9,13 @@ tags:
 - recording
 - finland-sessions
 hero: /images/posts/hero-the-observer.jpg
-hero_title: "the river"
+hero_title: "west branch baptism river"
 ---
 
-Just seeing if exerpts works.
+On a still morning in a remote cabin north of Lake Superior, I woke up to a new completely different circumstance that anything else in my life: Pure opportunity.
 
 <!-- more -->
 
-Here is more content
+Ever since making music gripped me as a passion, I've dream of stealing away to some remote studio 
+to completely emerse myself in the writing process.  With life only getting more complicated as an adult, it 
+only seemed to emphasize the need to get away.  

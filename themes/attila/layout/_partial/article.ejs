@@ -50,8 +50,10 @@
 <header class="post-header  has-cover ">
 	<div class="inner">
 		<span class="post-info">
-			<span class="post-type">Article</span>
-			<span class="post-count">Getting Started</span>
+			<span class="post-type">Category</span>
+			<span class="post-count">
+				<%- partial('post/category') %>
+			</span>
 		</span>
     <%- partial('post/title', {class_name: 'article-title'}) %>
 		<div class="post-meta">
@@ -66,10 +68,18 @@
 			<%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
 		</div>
 		<div class="post-cover cover" style="transform: translate3d(0px, 0px, 0px);">
-			<img srcset="https://static.ghost.org/v2.0.0/images/welcome-to-ghost.jpg 320w,
-              https://static.ghost.org/v2.0.0/images/welcome-to-ghost.jpg 640w,
-              https://static.ghost.org/v2.0.0/images/welcome-to-ghost.jpg 960w,
-              https://static.ghost.org/v2.0.0/images/welcome-to-ghost.jpg 1920w" src="./article_files/welcome-to-ghost.jpg" alt="Welcome to Ghost">
+			<% if (post.hero){ %>
+				<img srcset="<%= post.hero %> 320w,
+					<%= post.hero %> 640w,
+					<%= post.hero %> 960w,
+					<%= post.hero %> 1920w" src="<%= post.hero %>" alt="<%= post.hero_title || post.title %>">
+			<% } else { %>
+				<img srcset="https://static.ghost.org/v2.0.0/images/welcome-to-ghost.jpg 320w,
+					https://static.ghost.org/v2.0.0/images/welcome-to-ghost.jpg 640w,
+					https://static.ghost.org/v2.0.0/images/welcome-to-ghost.jpg 960w,
+					https://static.ghost.org/v2.0.0/images/welcome-to-ghost.jpg 1920w" src="./article_files/welcome-to-ghost.jpg" alt="Welcome to Ghost">
+			<% } %>
+	
 		</div>
 	</div>
 </header>
@@ -91,6 +101,8 @@
         <% } %>        
 			</section>
 
+
+			<% if (!index){ %>
 			<section class="post-footer">
 
 				<div class="post-share">
@@ -111,17 +123,17 @@
 
 				<aside class="post-tags">
 					<span class="post-info-label">Topic</span>
-					<a href="https://attila.zutrinken.com/tag/getting-started/">Getting Started</a>
+					<%- partial('post/tag') %>
 				</aside>
 
 			</section>
 
-      <% if (!index && post.comments && config.disqus_shortname){ %>
+      <% if ( post.comments && config.disqus_shortname){ %>
         <section class="post-comments" style="display: none;">
           <a id="show-disqus" class="post-comments-activate">Show Comments</a>
            <div id="disqus_thread"></div>
         </section>
-        <% } %>
+      <% } %>
 
 			<aside class="post-nav">
 					<a class="post-nav-prev" href="https://attila.zutrinken.com/the-editor/">
@@ -135,6 +147,7 @@
 				<div class="clear"></div>
 			</aside>
 
+			<% } %>
 
 		</div>
 	</article>

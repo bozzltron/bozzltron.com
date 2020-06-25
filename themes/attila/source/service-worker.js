@@ -4,6 +4,10 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox
 //   {url: '/', revision: '1'}
 // ]);
 
+workbox.setConfig({
+  debug: false
+});
+
 workbox.routing.registerRoute(
   /\.(?:png|gif|jpg|jpeg|webp|svg)$/,
   new workbox.strategies.CacheFirst({

@@ -1,43 +1,44 @@
-<header class="blog-header ">
-  <div class="inner">
-    <div class="box blog-box">
-      <h1 class="blog-name">@bozzltron</h1>
-      <span class="blog-description">A place to </span>
-    </div>
-</header>
 
-<div id="index" class="container">
-
-  <main class="content" role="main">
-
-    <div class="extra-pagination">
-      <nav class="pagination">
-        <div class="inner">
-          <div class="box pagination-box" role="navigation" aria-label="Pagination Navigation">
-            <span class="pagination-info">Page 1 of 1</span>
-          </div>
-        </div>
-      </nav>
-    </div>
     <% if (pagination == 2){ %>
-    <% page.posts.each(function(post){ %>
-    <%- partial('article', {post: post, index: true}) %>
-    <% }) %>
+      <% page.posts.each(function(post){ %>
+        <%- partial('article', {post: post, index: true}) %>
+      <% }) %>
     <% } else { %>
-    <% var last; %>
-    <% page.posts.each(function(post, i){ %>
-    <% var year = post.date.year(); %>
-    <% if (last != year){ %>
-    <% if (last != null){ %>
+      <header class="blog-header ">
+        <div class="inner">
+          <div class="box blog-box">
+            <h1 class="blog-name">@bozzltron</h1>
+            <span class="blog-description">A place to </span>
+          </div>
+      </header>
+      
+      <div id="index" class="container">
+      
+        <main class="content" role="main">
+      
+          <div class="extra-pagination">
+            <nav class="pagination">
+              <div class="inner">
+                <div class="box pagination-box" role="navigation" aria-label="Pagination Navigation">
+                  <span class="pagination-info">Page 1 of 1</span>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <% var last; %>
+          <% page.posts.each(function(post, i){ %>
+            <% var year = post.date.year(); %>
+            <% if (last != year){ %>
+                <% if (last != null){ %>
+                <% } %>
+                <% last = year; %>
+            <% } %>
+            <%- partial('archive-post', {post: post, even: i % 2 == 0}) %>
+        <% }) %>
+        <% if (page.posts.length){ %>
+        <% } %>
+        </main>
     <% } %>
-    <% last = year; %>
-    <% } %>
-    <%- partial('archive-post', {post: post, even: i % 2 == 0}) %>
-    <% }) %>
-    <% if (page.posts.length){ %>
-    <% } %>
-    <% } %>
-  </main>
 
   <% if (page.total > 1){ %>
   <nav class="pagination">

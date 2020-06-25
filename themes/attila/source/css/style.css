@@ -3028,3 +3028,14 @@ textarea {
     border-color: #3b3d40
   }
 }
+
+/* Hexo modifications */
+
+.article-category-link {
+ color:#fff;
+ text-decoration: none;
+}
+
+.article-tag-list-item {
+  list-style: none;
+}

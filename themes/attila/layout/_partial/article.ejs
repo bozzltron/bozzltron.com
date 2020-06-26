@@ -93,7 +93,7 @@
 				
 				<aside class="post-nav">
 					<% if ( page.next ){ %>
-						<a class="post-nav-next" href="/admin-settings/">
+						<a class="post-nav-next" href="<%- url_for(post.next.path) %>">
 							<section class="post-nav-teaser">
 								<i class="icon icon-arrow-left"></i>
 								<h2 class="post-nav-title"><%= page.next.title %></h2>
@@ -103,7 +103,7 @@
 						</a>
 					<% } %>
 					<% if ( page.prev ){ %>
-						<a class="post-nav-prev" href="/<%= page.prev.path %>">
+						<a class="post-nav-prev" href="<%- url_for(post.prev.path) %>">
 							<section class="post-nav-teaser">
 								<i class="icon icon-arrow-right"></i>
 								<h2 class="post-nav-title"><%= page.prev.title %></h2>

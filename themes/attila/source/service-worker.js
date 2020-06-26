@@ -1,7 +1,7 @@
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
 
 workbox.precaching.precacheAndRoute([
-  {url: '/', revision: 'ec4d3f3f0023b92f59feda7b905bdced451d6248'}
+  {url: '/', revision: 'a24485633e56f451cd27d86e15819b2b759c02e5'}
 ]);
 
 workbox.setConfig({

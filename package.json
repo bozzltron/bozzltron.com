@@ -7,7 +7,7 @@
     "build": "npm run-script version && hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "server": "npm run-script version && hexo server"
+    "server": "hexo server --config _config.local.yml"
   },
   "hexo": {
     "version": "4.2.1"

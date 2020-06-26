@@ -4,10 +4,6 @@ workbox.precaching.precacheAndRoute([
   {url: '/', revision: 'GIT_HASH'}
 ]);
 
-workbox.setConfig({
-  debug: false
-});
-
 workbox.routing.registerRoute(
   /\.(?:png|gif|jpg|jpeg|webp|svg)$/,
   new workbox.strategies.CacheFirst({

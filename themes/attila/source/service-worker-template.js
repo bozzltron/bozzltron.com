@@ -1,8 +1,7 @@
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
 
 workbox.precaching.precacheAndRoute([
-  {url: '/', revision: 'GIT_HASH'},
-  {url: '/index.html', revision: 'GIT_HASH'}
+  {url: '/', revision: 'GIT_HASH'}
 ]);
 
 workbox.routing.registerRoute(

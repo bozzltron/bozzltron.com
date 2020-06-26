@@ -4,10 +4,6 @@ workbox.precaching.precacheAndRoute([
   {url: '/', revision: 'a24485633e56f451cd27d86e15819b2b759c02e5'}
 ]);
 
-workbox.setConfig({
-  debug: false
-});
-
 workbox.routing.registerRoute(
   /\.(?:png|gif|jpg|jpeg|webp|svg)$/,
   new workbox.strategies.CacheFirst({

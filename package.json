@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "version": "cd themes/attila && npm install && ./node_modules/.bin/grunt",
-    "build": "npm run-script version && hexo generate",
+    "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server --config _config.local.yml"

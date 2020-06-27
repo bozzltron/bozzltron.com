@@ -16,7 +16,7 @@ On a still morning in a remote cabin north of Lake Superior, I woke up to someth
 
 <!-- more -->
 
-I rolled out of the upstairs loft, creeked down the steep wooden stairs, and made breakfast and coffee looking out through a long rectangular window out across a shallow river valley.  The valley us completely surrounded in pines.  At the time there was around a 20 inch snow base.  I took my breakfast to the living area and threw out some suet for the birds to munch.  
+I rolled out of the upstairs loft, creeked down the steep wooden stairs, and made breakfast and coffee looking out through a long rectangular window out across a shallow river valley.  The valley was completely covered with tall pine trees.  There was around a 20 inch snow base.  I took my breakfast to the living area and threw out some suet for the birds to munch.  
 
 Sitting for awhile, watching the world, and listened to the sound of the river.  I picked up my guitar and starting writing *The Observer*.  All of the lyrics came out of what was unfolding on a beautiful mountain morning in Finland Minnesota.  The song is trying to take you, the listener, to that cabin morning so you can experience it yourself.  The background noise is a recording of the river from that same morning.
 

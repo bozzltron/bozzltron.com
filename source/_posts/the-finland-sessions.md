@@ -11,7 +11,7 @@ tags:
 hero: /images/posts/hero-finland.jpg
 hero_title: "the shore of lake superior"
 ---
-It began with watching [*Inside Bill's Brain - Decoding Bill Gates*](https://www.netflix.com/title/80184771).  In a documentary focusing on Bill, his life, and his work, he shares about his own yearly pilgrimage to a remote cabin to process.
+It began with watching [*Inside Bill's Brain - Decoding Bill Gates*](https://www.netflix.com/title/80184771).  It's a documentary focusing on Bill, his life, and his work, he shares about his own yearly pilgrimage to a remote cabin to process.
 
 <!-- more -->
 

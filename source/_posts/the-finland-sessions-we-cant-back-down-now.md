@@ -16,7 +16,7 @@ Taking time to step out of a routine and put life on paper to weigh its purpose 
 
 <!-- more -->
 
-Looking back over 2019, it was a rough year for many reasons, but the major one in the life of my family is becoming guardians of a child we never intended to.  It has broken me in the best way.  It has forced me to make a decision on what kind of world I want to live in and how I will leave it better than how I found it.  Life has a way of surprising you whether you planned for it or not.
+Looking back over 2019, it was a rough year for many reasons. It forced use to decide if we wanted to live in a world where we were part of the problem or part of the solution.  To leave the world better than how we found it.  2020 is no different.  It has broken me in the best way.  
 
 This was what I was musing on when I picked up my guitar.  I wasn't anticipating writing *We Can't Back Down Now*.  It came to me.  I found some chords that seem to give voice to the strain in my soul.  I thought my wife and how much we've gone through together.  It was clear to me that this song was for her.  It was a message of encouragement that while we've struggled, we can still enjoying blessing and see other blessed along the way.  These are healing words that came through welled up eyes.
 

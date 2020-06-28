@@ -14,7 +14,7 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
-  /\.(?:js|css)$/,
+  /\.(?:js|css|json)$/,
   new workbox.strategies.StaleWhileRevalidate({
     cacheName: 'static-resources',
   })
@@ -24,5 +24,33 @@ workbox.routing.registerRoute(
   /\.(?:woff2)$/,
   new workbox.strategies.StaleWhileRevalidate({
     cacheName: 'fonts',
+  })
+);
+
+workbox.routing.registerRoute(
+  // Third party png cache
+  new RegExp('^https?://', 'i'),
+  new workbox.strategies.NetworkFirst({
+    cacheName: 'html',
+    plugins: [
+      new workbox.cacheableResponse.CacheableResponsePlugin({
+        headers: {
+          'Content-Type': 'text/html',
+        }
+      })
+    ]
+  })
+);
+
+workbox.routing.registerRoute(
+  // Cache api requests if they return 200
+  isLocal ? new RegExp('^https://widget.sndcdn.com', 'i') : new RegExp('^https://api', 'i'),
+  new workbox.strategies.NetworkFirst({
+    cacheName: 'third-party',
+    plugins: [
+      new workbox.cacheableResponse.CacheableResponsePlugin({
+        statuses: [0, 200],
+      })
+    ]
   })
 );

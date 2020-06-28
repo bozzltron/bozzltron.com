@@ -44,9 +44,9 @@ workbox.routing.registerRoute(
 
 workbox.routing.registerRoute(
   // Cache api requests if they return 200
-  isLocal ? new RegExp('^https://widget.sndcdn.com', 'i') : new RegExp('^https://api', 'i'),
+  new RegExp('^https://widget.sndcdn.com', 'i'),
   new workbox.strategies.NetworkFirst({
-    cacheName: 'third-party',
+    cacheName: 'sndcdn',
     plugins: [
       new workbox.cacheableResponse.CacheableResponsePlugin({
         statuses: [0, 200],

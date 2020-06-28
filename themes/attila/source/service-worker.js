@@ -1,9 +1,5 @@
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
 
-workbox.precaching.precacheAndRoute([
-  {url: '/', revision: null}
-]);
-
 workbox.routing.registerRoute(
   /\.(?:png|gif|jpg|jpeg|webp|svg)$/,
   new workbox.strategies.CacheFirst({

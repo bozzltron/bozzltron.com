@@ -16,9 +16,9 @@ Taking time to step out of a routine and put life on paper to weigh its purpose 
 
 <!-- more -->
 
-Looking back over 2019, it was a rough year for many reasons. It forced use to decide if we wanted to live in a world where we were part of the problem or part of the solution.  To leave the world better than how we found it.  2020 is no different.  It has broken me in the best way.  
+Looking back over 2019, it was a rough year for many reasons. It forced us to decide if we wanted to live in a world where we were part of the problem or part of the solution.  To leave the world better than how we found it.  2020 is no different.  It has broken me in the best way.  
 
-This was what I was musing on when I picked up my guitar.  I wasn't anticipating writing *We Can't Back Down Now*.  It came to me.  I found some chords that seem to give voice to the strain in my soul.  I thought my wife and how much we've gone through together.  It was clear to me that this song was for her.  It was a message of encouragement that while we've struggled, we can still enjoying blessing and see other blessed along the way.  These are healing words that came through welled up eyes.
+This was what I was musing on when I picked up my guitar.  I wasn't anticipating writing *We Can't Back Down Now*.  It came to me.  I found some chords that seem to give voice to the strain in my soul.  I thought my wife and how much we've gone through together.  It was clear to me that this song was for her.  It was a message of encouragement that while we've struggled, we can still enjoying blessing and see others blessed along the way.  These are healing words that came through welled up eyes.
 
 {% iframe https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/778572595&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true [100%] [300] %}
 

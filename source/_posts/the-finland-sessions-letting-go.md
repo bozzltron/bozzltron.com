@@ -13,7 +13,7 @@ Sometimes a dream is just as inspiring as its corresponding reality. I was so ex
 
 <!-- more -->
 
-I'm a 90's kid.  Grunge, Alternative, and mainstream Punk all thrown in a pot and brought to a boil.  It's foundational.  Weezer's Blue Album, Green Day's Dookie, Soundgarden's Superunknow, Silverchair's Frogstomp, Smashing Pumpkin's Siamese Dream, and Nirvana's In Utero are not just great albums but inform my creations.
+I'm a 90's kid.  Grunge, Alternative, and mainstream Punk all thrown in a pot and brought to a boil.  It's foundational.  Weezer's Blue Album, Green Day's Dookie, Soundgarden's Superunknown, Silverchair's Frogstomp, Smashing Pumpkin's Siamese Dream, and Nirvana's In Utero are not just great albums but inform my creations.
 
 *Letting Go* comes from some of that.  It's a song that captures my eagerness to break away, seek release, have an outlet, and get it all out.
 

@@ -4,9 +4,6 @@ date: 2020-06-27 10:18:30
 categories:
 - "song writing"
 tags:
-- music
-- song-writing
-- recording
 - finland-sessions
 hero: /images/posts/hero-lakeside.jpg
 hero_title: "lake superior"

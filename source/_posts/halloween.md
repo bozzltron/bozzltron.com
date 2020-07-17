@@ -23,6 +23,8 @@ Halloween not only gives voice to that longing, but pours fuel on the fire.  The
 
 New jobs, city, home, everything feels like the first breath of fresh air after wearing a mask.
 
-{% iframe https://open.spotify.com/embed/track/7FQ2JgfdkBcBb3BEbu8Axf [100%] [300] %}
+<iframe src="https://open.spotify.com/embed/track/7FQ2JgfdkBcBb3BEbu8Axf" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
-I recognize there high degree of privilege in even being able to move.  Many in the country are economically boxed in.  Emprisoned in their own community without the means to leave.   I want this kind of freedom for everyone and not just my family.
+&nbsp;
+
+I recognize there high degree of privilege in being able to move.  Many in the country are economically boxed in.  Emprisoned in their own community without the means to leave.   I want this kind of freedom for everyone and not just my family.

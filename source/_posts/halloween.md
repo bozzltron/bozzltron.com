@@ -17,7 +17,7 @@ I first heard of Phoebe Bridgers via Pitchfork's Best New Album's feed and later
 
 Sometimes there is a song that hits you at just the right moment.  Halloween is that song for me.  The concept is simple: its Halloween, we can dress up as anyone.  For me, it represents something deeper.  Rediscovery of a life worth living.  
 
-Maybe its the mid-life crisis talking but my wife and I are ripe for big change in life.  Everything we've been doing feels some kind of old skin ready to molt.  We are looking to shed the jobs we've been working and the place we've been living.  We are eager to pick up and rediscover life elsewhere doing something different.  
+Maybe its the mid-life crisis talking but my wife and I are ripe for big change.  Everything we've been doing feels like old skin ready to molt.  We are eager to pick up and rediscover life elsewhere doing something different.  
 
 Halloween not only gives voice to that longing, but pours fuel on the fire.  There is a freedom and hope tied into letting old things die and embracing what could be.  Maybe we are over-romanticizing, but we can't just let life happen.  _We don't need control.  We just want adventure._
 

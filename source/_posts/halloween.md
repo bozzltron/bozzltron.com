@@ -15,7 +15,7 @@ date: 2020-07-14 14:11:35
 
 I first heard of Phoebe Bridgers via Pitchfork's Best New Album's feed and later discovered that I'd already been listening to her as part of Better Oblivion Community Center.  Her latest album _Punisher_ deserves the accolades that its been receiving.  
 
-Sometimes there is a song that hits you at just the right moment.  Halloween is that song for me.  The concept is simple: its Halloween, we can dress up as anyone.  For me, it represents something deeper.  Rediscovery of a life worth living.  
+Sometimes there is a song that hits you at just the right moment.  Halloween is that song for me.  The concept is simple: its Halloween, we can dress up as anyone.  For me, it represents something deeper.  Reinventing yourself and rediscovering life.
 
 Maybe its the mid-life crisis talking but my wife and I are ripe for big change.  Everything we've been doing feels like old skin ready to molt.  We are eager to pick up and rediscover life elsewhere doing something different.  
 

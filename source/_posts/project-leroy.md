@@ -36,3 +36,7 @@ This is just the begining, but I am excited.  It will provide insights in to the
 A final touch on my first iteration was to add a Twitter account.  When I get a photo that registers with above 90% accuracy the code will autonomously post a photo to the [Project Leroy twitter account](https://twitter.com/ProjectLeroy).
 
 You can find the Project Leroy code on [Github](https://github.com/bozzltron/project-leroy).
+
+I leave you with Project Leroy's first autonomous tweet!
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I&#39;m 88 percent sure this is a Sparrow. <a href="https://twitter.com/hashtag/ai?src=hash&amp;ref_src=twsrc%5Etfw">#ai</a> <a href="https://t.co/YGpZsiHvC4">pic.twitter.com/YGpZsiHvC4</a></p>&mdash; ProjectLeroy (@ProjectLeroy) <a href="https://twitter.com/ProjectLeroy/status/1287186343089643520?ref_src=twsrc%5Etfw">July 26, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 

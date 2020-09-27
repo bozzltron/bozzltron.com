@@ -2,7 +2,7 @@
 title: We Can't Back Down Now
 date: 2020-06-27 10:18:30
 categories:
-- "song writing"
+- Song Writing
 tags:
 - finland-sessions
 hero: /images/posts/hero-lakeside.jpg

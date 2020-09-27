@@ -2,7 +2,7 @@
 title: The Observer
 date: 2020-06-25 10:18:30
 categories:
-- "song writing"
+- Song Writing
 tags:
 - finland-sessions
 hero: /images/posts/hero-the-observer.jpg

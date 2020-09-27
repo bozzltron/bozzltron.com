@@ -1,7 +1,7 @@
 ---
 title: Black Lives Matter
 categories:
-  - adventure
+  - Adventure
 tags:
   - music
 hero: /images/posts/hero-black-lives-matter.jpg

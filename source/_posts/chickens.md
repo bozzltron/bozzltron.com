@@ -1,7 +1,7 @@
 ---
 title: Chickens
 categories:
-  - adventure
+  - Adventure
 tags:
   - animals
 hero: /images/posts/hero-chickens.jpg

@@ -2,7 +2,7 @@
 title: The Finland Sessions
 date: 2020-06-24 10:18:30
 categories:
-- "adventure"
+- Adventure
 tags:
 - music
 - song-writing

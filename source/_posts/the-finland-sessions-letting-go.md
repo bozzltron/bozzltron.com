@@ -1,7 +1,7 @@
 ---
 title: Letting Go
 categories:
-  - song-writing
+  - Song Writing
 tags:
   - finland-sessions
 hero: /images/posts/hero-letting-go.jpg

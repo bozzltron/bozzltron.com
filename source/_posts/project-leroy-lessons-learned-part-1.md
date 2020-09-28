@@ -1,5 +1,5 @@
 ---
-title: Project Leroy - Leasons Learned Part 1
+title: Project Leroy - Lessons Learned Part 1
 categories:
   - Technology
 tags:

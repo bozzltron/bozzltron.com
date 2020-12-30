@@ -25,7 +25,7 @@ Any real solution has to start with us.  We can't shake our finger at the world 
 ### 2. Identify bias in your current sources of news
 The chart below is created by a company called [Ad Fontes Media](https://www.adfontesmedia.com/about-ad-fontes-media/) whose mission is to "to make news consumers smarter and news media better".
 
-![Ad Fontes Media Bias Chart v6.1](/images/posts/ad-fontes-media-bias.jpg)
+<a href="/images/posts/ad-fontes-media-bias.jpg">![Ad Fontes Media Bias Chart v6.1](/images/posts/ad-fontes-media-bias.jpg)</a>
 
 What are you favorite news sources?  Are they in the Most Reliable, Mixed Reliability, Somewhat Reliable, or Unreliable categories?
 

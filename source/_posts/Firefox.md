@@ -21,17 +21,17 @@ Looking at it this way, do you trust your browser?  There are plenty to pick fro
 
 A great follow-up question is, "what is the vendor's purpose?" for making a browser.     Browsers are not easy to build.   As the Internet evolves, so does the browser.   A company would need a good reason to do it.
 
-Why does Google make Chrome?
+Why does Microsoft make Edge?
 
-Google's primary source of revenue is online advertising.  Chrome entered the market to "speed up" our online experience.  Keep a user's attention, keeps them engaged, and exposes them to more advertising.
+Microsoft is a software company.  They created Internet Explorer in 1995 to compete with Netscape Navigator.  As the Internet took off, it was an obvious value add to Windows to include its own built-in browser.  Recently, it has been rebranded as Edge.
 
 Why does Apple Make Safari?
 
-Apple's primary income source is selling phones, laptops, and other devices.  These devices run their own Macintosh operating system.  It competes against Microsoft Windows, and Safari is its alternative to the default Windows browser: Internet Explorer now Edge. 
+Apple's primary income source is selling phones, laptops, and other devices.  These devices run their own Macintosh operating system.  It competes against Microsoft Windows, and Safari is its alternative default browser. 
 
-Why does Microsoft make Edge?
+Why does Google make Chrome?
 
-Microsoft is a software company.  They created Internet Explorer, which recently has been rebranded as Edge, to compete with Netscape Navigator.  As the Internet took off, it was an obvious value add to Windows to include its own built-in browser.
+Google's primary source of revenue is online advertising.  Chrome entered the market to "speed up" our online experience.  Keep a user's attention, keeps them engaged, and exposes them to more advertising.
 
 Why does Opera make Opera?
 
@@ -43,7 +43,7 @@ Brave was created as a business venture to turn the tables on traditional advert
 
 Why does Mozilla make Firefox?
 
-Firefox was created in 1998 as Netscape Navigators source code was released.  Firefox was an open-source project contributed to by many all over the world, thanks to the Internet.  In 2003 an independent non-profit organization called the Mozilla Foundation was created to support Firefox and organize donations for its funding.  Firefox by people for people.
+Firefox was created in 1998 as Netscape Navigators source code was released.  It was an open-source project contributed to by many all over the world, thanks to the Internet.  In 2003 an independent non-profit organization called the Mozilla Foundation was created to support Firefox and organize donations for its funding.  Firefox is made by people for people.
 
 Clearly, Mozilla has the most integrity when it comes to trust. They're not trying to make money from your data.  They are not trying to sell you something.  They are trying to provide an open and free browser option so that we are not stuck with only browsers with agendas.
 

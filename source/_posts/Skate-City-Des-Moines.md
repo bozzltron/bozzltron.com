@@ -21,6 +21,6 @@ Seeing these athletes I'd watch on YouTube for years warming up 10 feet away fro
 
 When the finals came, I loaded up the family to show them this new world.  It ended up being a hot day with not much breeze and they took off early, but I was happy for them to experience something of the event that had me reeling.
 
-I stood through the finals, watched some amazing athletes, and let the experience marinate in my mind.  There was a lot that I had missed:  The nightlife and the semi-finals.  That aside, I was still a part of something special.  Seeing many legends with my own eyes, observing the spirit of the sports glue so many people together, and witness epic moments of the competition.  In four days, I watched Des Moines become a skate city.
+I stood through the finals, watched some amazing athletes, and let the experience marinate in my mind.  There was a lot that I had missed:  The nightlife and the semi-finals.  That aside, I was still a part of something special.  Seeing many legends with my own eyes, observing the spirit of the sport glue so many people together, and witness epic moments of the competition.  In four days, I watched Des Moines become a skate city.
 
 

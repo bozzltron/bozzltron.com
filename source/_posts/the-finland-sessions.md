@@ -8,14 +8,14 @@ tags:
 - song-writing
 - recording
 - finland-sessions
-hero: /images/posts/hero-finland.jpg
+hero: https://files.bozzltron.com/hero-finland.jpg
 hero_title: "the shore of lake superior"
 ---
 It began with watching [*Inside Bill's Brain - Decoding Bill Gates*](https://www.netflix.com/title/80184771).  A documentary focusing on Bill, his life, and his work shares his yearly pilgrimage to a remote cabin to process.
 
 <!-- more -->
 
-![Inside Bill's Brain \<Decoding Bill Gates\>!](/images/posts/inside-bills-brain.jpg "Inside Bill's Brain \<Decoding Bill Gates\>")
+![Inside Bill's Brain \<Decoding Bill Gates\>!](https://files.bozzltron.com/inside-bills-brain.jpg "Inside Bill's Brain \<Decoding Bill Gates\>")
 
 Ever since making music gripped me, I've dreamed of stealing away to some remote studio to immerse myself in the writing process completely.  To have all the tools I needed in the space that I needed them and, most important of all, the time to let the creative process happen.  With life only getting more complicated, it seemed as good a time as any.  But how do you find the right space?
 

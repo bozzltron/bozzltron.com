@@ -4,7 +4,7 @@ categories:
   - Song Writing
 tags:
   - finland-sessions
-hero: /images/posts/hero-farewell.jpg
+hero: https://files.bozzltron.com/hero-farewell.jpg
 hero_title: 'grocery store in finland'
 date: 2020-06-30 14:09:26
 ---
@@ -17,7 +17,7 @@ Stillness,  quiet, natural beauty, and creating recharge me.  The location could
 
 Cooking in the cabin took some planning, but was enjoyable.  I'll be better prepared next time.
 
-![Pancakes](/images/posts/pancakes.jpg)
+![Pancakes](https://files.bozzltron.com/pancakes.jpg)
 
 The writing seemed natural. I tried following ideas as they came.  I let go of trying to prove myself or writing to impress someone and just had fun.
 

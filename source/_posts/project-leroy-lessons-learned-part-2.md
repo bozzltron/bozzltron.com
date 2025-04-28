@@ -4,7 +4,7 @@ categories:
   - Adventure
 tags:
   - ai
-hero: /images/posts/hero-leroy.jpg
+hero: https://files.bozzltron.com/hero-leroy.jpg
 hero_title: ''
 date: 2020-09-27 18:48:37
 ---

@@ -5,7 +5,7 @@ categories:
 - "adventure"
 tags:
 - music
-hero: /images/posts/hero-finland.jpg
+hero: https://files.bozzltron.com/hero-finland.jpg
 hero_title: ""
 ---
 

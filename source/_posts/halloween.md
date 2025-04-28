@@ -4,7 +4,7 @@ categories:
   - Music Review
 tags:
   - music
-hero: /images/posts/hero-halloween.jpg
+hero: https://files.bozzltron.com/hero-halloween.jpg
 hero_title: 'Phoebe Bridgers Credit: Frank Ockenfels'
 date: 2020-07-14 14:11:35
 ---

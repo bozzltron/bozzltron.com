@@ -4,7 +4,7 @@ categories:
   - adventure
 tags:
   - skateboarding
-hero: /images/posts/hero-skate-city-des-moines.jpg
+hero: https://files.bozzltron.com/hero-skate-city-des-moines.jpg
 hero_title: ''
 date: 2021-07-05 18:54:56
 ---

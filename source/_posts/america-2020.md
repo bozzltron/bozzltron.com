@@ -4,7 +4,7 @@ categories:
   - Song Writing
 tags:
   - music
-hero: /images/posts/hero-simon_and_garfunkel.jpg
+hero: https://files.bozzltron.com/hero-simon_and_garfunkel.jpg
 hero_title: '(Nancy Kaye/AP)'
 date: 2020-11-03 19:26:42
 ---

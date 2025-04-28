@@ -4,7 +4,7 @@ categories:
   - Technology
 tags:
   - ai
-hero: /images/posts/hero-leroy.jpg
+hero: https://files.bozzltron.com/hero-leroy.jpg
 hero_title: ''
 date: 2020-09-27 13:19:04
 ---
@@ -21,7 +21,7 @@ My first iteration of Project Leroy started with classification.  Classification
 It makes sense why classfication was not effective because when we bird warch as humans we are not looking at everything our eye sees and trying understand it as one type of thing.  Instead we understand that what we're looking at is a composition of many little things.  Of those things, we look for birds in particular and when we spot one, we try and understand what type of bird it is.  This led my to update Leroy to achieve his goal in two steps.  First object detection and second classification.
 <br /> <br />
 <video controls muted="muted">
-  <source src="/images/posts/training.mp4" type="video/mp4">
+  <source src="https://files.bozzltron.com/training.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 <caption>My daughter helped me test out object detection with her stuffed chicken Gary.</caption>

@@ -4,7 +4,7 @@ categories:
   - Song Writing 
 tags:
   - mcclouth sessions
-hero: /images/posts/hero-kansas.jpg
+hero: https://files.bozzltron.com/hero-kansas.jpg
 hero_title: 'Here In Kasas'
 date: 2021-05-31 11:04:10
 ---
@@ -19,12 +19,12 @@ I started down listening to a bunch of [song exploder podcasts](https://songexpl
 
 My arrival was met with slight discouragement. The cabin was visible to the host's home.  Something more secluded was the ideal.  On a positive note, the structure was a tiny home complete with a quirky host to match.  She noticed my unpacking and gave some instructions from afar.   She wore a hat that gave her fox-like ears and had flaps that covered her cheeks.
 
-![tiny house](/images/posts/tiny-house.jpg)
+![tiny house](https://files.bozzltron.com/tiny-house.jpg)
 
 Getting in required opening a fence and led to a bridge over a creek.  The fence held a horse and pony.  The cabin came with surprises.  I crossed over into in the covered porch and through door.  It had been augmented over the years with a bunch of different DIY homemaking materials and techniques. Down below were a fully functional kitchen, shower, and a little cove to sleep. Up top was for kids to sleep and play. Out towards the front was a sitting and reading space. 
 
 <video width="100%" controls muted="muted">
-  <source src="/images/posts/cabin-tour.mp4" type="video/mp4">
+  <source src="https://files.bozzltron.com/cabin-tour.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 <caption>A cabin tour.</caption>

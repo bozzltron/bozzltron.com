@@ -3,7 +3,7 @@ title: rejection
 categories:
 - "the feels"
 tags:
-hero: /images/posts/hero-finland.jpg
+hero: https://files.bozzltron.com/hero-finland.jpg
 hero_title: ""
 ---
 

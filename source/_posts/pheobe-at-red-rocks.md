@@ -4,7 +4,7 @@ categories:
   - adventure
 tags:
   - music
-hero: /images/posts/hero-phoebe-at-red-rocks.jpg
+hero: https://files.bozzltron.com/hero-phoebe-at-red-rocks.jpg
 hero_title: 'Phoebe Bridgers live at Red Rocks'
 date: 2022-06-23 13:25:53
 ---
@@ -15,7 +15,7 @@ A favorite artist in a coveted venue and a profound connection.
 
 The drive up north along the mountains to the west was absolutely beautiful. Red rocks being a gorgeous preservation of what nature can be. Even the parking lot was beautiful.
 
-![Red Rocks parking lot](/images/posts/red-rocks-parking.jpg)
+![Red Rocks parking lot](https://files.bozzltron.com/red-rocks-parking.jpg)
 
 
 Donis and I took a short walk through the park to explore for a bit and then enter the venue.  We provided our proof of vaccinations, waited in line for a bit, and found our seats. 
@@ -28,7 +28,7 @@ Sometimes there is music that resonates with your circumstances. The COVID exper
 
 Now fast forward almost a year and I've made the move and now I'm sitting in this venue that I've always wanted to visit watching that very artist perform the song. It was surreal. The prophecy was fulfilled.
 
-![Phoebe performing sidelines](/images/posts/phoebe-sidelines.jpg)
+![Phoebe performing sidelines](https://files.bozzltron.com/phoebe-sidelines.jpg)
 
 Even crazier is that Phoebe performed a new hit single called Sidelines. Like every other song the background changed to give the soundscape a visual theme. The song took on the theme of a rodeo with horses and cowboys and gates in the background. Donis pointed out to me in the background she saw the word Austin. This is exactly where she and I were looking to move that summer. Again the music and now the performance associated with it seemed to provide direction in the moment that I needed it.
 

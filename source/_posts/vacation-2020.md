@@ -4,7 +4,7 @@ categories:
   - Adventure
 tags:
   - music
-hero: /images/posts/hero-vacation-2020.jpg
+hero: https://files.bozzltron.com/hero-vacation-2020.jpg
 hero_title: ''
 date: 2020-08-21 15:30:14
 ---
@@ -19,4 +19,4 @@ We found a nest of Black Widows, played with Daddy long legs, heard wild life in
 
 Most of our time was just exploring.  We found a water hole, a freezing cold stream, and the kids loved it.  It was our our secret place to just be.  A much needed break from screens and people.
 
-![The Water Hole](/images/posts/water-hole.jpg)
+![The Water Hole](https://files.bozzltron.com/water-hole.jpg)

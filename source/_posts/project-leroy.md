@@ -4,7 +4,7 @@ categories:
   - Techonology
 tags:
   - ai
-hero: /images/posts/hero-project-leroy.jpg
+hero: https://files.bozzltron.com/hero-project-leroy.jpg
 hero_title: ''
 date: 2020-07-25 13:43:15
 ---
@@ -17,7 +17,7 @@ I've had the idea for Project Leroy for some time.  The pandemic has provided th
 
 Project Leroy is applying Artificial Intelligence to bird watching.  The goal is to be able to indentify any bird species that comes to the feeder. 
 
-![Raspberry Pi 3, Google Coral, Camera Module](/images/posts/project-leroy.jpg)
+![Raspberry Pi 3, Google Coral, Camera Module](https://files.bozzltron.com/project-leroy.jpg)
 
 The first step was getting the hardware.  I already had a Raspberry Pi 3 laying around for the main system.  I picked up the Google Coral USB module for the model processing.  Lucky enough, Google Coral had a [bird feeder example project](https://coral.ai/projects/bird-feeder/#project-intro) that became my starting point for the code.  Last addition was the Raspberry camera module.
 

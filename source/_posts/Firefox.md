@@ -4,7 +4,7 @@ categories:
   - Software
 tags:
   - technology
-hero: /images/posts/hero-firefox.jpg
+hero: https://files.bozzltron.com/hero-firefox.jpg
 hero_title: ''
 date: 2021-01-09 15:13:25
 ---

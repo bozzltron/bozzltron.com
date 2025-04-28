@@ -5,7 +5,7 @@ categories:
 - Song Writing
 tags:
 - finland-sessions
-hero: /images/posts/hero-the-observer.jpg
+hero: https://files.bozzltron.com/hero-the-observer.jpg
 hero_title: "west branch baptism river"
 ---
 

@@ -5,7 +5,7 @@ categories:
 - Song Writing
 tags:
 - finland-sessions
-hero: /images/posts/hero-lakeside.jpg
+hero: https://files.bozzltron.com/hero-lakeside.jpg
 hero_title: "lake superior"
 ---
 

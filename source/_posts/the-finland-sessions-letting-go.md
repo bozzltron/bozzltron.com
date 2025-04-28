@@ -4,7 +4,7 @@ categories:
   - Song Writing
 tags:
   - finland-sessions
-hero: /images/posts/hero-letting-go.jpg
+hero: https://files.bozzltron.com/hero-letting-go.jpg
 hero_title: 'palisade head'
 date: 2020-06-27 11:21:08
 ---

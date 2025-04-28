@@ -33,7 +33,7 @@
   <!-- include PWACompat _after_ your manifest -->
   <script type="module">
     // detect iOS Safari
-    if (('standalone' in navigator) && (!navigator.standalone)) {
+    if (("standalone" in navigator) && (!navigator.standalone)) {
       import('https://unpkg.com/pwacompat');
     }
   </script>
@@ -47,7 +47,7 @@
   <% if (config.highlight.enable){ %>
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   <% } %>
-  <%- css('css/style') %>
+  <link rel="stylesheet" href="/css/style.css">
   <style id="fit-vids-style">
 		.fluid-width-video-wrapper {
 			width: 100%;

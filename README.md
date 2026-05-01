@@ -8,6 +8,18 @@ Personal site and blog, published at [bozzltron.com](https://bozzltron.com). Pos
 - **Small, maintainable stack** — Hexo generates the site from `source/_posts`; the theme stays close to upstream [Attila](https://github.com/zutrinken/hexo-theme-attila)-style markup with deliberate overrides documented below.
 - **Human and agent onboarding** — This file is the canonical map of repo layout and editorial decisions.
 
+## Editorial guidelines
+
+**Length.** New posts should land in roughly **five minutes of reading time** for a typical reader. That usually means about **900–1,200 words** as a soft target (reading speed varies; dense quotes, lists, or embeds change perceived time more than the counter does). Use `<!-- more -->` so indexes stay skimmable, and tighten rather than pad.
+
+**Series: Influential music** (category **Influential music**, shared tag **`influential-music`**). Keep a **steady arc** across installments so the series feels like one voice:
+
+1. **Scene and facts** — A little history or release context for the song: where it landed in culture, timelines, collaborators, myths worth correcting—only what earns the reader’s trust for what follows.
+2. **The music** — What happens in the recording: arrangement, melody, rhythm, lyrics, production choices—heard as criticism, not inventory.
+3. **Why it sticks** — Close on **impact**: how it reached you **as a person** and **as a musician** (habits you picked up, doors it opened, what you stole or resisted). Honest endings beat tidy ones.
+
+Together, that trio should still respect the five-minute framing above unless a piece deliberately breaks format (then say why in draft notes or the opening graf).
+
 ## Stack
 
 | Piece | Role |
@@ -105,7 +117,7 @@ Manual spot checks: home + paginator, longest post title / category row, hero im
 | `themes/attila/layout/_partial/archive.ejs` | Index / archive / paginated listings |
 | `themes/attila/layout/_partial/header.ejs` | Primary nav driven by theme menu |
 | `themes/attila/layout/_partial/head.ejs` | Meta, OG, accent CSS variables, font preconnect |
-| `source/_posts/` | Markdown posts |
+| `source/_posts/` | Markdown posts (drafts stay in **`source/_drafts/`** until published; see Editorial guidelines above) |
 | `_config.yml` | Site-level Hexo |
 
 When adding features, mirror existing patterns (`url_for()`, theme fallbacks from `Hexo`/locale helpers) so subdirectory deploy and i18n keep working.

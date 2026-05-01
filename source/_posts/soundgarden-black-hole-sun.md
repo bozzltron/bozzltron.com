@@ -14,11 +14,12 @@ hero_title: 'Soundgarden Superunknown portraits — Kevin Westenberg'
 hero_alt: 'Soundgarden in the saturated, warped publicity photograph by Kevin Westenberg used for Superunknown-era artwork—reproduced from Loudersound; see References for credit.'
 hero_width: 1200
 hero_height: 675
+excerpt: >-
+  Imagine you’re the frontman of a Seattle grunge band in 1993—you’ve finished three studio albums and you’re deep in a fourth. Your producer challenges you to write with more integrity instead of courting what you think fans want. On the drive home, a song starts to assemble in your head, and a stray line from the radio becomes “Black Hole Sun.”
+
 ---
 
 This series is about influential music and what it did to me. It’s inspired by Jeff Tweedy’s book *World Within a Song: Music That Changed My Life and Life That Changed My Music*. After *Tomorrow*, I’m turning to *Black Hole Sun*.
-
-<!-- more -->
 
 Imagine you’re the frontman of a grunge band in Seattle in **1993**. You’ve finished **three studio albums**; you’re deep in a **fourth**. Your producer walks in and challenges you to write with **more integrity**—not to lean toward what you think the fans want. You chew on that.
 

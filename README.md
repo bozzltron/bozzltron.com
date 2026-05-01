@@ -1,160 +1,61 @@
 # bozzltron.com
 
-Personal site and blog, published at [bozzltron.com](https://bozzltron.com). Posts live in Markdown; the static HTML is produced at build time. Production hosting is **[Cloudflare Pages](https://pages.cloudflare.com/)**: builds run from this Git repository; publish the **`public/`** output and match the commands below in the Pages project settings.
+Personal site and blog ([bozzltron.com](https://bozzltron.com)). Markdown in `source/` → Hexo → static **`public/`**. Hosts on **[Cloudflare Pages](https://pages.cloudflare.com/)**; CI and Pages should run **`npm run lint && npm run build`** and publish **`public/`**.
 
-## Goals
-
-- **Readable, low-friction reading** — Comfortable typography on phones and desktops, sane defaults for light/dark, and tooling that prefers standards (semantic HTML landmarks, keyboard paths, scalable type).
-- **Small, maintainable stack** — Hexo generates the site from `source/_posts`; the theme stays close to upstream [Attila](https://github.com/zutrinken/hexo-theme-attila)-style markup with deliberate overrides documented below.
-- **Human and agent onboarding** — This file is the canonical map of repo layout and editorial decisions.
+**Goals:** Readable type and a11y defaults, small stack (Hexo + vendored [Attila](https://github.com/zutrinken/hexo-theme-attila)-style theme), and this file as the canonical map for humans and agents.
 
 ## Editorial guidelines
 
-**Length.** New posts should land in roughly **five minutes of reading time** for a typical reader. That usually means about **900–1,200 words** as a soft target (reading speed varies; dense quotes, lists, or embeds change perceived time more than the counter does). Use `<!-- more -->` so indexes stay skimmable, and tighten rather than pad.
+**Length.** ~**900–1,200 words** (~5 min read) as a soft target. Use `<!-- more -->` for excerpts on **non-series** posts unless you set a custom **`excerpt:`** (below).
 
-**Series: Influential music** (category **Influential music**, shared tag **`influential-music`**). Open each installment with a short acknowledgment that the series is **inspired by Jeff Tweedy’s *World Within a Song: Music That Changed My Life and Life That Changed My Music*** (then continue into your hook for that song). For posts in this series, use the Markdown filename **`<band>-<song>.md`** in lowercase kebab-case—for example **`silverchair-tomorrow.md`** for Silverchair’s *Tomorrow*. Do **not** put **`influential-music`** (or other series slug text) in the filename; category and tags already tie the series together. Hyphenate multi-word band or song parts as needed (**`foo-fighters-everlong.md`**). The basename becomes Hexo’s URL slug unless you override with **`permalink`** in front matter. Keep a **steady arc** across installments so the series feels like one voice:
+**Series: Influential music** — category **Influential music**, tag **`influential-music`**. Open with the **Jeff Tweedy / *World Within a Song*** acknowledgement, then the song hook. Filename: **`<band>-<song>.md`** (kebab-case, e.g. **`silverchair-tomorrow.md`**); do **not** put the series slug in the filename.
 
-1. **Scene and facts** — A little history or release context for the song: where it landed in culture, timelines, collaborators, myths worth correcting—only what earns the reader’s trust for what follows.
-2. **The music** — What happens in the recording: arrangement, melody, rhythm, lyrics, production choices—heard as criticism, not inventory.
-3. **Why it sticks** — Close on **impact**: how it reached you **as a person** and **as a musician** (habits you picked up, doors it opened, what you stole or resisted). Honest endings beat tidy ones.
+**Teasers (required for this series).** Shared Tweedy intro + `<!-- more -->` would make every listing identical. For each *Influential music* post add **`excerpt:`** in front matter (plain text, 1–3 sentences from the piece’s **unique** hook). **When `excerpt:` is set, do not use `<!-- more -->`** — Hexo skips the split and a stray HTML comment would otherwise appear in the body. See existing posts. Arc: (1) scene/facts (2) the music (3) why it sticks.
 
-**References and source quality.** Cite what isn’t ordinary memoir or uncontroversial common knowledge: dates, charts, contest outcomes, quotations, imagery rights, journalism, encyclopedia summaries, liner notes, broadcasts, etc. Prefer **Markdown links** (inline or a short **References** block at the end—pick one convention per post and stay consistent). Image heroes and embeds already imply a source—spell out attribution in prose or that block.
+**References.** Cite dates, charts, quotes, rights, etc. Inline links or an end **References** block — one style per post. **Source quality:** prefer established outlets, official channels, and on-the-record interviews for **facts**; trade press (*Guitar.com*, etc.) for craft; **Wikipedia** only as orientation with spot-checks; avoid forums, fan wikis, and content farms for factual claims. Verify links, bylines, numbers, and photo credits before ship.
 
-When you add references, **prioritize high-quality sources** so links stay trustworthy and fact-checkable:
+**Dictation.** Copy-desk pass: spelling, grammar, punctuation — **not** a voice rewrite. Extra facts belong next to citations or corrections.
 
-| Tier | Examples (not exhaustive) | How to use |
-|------|---------------------------|------------|
-| **Strong** | Reporting from established outlets (*Rolling Stone*, *Classic Rock* / *Louder*, *Uncut*, *Billboard*, major newspapers); **official** label, band, or musician channels (YouTube verified uploads, press releases); **quoted primary interviews** where the artist or producer speaks on the record; documentary or book citations with publisher and author | Prefer these for **facts** (release dates, chart peaks, who played what, timelines, rights/credits). |
-| **Good** | Specialized trade or musician-facing press (*Guitar.com*, *Guitar Player*, engineering podcasts with **identifiable** speakers and primary quotes); **peer-reviewed** or university-press work when relevant | Use for **technical or craft** detail; name the **writer** and date when the site provides them. |
-| **Use with care** | **Wikipedia** and other **tertiary** summaries | Fine for **orientation** or as one pointer among stronger links—note that articles are **community-maintained** and vary by topic. **Spot-check** sensitive claims against a **Strong** source; never treat Wikipedia as sole authority for contested facts. |
-| **Weak / avoid** | Anonymous forums, fan wikis, scraped “lyrics meaning” sites, unattributed listicles, SEO content farms | Do **not** rely on these for facts. If a claim only appears there, either **drop it** or **dig** until a Strong source confirms it. |
+**Posts vs drafts.** **`source/_posts/`** = shipped; **`source/_drafts/`** = not in production builds. No duplicate paths; edit published files only under **`_posts/`**.
 
-**Practical checks before shipping a References block:** link resolves; **byline** or channel matches what you cite (authors and article titles **drift** after site redesigns); quoted numbers and dates **match** the source; for hero or press photos, **credit line** and usage respect the publication’s terms. If two sources conflict, cite the **more primary** one or **say** the record is disputed.
-
-This bar applies especially to **Influential music** posts, where myth and marketing repeat fast—**memoir stays yours**; **everything else** earns a link that would survive a skeptical reader.
-
-**Dictation passes.** Raw author dictation gets a **copy-desk pass**, not a voice transplant: fix **spelling and grammar**, untangle punctuation where speech ran long, flag unclear spots with a comment if needed. **Do not** rework tone, slang, humour, or sentence shape to sound “more editorial.” Added **context** (timeline, chart place, catalogue detail) belongs where it backs a **reference** or corrects something objectively wrong—not to pad or replace the author’s own sentences.
-
-Together, that trio should still respect the five-minute framing above unless a piece deliberately breaks format (then say why in draft notes or the opening graf).
-
-**Posts vs drafts (single source of truth).** **`source/_posts/`** is the canonical home for **published** posts. **`source/_drafts/`** is for work not yet shipped. When you move a post into **`_posts/`**, **remove the corresponding file from `_drafts/`** (or you end up with two copies of the same piece). Production builds ignore drafts (`render_drafts: false`), but **`npm run server:drafts`** includes them—so duplicates confuse local preview—and an old path can reappear on disk if an editor buffer is saved again. **Edit published posts only under `_posts/`.**
-
-## Stack
+## Stack and commands
 
 | Piece | Role |
 |--------|------|
-| [Hexo](https://hexo.io/) 8 | Static generator |
-| Theme `themes/attila/` | Hexo-compatible Attila-derived layout, CSS, and scripts |
-| Node.js | See `engines` in `package.json` (currently ≥ 20.19) |
-
-`theme:` in `_config.yml` is `attila` (forked/vendor copy under `themes/attila/`).
-
-### Install and build
+| [Hexo](https://hexo.io/) 8 | Generator |
+| `themes/attila/` | Theme (see `theme:` in `_config.yml`) |
+| Node | `package.json` **`engines`** (≥ 20.19) |
 
 ```bash
 npm install
-npm run lint     # eslint + stylelint on theme-owned sources (see package.json)
-npm run build    # writes to public/
-npm run server   # local preview; merges _config.local.yml if present
-npm run server:drafts   # same, but includes source/_drafts (not published until moved)
+npm run lint          # eslint + stylelint (theme)
+npm run build         # → public/
+npm run server        # local; uses _config.local.yml if present
+npm run server:drafts # includes source/_drafts
 ```
 
-GitHub Actions runs **`npm run lint`** then **`npm run build`** on every push and pull request (`.github/workflows/hexo-build.yml`). In the Cloudflare Pages dashboard, use the **same build command** (**`npm run lint && npm run build`**) and set the build output directory to **`public`**, so production cannot ship lint failures while only GitHub is enforcing checks.
-
-### Configuration
+**CI / Pages:** `.github/workflows/hexo-build.yml` runs **`lint`** then **`build`**. Match that on Cloudflare Pages; output dir **`public`**.
 
 | File | Notes |
 |------|--------|
-| `_config.yml` | Site metadata, permalink shape, pagination, generators, **`url`** and **`root`**. Paths like `/css/...` in the theme assume `root` is `/`; subdirectory deploys must align `root` **and** those asset paths if you relocate the site. |
-| `_config.local.yml` | Local overlay for **`hexo server`** (URLs, ports). **Not committed.** Start from **`_config.local.yml.example`** and copy — never paste deploy tokens here if you recreate the repo without ignore rules. |
-| `_config.local.yml.example` | Short template checked in for onboarding; copy to **`_config.local.yml`**. |
-| `themes/attila/_config.yml` | Theme options: menu labels, avatar, accents, excerpt link, accent colors |
+| `_config.yml` | Site URL, **`root`**, permalinks (`root: /` assumes theme asset paths) |
+| `_config.local.yml` | Local preview only — **gitignored**; copy from `_config.local.yml.example` |
+| `themes/attila/_config.yml` | Menu, avatar, colors |
 
-## Typography and readable font sizing
+## Theme overrides (where to edit)
 
-**Standards-aligned expectations**
+**Primary:** **`themes/attila/source/css/overrides.css`** — body / `.post-content` size (Attila uses `html { font-size: 62.5% }`; don’t flip `html` to `100%` without rebalancing `em` in bundled `style.css`). **Clamp**/gutters, skip link, category row, pagination layout, **reduced-motion**. **Dates:** `themes/attila/scripts/date-helpers.js` (relative phrases are **generate-time**, not live).
 
-- **[WCAG 1.4.4 Resize text](https://www.w3.org/WAI/WCAG22/Understanding/resize-text/)** expects text can scale to **200%** without loss of functionality or undue horizontal scrolling in typical reading layouts. **It does not prescribe a minimum body font height in px.**
-- **[WCAG 1.4.12 Text spacing](https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html)** describes test thresholds for author-set spacing, including **line-height at least ~1.5** for blocks of text when spacing is authored. Many readable themes combine **solid line-height** with **moderate** point sizes rather than maximizing font size alone.
+**Layouts:** `layout/_partial/article.ejs` (post, hero, nav), `archive.ejs`, `header.ejs`, `head.ejs` (meta, viewport).
 
-**Industry / platform shorthand (guardrails — still verify devices and zoom)**
-
-| Source | Takeaway |
-|--------|----------|
-| [Material design typography](https://m3.material.io/styles/typography/overview) | **Modular scale** from body upward; readable body roles anchored near common defaults, not arbitrary one-off sizing. |
-| [Apple Typography (HIG)](https://developer.apple.com/design/human-interface-guidelines/typography) | Design for **legible hierarchies** and systems that tolerate user text-size preferences (on web: **respect zoom** and UA defaults). |
-| Long-form web / publications | Paragraph **upper-teens through low twenties px-equivalent** for continuous reading is widespread for serif prose; breakpoints and UI chrome shift the precise number |
-
-**What this repo implements**
-
-Attila keeps **`html { font-size: 62.5% }`**. **`body { font-size: 1.125em }`** and **`.post-content { font-size: 1.95em }`** (over Attila’s **`1.75em`**) live in **`themes/attila/source/css/overrides.css`** so continuous reading settles around **the low twenties in px-equivalent** at a **16px** UA root, without editing minified **`style.css`**. Nudge **`body`** if chrome feels small, **`.post-content`** alone if headings look undersized beside paragraphs.
-
-**Important:** resetting **`html`** to **`font-size: 100%`** without rebalancing nested **`em`/`rem`** in **`style.css`** skews proportions; prefer **`body` / `.post-content`** tweaks in **`overrides.css`** (see comments at top of that file).
-
-### Dates and “relative” time
-
-Friendly date strings plus a “relative” phrase (for example “two days ago”) are resolved **at Hexo generate time** via Moment in `themes/attila/scripts/date-helpers.js`, not refreshed in the browser. Re-deploy to refresh them.
-
-### Optional third-party scripts
-
-Google Analytics loads from `themes/attila/layout/_partial/google-analytics.ejs` only when configured. Disqus and similar blocks are guarded in templates (comments section off until enabled).
-
-## Accessibility
-
-What we prioritize and verify:
-
-- **Bypass block** — “Skip to main content” (`layout.ejs` + `#main-content` on `<main>` in article and archive partials).
-- **Landmarks** — One primary `<main id="main-content">` per page layout; `<nav aria-label="Primary">`; footer `<nav aria-label="Footer">`.
-- **Pagination** — Separate `aria-label`s for the “page X of Y” strip vs the link pager so screen readers distinguish summary from controls.
-- **Focus** — Category chips already use `:focus-visible` in `overrides.css`; skip link adopts a high-contrast focus treatment.
-- **Motion** — `prefers-reduced-motion` removes chip transitions (`overrides.css`); enlarge if new animated surfaces appear.
-- **Heading sanity** — Post **author line** uses `<p class="post-meta-author">` so the outline isn’t polluted by an `h4` between title and article body.
-
-**Recommended manual checks**
-
-- Tab from page load → skip link → enter main landmark.
-- 200% browser zoom on a long article and on the homepage list.
-- Color contrast if changing `--ghost-accent-color` / dark accent in theme config.
-
-Automated scanners (axe, Lighthouse) on generated `public/*.html` are useful before deploy.
-
-## Responsive design
-
-**Baseline (theme):** **`width=device-width`** viewport (`themes/attila/layout/_partial/head.ejs`); **`html`** / **`body`** avoid horizontal bleed in Attila. Main breakpoint **`640px`**: stacked nav drawer, **`inner`** gutters **`padding: 0 4rem`**. **`480px`**: hyphenation aids on **`post-title`**, tighter pagination labeling.
-
-**Site overrides (`overrides.css`):** **`clamp()`** typography for **`blog-name`**, **`.post-header .post-title`**, listing titles, and **`blog-description`** below **`640px`** so long lines reflow inside the viewport. Below **`480px`**, **`page-wrapper .inner`** gutters and mobile-menu link padding scale down from the theme **`4rem`** defaults so layouts breathe on **`~320–390px`** widths. Article tables already scroll sideways under **`640px`** in the bundled theme CSS.
-
-Manual spot checks: home + paginator, longest post title / category row, hero image post, rotated phone, soft keyboard shrinking the viewport.
-
-## Theme customization map (for editors and agents)
-
-| Path | Purpose |
-|------|---------|
-| `themes/attila/source/css/overrides.css` | Site overrides; typography, responsive **clamp**/gutters, skip link, category row, **Hexo pagination** (horizontal `.pagination-info` row vs Attila’s Ghost-style stacked pills), motion |
-| `themes/attila/scripts/date-helpers.js` | Registers **`readable_date`** and **`time_ago`** Moment helpers (`fromNow()` at generate time) |
-| `themes/attila/layout/_partial/article.ejs` | Post/article shell, hero, tags, adjacent post nav |
-| `themes/attila/layout/_partial/archive.ejs` | Index / archive / paginated listings |
-| `themes/attila/layout/_partial/header.ejs` | Primary nav driven by theme menu |
-| `themes/attila/layout/_partial/head.ejs` | Meta, OG, accent CSS variables, font preconnect |
-| `source/_posts/` | Markdown posts (drafts stay in **`source/_drafts/`** until published; see Editorial guidelines above) |
-| `_config.yml` | Site-level Hexo |
-
-When adding features, mirror existing patterns (`url_for()`, theme fallbacks from `Hexo`/locale helpers) so subdirectory deploy and i18n keep working.
+**Checks before deploy:** tab order (skip → main `#main-content`), ~200% zoom, contrast if accents change; Lighthouse/axe on **`public/**/*.html`** optional.
 
 ## Repository hygiene
 
-- **Gitignore** — `public/`, `node_modules/`, `db.json`, Hexo `.deploy*` folders, Amplify client artifacts (if used), and **`_config.local.yml`** belong out of git. **`_config.local.yml.example`** documents the minimal local overlay (`url`/`port`).
-- **`_config.local.yml`** — Keep on disk for `npm run server` but **never commit**; it was mistakenly tracked historically—removed from the index with `git rm --cached _config.local.yml` once `.gitignore` lists it.
+`public/`, `node_modules/`, `db.json`, `.deploy_*`, **`_config.local.yml`** → gitignored. Only **`themes/attila`** is active. **`npm run lint && npm run build`** must pass locally, in CI, and on Pages.
 
-- **Theme scope** — Only `themes/attila` is wired; a historical full-tree copy **`themes/attila-backup/`** was removed (recover from git if needed).
-- **Pruned dormant layout** — Sidebar, widgets (`layout/_widget/`), Ghost HTML templates (`template-*.html`), unused post partials (`post/nav`, `post/gallery`), and a duplicate root `after-footer.ejs` were removed; nothing referenced them from `layout.ejs` or layouts.
-- **Dependencies** — `hexo-theme-landscape` and `hexo-renderer-stylus` were dropped (no `.styl` sources in this repo).
-- **Build verification** — `npm run lint && npm run build` must succeed locally, in CI, and in the **Cloudflare Pages** production build before relying on publish automation.
-
-### Optional: regenerate service-worker hash
-
-Theme **`npm run version`** (`themes/attila/` Grunt) stamps git hash into `service-worker.js` from `service-worker-template.js`. Run before deploy only if that workflow matters for your CDN.
+**Optional:** `cd themes/attila && npm run version` (Grunt) updates service-worker hash if you rely on it.
 
 ---
 
-**Audience:** Humans maintaining the blog + automation that needs repo context. Prefer updating this README when behavior of `_config.yml`, theme overrides, or deploy assumptions changes materially.
+**Audience:** Maintainers and automation. Update this file when deploy steps, `_config.yml`, or theme override behavior changes materially.

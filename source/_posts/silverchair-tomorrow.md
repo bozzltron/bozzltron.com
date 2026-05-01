@@ -13,11 +13,12 @@ hero_title: 'Silverchair (Frogstomp era)'
 hero_alt: 'Silverchair as a teenage power trio—Frogstomp-era promo-style photograph reproduced from Loudersound'
 hero_width: 1280
 hero_height: 720
+excerpt: >-
+  In 1994, three teenagers in Australia, between the ages of 14 and 15, submitted their demo tape with two songs to a demo contest held nationally. One was called Tomorrow; the band was still Innocent Criminals. Tomorrow won, Triple J and a record deal followed, Silverchair finished Frogstomp—and when the single hit the US charts in 1995, that was when Tomorrow found me.
+
 ---
 
 This series is about influential music and what it did to me. It’s inspired by Jeff Tweedy’s book *World Within a Song: Music That Changed My Life and Life That Changed My Music*. I’m starting with *Tomorrow*.
-
-<!-- more -->
 
 In 1994, three teenagers in Australia, between the ages of 14 and 15, submitted their demo tape with two songs to a demo contest held nationally. One of the songs was called *Tomorrow*. The other was called *Pick Me*. The band at the time was called **Innocent Criminals**. *Tomorrow* ended up winning that demo contest. The prizes included studio recording at Triple J and a recording contract. Innocent Criminals changed their name to Silverchair. They got a professional recording of *Tomorrow* and finished the entire *Frogstomp* album by 1995. *Frogstomp* was also released in the United States, and *Tomorrow* peaked on the US charts in 1995. That is when the song *Tomorrow* found me.
 

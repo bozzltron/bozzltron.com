@@ -8,8 +8,8 @@ tags:
   - influential-music
   - silverchair
   - frogstomp
-hero: /images/silverchair-tomorrow-hero.webp
-hero_title: 'Silverchair live (Across the Great Divide tour, 2007)'
+hero: /images/silverchair-2006-stage-hero.webp
+hero_title: 'Silverchair on stage, August 2006'
 ---
 
 This is the first entry in a loose series about records and songs that rewired how I listen. I am starting with *Tomorrow* because teenage me did not see it coming—and adult me still respects the swing.
@@ -28,6 +28,10 @@ If you grew up alongside alternative radio, you might know the United States edi
 
 ### Hero photograph
 
-Finding a confirmed **public-domain** *group* photo of Silverchair in their earliest years turned up empty-handed on Wikimedia Commons; usable band shots there tend to carry **Creative Commons** terms instead. The cover image above is **Silverchair performing in 2007** on the *Across the Great Divide* tour—**Jeanie Mackinder**, [File:Silverchair-AcrossTheGreatDivide.jpg](https://commons.wikimedia.org/wiki/File:Silverchair-AcrossTheGreatDivide.jpg) on Wikimedia Commons, licensed under **[CC BY 2.0](https://creativecommons.org/licenses/by/2.0/deed.en)**. Converted to WebP locally for bandwidth; attribution retained here.
+I went looking for open-license **whole-band** imagery as close as possible to the *Tomorrow*/Frogstomp window (1994–1995). On **Wikimedia Commons** there isn’t currently a downloadable, license-verified photo of **Daniel Johns / Ben Gillies / Chris Joannou** together from **that decade**—the usual press shots from then sit behind Getty-style rights we can’t just lift for the blog.
 
-If you substitute a hero later, [**Ben Gillies** (Webster Hall, 2007)](https://commons.wikimedia.org/wiki/File:Ben_Gillies.jpg) is marked **public domain** on Commons, though it depicts one member rather than the full lineup.
+The hero above is therefore the **earliest Commons-hosted full-band live frame** we could confirm: **[File:Silverchair.jpg](https://commons.wikimedia.org/wiki/File:Silverchair.jpg)** — **Silverchair on stage, 10 August 2006** — **Jökull Auðunsson** (posted on Flickr first; mirrored on Commons with license review — **[CC BY 2.0](https://creativecommons.org/licenses/by/2.0/deed.en)**). It is **not** Frogstomp-era (and the lineup pictured includes keyboardist/guitarist **Paul Mac** beside Johns, Gillies, and Joannou), but it is still the **least late** credible group photograph on Commons—it sits **about a dozen years** after the first *Tomorrow* release—while staying clearly attributed and reusable.
+
+Converted to WebP locally (scaled from the small source scan for sharper display).
+
+If you want a purely **public domain** substitution with no attribution chain, **[Ben Gillies at Webster Hall, 13 February 2007](https://commons.wikimedia.org/wiki/File:Ben_Gillies.jpg)** is marked PD on Commons, but it is **one drummer mid-performance**, not the group.

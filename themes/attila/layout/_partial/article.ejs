@@ -42,10 +42,15 @@ var metaName = authorMetaName();
 		</div>
 		<% if (post.hero) { %>
 		<div class="post-cover cover" style="transform: translate3d(0px, 0px, 0px);">
+				<% var heroAlt = post.hero_alt || post.hero_title || post.title; %>
 				<img sizes="100vw" srcset="<%= post.hero %> 320w,
 					<%= post.hero %> 640w,
 					<%= post.hero %> 960w,
-					<%= post.hero %> 1920w" src="<%= post.hero %>" alt="<%= post.hero_title || post.title %>">
+					<%= post.hero %> 1920w" src="<%= post.hero %>" alt="<%= heroAlt %>"<%
+					if (post.hero_title_attr) { %> title="<%= post.hero_title_attr %>"<% }
+					%> loading="<%= post.hero_loading || 'eager' %>" decoding="<%= post.hero_decoding || 'async' %>" fetchpriority="high"<%
+					if (post.hero_width != null && post.hero_height != null) { %> width="<%= post.hero_width %>" height="<%= post.hero_height %>"<% }
+					%>>
 		</div>
 		<% } %>
 	</div>

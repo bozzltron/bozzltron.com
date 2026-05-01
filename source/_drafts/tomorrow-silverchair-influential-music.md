@@ -18,13 +18,11 @@ This is the first entry in a loose series about records and songs that rewired h
 
 Some songs arrive as comfort. Others arrive as voltage. *Tomorrow* landed in the mid‑90s MTV and mix‑tape era with a kind of blunt, breathless confidence: a band barely out of school, writing hooks that felt oversized for the room they were played in. Hearing it again is less about nostalgia than about remembering what it felt like when a riff could reset your afternoon.
 
-The Australian video below is the version tied to how the story broke locally—grain, charm, and a little chaos. Pick your player poison; the melody is stubborn either way.
+The embed below is the **United States** official video—that **Mark Pellington** cut that dominated MTV-era alternative rock in 1995, same chorus, different glare. Prefer the original Australian Nomad-era clip instead? **[Tomorrow (Australian official video)](https://www.youtube.com/watch?v=RZD982yrmx4)** on YouTube.
 
 <div class="youtube-wrap">
-  <iframe src="https://www.youtube-nocookie.com/embed/RZD982yrmx4" title="Silverchair — Tomorrow (Australian version, official music video)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/PjsMnvqL7eY" title="Silverchair — Tomorrow (US version, official music video)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
 </div>
-
-If you grew up alongside alternative radio, you might know the United States edit and video as well—same stubborn chorus, different lens. Official upload: [US version](https://www.youtube.com/watch?v=PjsMnvqL7eY) (YouTube).
 
 ### Hero photograph
 

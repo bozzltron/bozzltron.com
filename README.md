@@ -25,6 +25,7 @@ npm install
 npm run lint     # eslint + stylelint on theme-owned sources (see package.json)
 npm run build    # writes to public/
 npm run server   # local preview; merges _config.local.yml if present
+npm run server:drafts   # same, but includes source/_drafts (not published until moved)
 ```
 
 GitHub Actions runs **`npm run lint`** then **`npm run build`** on every push and pull request (`.github/workflows/hexo-build.yml`). In the Cloudflare Pages dashboard, use the **same build command** (**`npm run lint && npm run build`**) and set the build output directory to **`public`**, so production cannot ship lint failures while only GitHub is enforcing checks.

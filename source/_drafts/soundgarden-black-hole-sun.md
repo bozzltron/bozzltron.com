@@ -11,7 +11,7 @@ tags:
   - chris-cornell
 ---
 
-This series is about influential music and what it did to me. After *Tomorrow*, I’m turning to *Black Hole Sun*.
+This series is about influential music and what it did to me. It’s inspired by Jeff Tweedy’s book *World Within a Song: Music That Changed My Life and Life That Changed My Music*. After *Tomorrow*, I’m turning to *Black Hole Sun*.
 
 <!-- more -->
 

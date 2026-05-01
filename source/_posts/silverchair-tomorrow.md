@@ -15,7 +15,7 @@ hero_width: 1280
 hero_height: 720
 ---
 
-This series is about influential music and what it did to me. I’m starting with *Tomorrow*.
+This series is about influential music and what it did to me. It’s inspired by Jeff Tweedy’s book *World Within a Song: Music That Changed My Life and Life That Changed My Music*. I’m starting with *Tomorrow*.
 
 <!-- more -->
 

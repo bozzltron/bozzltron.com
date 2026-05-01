@@ -18,6 +18,10 @@ Personal site and blog, published at [bozzltron.com](https://bozzltron.com). Pos
 2. **The music** — What happens in the recording: arrangement, melody, rhythm, lyrics, production choices—heard as criticism, not inventory.
 3. **Why it sticks** — Close on **impact**: how it reached you **as a person** and **as a musician** (habits you picked up, doors it opened, what you stole or resisted). Honest endings beat tidy ones.
 
+**References.** Cite what isn’t ordinary memoir or uncontroversial common knowledge: dates, charts, contest outcomes, quotations, imagery rights, journalism, encyclopedia summaries, liner notes, broadcasts, etc. Prefer **Markdown links** (inline or a short **References** block at the end—pick one convention per post and stay consistent). Image heroes and embeds already imply a source—spell out attribution in prose or that block.
+
+**Dictation passes.** Raw author dictation gets a **copy-desk pass**, not a voice transplant: fix **spelling and grammar**, untangle punctuation where speech ran long, flag unclear spots with a comment if needed. **Do not** rework tone, slang, humour, or sentence shape to sound “more editorial.” Added **context** (timeline, chart place, catalogue detail) belongs where it backs a **reference** or corrects something objectively wrong—not to pad or replace the author’s own sentences.
+
 Together, that trio should still respect the five-minute framing above unless a piece deliberately breaks format (then say why in draft notes or the opening graf).
 
 ## Stack

@@ -8,8 +8,8 @@ tags:
   - influential-music
   - silverchair
   - frogstomp
-hero: /images/silverchair-2006-stage-hero.webp
-hero_title: 'Silverchair on stage, August 2006'
+hero: /images/silverchair-frogstomp-louder-hero.webp
+hero_title: 'Silverchair (Frogstomp era) — lead image from Loudersound review'
 ---
 
 This series is about influential music and what it did to me. I’m starting with *Tomorrow*.
@@ -28,7 +28,7 @@ The video below is the US official upload on YouTube. The Australian official vi
 
 ### Hero image
 
-The header photo is not from the mid‑90s (free-use **whole-band** shots from that year are hard to license). It is **Silverchair on stage, 10 August 2006** — **Jökull Auðunsson**, [File:Silverchair.jpg](https://commons.wikimedia.org/wiki/File:Silverchair.jpg) on Wikimedia Commons, **[CC BY 2.0](https://creativecommons.org/licenses/by/2.0/deed.en)**. Converted to WebP here. The frame includes **Paul Mac** on keys/guitar alongside Johns, Gillies, and Joannou.
+Lead photo is taken from [**Nick Hasted**’s *Louder* / *Classic Rock* review **“Silverchair: Frogstomp”**](https://www.loudersound.com/reviews/silverchair-frogstomp) (published **12 June 2015**). I downloaded the article’s CDN JPEG (**`cdn.mos.cms.futurecdn.net/7bjhF2P2cdGP9Nj5UdmgGh.jpg`**) and saved a **WebP** copy in this repo for performance. Visual rights belong to **Future plc** / the original photographer—as listed on Loudersound—not to this blog; attribution here is bookkeeping, not a substitute for a formal licence if you need one.
 
 ### References
 
@@ -36,4 +36,4 @@ The header photo is not from the mid‑90s (free-use **whole-band** shots from t
 2. Wikipedia, [*Frogstomp* (album)](https://en.wikipedia.org/wiki/Frogstomp) — 1995 album, including US release timing.
 3. Silverchair (official via YouTube), [“Tomorrow” (US version, official video)](https://www.youtube.com/watch?v=PjsMnvqL7eY).
 4. Silverchair (official via YouTube), [“Tomorrow” (Australian version, official video)](https://www.youtube.com/watch?v=RZD982yrmx4).
-5. Wikimedia Commons, [File:Silverchair.jpg](https://commons.wikimedia.org/wiki/File:Silverchair.jpg) — author **Jökull Auðunsson**, **CC BY 2.0**.
+5. Nick Hasted, [“Silverchair: Frogstomp”](https://www.loudersound.com/reviews/silverchair-frogstomp), *Louder* (Future plc), 12 June 2015 — **hero photograph** source (WebP derivative hosted here).

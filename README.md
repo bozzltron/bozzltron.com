@@ -18,7 +18,20 @@ Personal site and blog, published at [bozzltron.com](https://bozzltron.com). Pos
 2. **The music** — What happens in the recording: arrangement, melody, rhythm, lyrics, production choices—heard as criticism, not inventory.
 3. **Why it sticks** — Close on **impact**: how it reached you **as a person** and **as a musician** (habits you picked up, doors it opened, what you stole or resisted). Honest endings beat tidy ones.
 
-**References.** Cite what isn’t ordinary memoir or uncontroversial common knowledge: dates, charts, contest outcomes, quotations, imagery rights, journalism, encyclopedia summaries, liner notes, broadcasts, etc. Prefer **Markdown links** (inline or a short **References** block at the end—pick one convention per post and stay consistent). Image heroes and embeds already imply a source—spell out attribution in prose or that block.
+**References and source quality.** Cite what isn’t ordinary memoir or uncontroversial common knowledge: dates, charts, contest outcomes, quotations, imagery rights, journalism, encyclopedia summaries, liner notes, broadcasts, etc. Prefer **Markdown links** (inline or a short **References** block at the end—pick one convention per post and stay consistent). Image heroes and embeds already imply a source—spell out attribution in prose or that block.
+
+When you add references, **prioritize high-quality sources** so links stay trustworthy and fact-checkable:
+
+| Tier | Examples (not exhaustive) | How to use |
+|------|---------------------------|------------|
+| **Strong** | Reporting from established outlets (*Rolling Stone*, *Classic Rock* / *Louder*, *Uncut*, *Billboard*, major newspapers); **official** label, band, or musician channels (YouTube verified uploads, press releases); **quoted primary interviews** where the artist or producer speaks on the record; documentary or book citations with publisher and author | Prefer these for **facts** (release dates, chart peaks, who played what, timelines, rights/credits). |
+| **Good** | Specialized trade or musician-facing press (*Guitar.com*, *Guitar Player*, engineering podcasts with **identifiable** speakers and primary quotes); **peer-reviewed** or university-press work when relevant | Use for **technical or craft** detail; name the **writer** and date when the site provides them. |
+| **Use with care** | **Wikipedia** and other **tertiary** summaries | Fine for **orientation** or as one pointer among stronger links—note that articles are **community-maintained** and vary by topic. **Spot-check** sensitive claims against a **Strong** source; never treat Wikipedia as sole authority for contested facts. |
+| **Weak / avoid** | Anonymous forums, fan wikis, scraped “lyrics meaning” sites, unattributed listicles, SEO content farms | Do **not** rely on these for facts. If a claim only appears there, either **drop it** or **dig** until a Strong source confirms it. |
+
+**Practical checks before shipping a References block:** link resolves; **byline** or channel matches what you cite (authors and article titles **drift** after site redesigns); quoted numbers and dates **match** the source; for hero or press photos, **credit line** and usage respect the publication’s terms. If two sources conflict, cite the **more primary** one or **say** the record is disputed.
+
+This bar applies especially to **Influential music** posts, where myth and marketing repeat fast—**memoir stays yours**; **everything else** earns a link that would survive a skeptical reader.
 
 **Dictation passes.** Raw author dictation gets a **copy-desk pass**, not a voice transplant: fix **spelling and grammar**, untangle punctuation where speech ran long, flag unclear spots with a comment if needed. **Do not** rework tone, slang, humour, or sentence shape to sound “more editorial.” Added **context** (timeline, chart place, catalogue detail) belongs where it backs a **reference** or corrects something objectively wrong—not to pad or replace the author’s own sentences.
 

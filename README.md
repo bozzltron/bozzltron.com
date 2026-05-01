@@ -24,6 +24,8 @@ Personal site and blog, published at [bozzltron.com](https://bozzltron.com). Pos
 
 Together, that trio should still respect the five-minute framing above unless a piece deliberately breaks format (then say why in draft notes or the opening graf).
 
+**Posts vs drafts (single source of truth).** **`source/_posts/`** is the canonical home for **published** posts. **`source/_drafts/`** is for work not yet shipped. When you move a post into **`_posts/`**, **remove the corresponding file from `_drafts/`** (or you end up with two copies of the same piece). Production builds ignore drafts (`render_drafts: false`), but **`npm run server:drafts`** includes them—so duplicates confuse local preview—and an old path can reappear on disk if an editor buffer is saved again. **Edit published posts only under `_posts/`.**
+
 ## Stack
 
 | Piece | Role |

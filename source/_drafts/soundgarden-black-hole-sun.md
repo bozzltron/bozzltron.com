@@ -9,6 +9,11 @@ tags:
   - soundgarden
   - superunknown
   - chris-cornell
+hero: /images/soundgarden-superunknown-westenberg-hero.jpg
+hero_title: 'Soundgarden Superunknown portraits — Kevin Westenberg'
+hero_alt: 'Soundgarden in the saturated, warped publicity photograph by Kevin Westenberg used for Superunknown-era artwork—reproduced from Loudersound; see References for credit.'
+hero_width: 1200
+hero_height: 675
 ---
 
 This series is about influential music and what it did to me. It’s inspired by Jeff Tweedy’s book *World Within a Song: Music That Changed My Life and Life That Changed My Music*. After *Tomorrow*, I’m turning to *Black Hole Sun*.
@@ -41,3 +46,4 @@ The embed below uses the longstanding **official upload** SoundgardenVEVO mainta
 2. *Uncut* (Peter Watts), [“Chris Cornell and Soundgarden remember ‘Black Hole Sun’”](https://www.uncut.co.uk/features/chris-cornell-soundgarden-remember-black-hole-sun-understand-even-less-now-100365/) — web feature (**19 May 2017**) reprinting/expanding Cornell/Thayil/Beinhorn/Shepherd interviews originally from ***Uncut* August 2014**; drive‑home origin, dictaphone, **vari‑speed / Leslie sparkle** saga, Cornell on letting Greenhalgh dictate the surreal video vision.
 3. *Rolling Stone* (Andy Greene), ["Soundgarden’s Chris Cornell on ‘Superunknown,’ Depression"](https://www.rollingstone.com/music/music-features/soundgardens-chris-cornell-on-superunknown-depression-203008/) — long **2014** anniversary oral history; Cornell unsure the song belonged on a Soundgarden record yet everyone responded; **Nobody forecast it as single** alongside surreal verses; Leslie chorus slowdown lost from demo on final master; contemporaneous Kurt Cobain context framing when read today.
 4. Soundgarden (via YouTube), ["Black Hole Sun" (official video)](https://www.youtube.com/watch?v=3mbBbFH9fAg).
+5. Hero image — Scott Munro, [Original cover photo for Soundgarden’s *Superunknown* revealed](https://www.loudersound.com/news/original-cover-photo-for-soundgardens-superunknown-revealed), *Louder* / *Classic Rock*, Future plc, published **19 June 2017** — photograph **Kevin Westenberg** (full‑frame sleeve image); original CDN **`https://cdn.mos.cms.futurecdn.net/XUrikZt7cEs5WKzKAyNhyR-1200-80.jpg`**; this repo hosts **the same JPEG** at **`/images/soundgarden-superunknown-westenberg-hero.jpg`** for the site build. © Kevin Westenberg; reproduction via Loudersound is not an implied licence beyond personal / editorial attribution as practiced here.

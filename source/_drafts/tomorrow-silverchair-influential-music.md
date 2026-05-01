@@ -12,36 +12,28 @@ hero: /images/silverchair-2006-stage-hero.webp
 hero_title: 'Silverchair on stage, August 2006'
 ---
 
-This series is about songs that bent my listening and sometimes my choices. *Tomorrow* is the honest opener—it found me while I was still figuring out whether “musician” was a job other people got to have.
+This series is about influential music and what it did to me. I’m starting with *Tomorrow*.
 
 <!-- more -->
 
-In **1994**, three teenagers from **Newcastle, Australia**—Daniel Johns, Ben Gillies, and Chris Joannou, between about **fourteen and fifteen**—still rehearsed as **Innocent Criminals**. They entered **Pick Me**, a **national demo contest** run through SBS-TV’s *Nomad* with **Triple J** folded into the prize package. Press tallies from the competition land near [**eight hundred** entries](https://en.wikipedia.org/wiki/Tomorrow_(Silverchair_song)); theirs was a **two-song** demo led by *Tomorrow* and a second original they also titled *Pick Me*—the same words as the contest, teenage literalism turned up loud.
+In 1994, three teenagers in Australia, between the ages of 14 and 15, submitted their demo tape with two songs to a demo contest held nationally. One of the songs was called *Tomorrow*. The other was called *Pick Me*. The band at the time was called Innocent. *Tomorrow* ended up winning that demo contest. The prizes included studio recording at Triple J and a recording contract. Innocent changed their name to Silverchair. They got a professional recording of *Tomorrow* and finished the entire *Frogstomp* album by 1995. *Frogstomp* was also released in the United States, and *Tomorrow* peaked on the US charts in 1995. That is when the song *Tomorrow* found me.
 
-*Tomorrow* won. The prize stack read like a daydream scribbled in a school planner: **Triple J** session time, an ABC-filmed performance clip, airplay that refused to cool, then a **Murmur** (Sony) contract, the intentional lowercase rename to **silverchair**, and studio work that fed **Frogstomp**, completed and released through **1995** in Australia and abroad. When the album reached the United States that summer, *Tomorrow* dominated **modern rock radio** and MTV’s rotation; the stateside promo, directed by **[Mark Pellington](https://en.wikipedia.org/wiki/Mark_Pellington)**, swapped the Australian video’s grain for harsh light and jump-cut anxiety—the visual dialect every US teenager learned in waiting rooms and rec rooms.
+I was 13 years old. The band was merely three years older than me. There’s a lot to be said about representation. I loved the song. I was playing guitar and making music too. For me, knowing how young the band was was a realization that my dream of making music for a living was attainable. If I wanted to be on par with these guys, I only had three more years to do it. They set the bar high.
 
-### The music
-
-On its own terms the track is not subtle: a **grunge-weight groove** that borrows the Pacific Northwest’s volume but keeps an **Antipodean bluntness** in the vocal. Gillies’s drumming leans on **wide-open stadium pocket** even when the band is still picturing high-school halls, and Joannou’s bass holds the swing so Johns can smear vocal notes without the whole thing unraveling. The chorus circles the same demand like a playground dare—*wait till tomorrow*—while the lyric needle alternates swagger and brittle comedy (“no bathroom and there is no sink”). It is adolescent theatre played completely straight; that sincerity is why the riff still carries.
-
-### Where it landed for me
-
-I was **thirteen** when the American push put the song in front of me. The band sat only **three years ahead** on the clock—barely older than my friends with drivers’ permits—which rearranged everything I assumed about legitimacy. Representation is not usually the word people reach for around three white boys with loud amps, yet it was unmistakable **for me**: if they could already be shipping records and occupying the same charts I heard at the mall, then the premise that *professional musician* lived on another continent from my notebook started to look silly.
-
-I was **playing guitar** on a bedroom amp, writing clumsy originals, tabbing riffs with a pencil when I could not keep up by ear. Knowing how young they were flipped a competitive switch—not jealousy exactly, more like a ruler laid against the timeline. **If parity was possible, they had only given me another three years to catch up.** They set an absurdly **high bar**—the kind your heroes are supposed to set—and I chased it badly and happily like every other kid who thought amplifiers were honest work.
-
-The clip below is the **US** promo cut that swallowed alternative radio stateside—same recording’s myth, different glare. Prefer the **Australian** Nomad-era video from the Pick Me aftermath? **[Tomorrow (Australian official video)](https://www.youtube.com/watch?v=RZD982yrmx4)** on YouTube.
+The video below is the US official upload on YouTube. The Australian official video is [here](https://www.youtube.com/watch?v=RZD982yrmx4).
 
 <div class="youtube-wrap">
   <iframe src="https://www.youtube-nocookie.com/embed/PjsMnvqL7eY" title="Silverchair — Tomorrow (US version, official music video)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
 </div>
 
-### Hero photograph
+### Hero image
 
-I went looking for open-license **whole-band** imagery as close as possible to the *Tomorrow*/Frogstomp window (1994–1995). On **Wikimedia Commons** there isn’t currently a downloadable, license-verified photo of **Daniel Johns / Ben Gillies / Chris Joannou** together from **that decade**—the usual press shots from then sit behind Getty-style rights we can’t lift for this blog without a separate license.
+The header photo is not from the mid‑90s (free-use **whole-band** shots from that year are hard to license). It is **Silverchair on stage, 10 August 2006** — **Jökull Auðunsson**, [File:Silverchair.jpg](https://commons.wikimedia.org/wiki/File:Silverchair.jpg) on Wikimedia Commons, **[CC BY 2.0](https://creativecommons.org/licenses/by/2.0/deed.en)**. Converted to WebP here. The frame includes **Paul Mac** on keys/guitar alongside Johns, Gillies, and Joannou.
 
-The hero above is therefore the **earliest Commons-hosted full-band live frame** we could confirm: **[File:Silverchair.jpg](https://commons.wikimedia.org/wiki/File:Silverchair.jpg)** — **Silverchair on stage, 10 August 2006** — **Jökull Auðunsson** (posted on Flickr first; mirrored on Commons with license review — **[CC BY 2.0](https://creativecommons.org/licenses/by/2.0/deed.en)**). It is **not** Frogstomp-era (and the lineup pictured includes keyboardist/guitarist **Paul Mac** beside Johns, Gillies, and Joannou), but it is still the **least late** credible group photograph on Commons—it sits **about a dozen years** after the first *Tomorrow* release—while staying clearly attributed and reusable.
+### References
 
-Converted to WebP locally (scaled from the small source scan for sharper display).
-
-If you want a purely **public domain** substitution with no attribution chain, **[Ben Gillies at Webster Hall, 13 February 2007](https://commons.wikimedia.org/wiki/File:Ben_Gillies.jpg)** is marked PD on Commons, but it is **one drummer mid-performance**, not the group.
+1. Wikipedia, [“Tomorrow” (Silverchair song)](https://en.wikipedia.org/wiki/Tomorrow_(Silverchair_song)) — *Pick Me* / *Nomad* national competition, Triple J recording and ABC-filmed video as part of the prize, release of the *Tomorrow* EP, charting, US modern rock success and second (Pellington) video for the American market; notes the **Innocent Criminals** name before **silverchair** (many write-ups use the longer name; **Innocent** above is how I remember us talking about it).
+2. Wikipedia, [*Frogstomp* (album)](https://en.wikipedia.org/wiki/Frogstomp) — 1995 album, including US release timing.
+3. Silverchair (official via YouTube), [“Tomorrow” (US version, official video)](https://www.youtube.com/watch?v=PjsMnvqL7eY).
+4. Silverchair (official via YouTube), [“Tomorrow” (Australian version, official video)](https://www.youtube.com/watch?v=RZD982yrmx4).
+5. Wikimedia Commons, [File:Silverchair.jpg](https://commons.wikimedia.org/wiki/File:Silverchair.jpg) — author **Jökull Auðunsson**, **CC BY 2.0**.

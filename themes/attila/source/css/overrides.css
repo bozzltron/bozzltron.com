@@ -314,22 +314,107 @@ html.theme-dark .article-category-link:focus-visible {
   list-style: none;
 }
 
-/* Hexo paginator nests controls inside .pagination-info; add breathing room vs Attila defaults. */
+/* Hexo paginator lives inside .pagination-info (numbered links + Prev/Next). Attila’s base
+ * .pagination a rule uses tall block-level flex pills meant for Ghost’s paired prev/next ribbons,
+ * which stacks Hexo controls vertically. Reset to one horizontal row (wrap when needed).
+ */
+.pagination .pagination-box {
+  position: relative;
+}
+
+.pagination .pagination-info {
+  position: relative;
+  inset: auto;
+  left: auto;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  font-size: 1em;
+  line-height: 1.35;
+  text-align: inherit;
+}
 
 .pagination .pagination-info a.extend,
 .pagination .pagination-info a.page-number,
 .pagination .pagination-info span.page-number,
 .pagination .pagination-info span.space {
-  margin: 0.5rem 0.85rem;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  min-height: 2.25rem;
+  height: auto;
+  margin: 0;
+  padding: 0.35rem 0.95rem;
+  font-size: 1em;
+  line-height: 1.3;
+  font-weight: 500;
+  border-radius: 999px;
+  box-sizing: border-box;
+  text-decoration: none;
   vertical-align: middle;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.pagination .pagination-info a.extend,
+.pagination .pagination-info a.page-number {
+  border: 1px solid var(--color-background-contrast);
+  color: var(--color-content-secondary);
+}
+
+.pagination .pagination-info a.extend:hover,
+.pagination .pagination-info a.page-number:hover {
+  border-color: var(--ghost-accent-color);
+  color: var(--color-content-main);
+}
+
+.pagination .pagination-info a.extend:focus,
+.pagination .pagination-info a.page-number:focus {
+  outline: none;
+}
+
+.pagination .pagination-info a.extend:focus-visible,
+.pagination .pagination-info a.page-number:focus-visible {
+  border-color: var(--ghost-accent-color);
+  color: var(--color-content-main);
+}
+
+.pagination .pagination-info span.page-number {
+  cursor: default;
+}
+
+.pagination .pagination-info span.page-number.current {
+  border: 1px solid var(--ghost-accent-color);
+  color: var(--color-content-main);
+  font-weight: 600;
+}
+
+.pagination .pagination-info span.space {
+  border: none;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  min-width: auto;
+  color: var(--color-content-secondary);
 }
 
 @media (max-width: 480px) {
+  .pagination .pagination-info {
+    gap: 0.3rem 0.35rem;
+  }
+
   .pagination .pagination-info a.extend,
   .pagination .pagination-info a.page-number,
-  .pagination .pagination-info span.page-number,
-  .pagination .pagination-info span.space {
-    margin: 0.4rem 0.5rem;
+  .pagination .pagination-info span.page-number {
+    padding: 0.3rem 0.65rem;
+    min-height: 2rem;
+    font-size: 0.95em;
   }
 }
 

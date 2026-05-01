@@ -115,7 +115,7 @@ Manual spot checks: home + paginator, longest post title / category row, hero im
 
 | Path | Purpose |
 |------|---------|
-| `themes/attila/source/css/overrides.css` | Site overrides; typography, responsive **clamp**/gutters, skip link, category row, pagination, motion |
+| `themes/attila/source/css/overrides.css` | Site overrides; typography, responsive **clamp**/gutters, skip link, category row, **Hexo pagination** (horizontal `.pagination-info` row vs Attila’s Ghost-style stacked pills), motion |
 | `themes/attila/scripts/date-helpers.js` | Registers **`readable_date`** and **`time_ago`** Moment helpers (`fromNow()` at generate time) |
 | `themes/attila/layout/_partial/article.ejs` | Post/article shell, hero, tags, adjacent post nav |
 | `themes/attila/layout/_partial/archive.ejs` | Index / archive / paginated listings |

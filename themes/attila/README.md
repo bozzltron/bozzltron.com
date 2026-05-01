@@ -1,87 +1,16 @@
-# Landscape
+# bozzltron Hexo theme (Ghost Attila–inspired)
 
-A brand new default theme for [Hexo].
+This is **not** the Ghost theme package. It is a **Hexo-first** customization that aligns layout and styling with [**zutrinken/attila**](https://github.com/zutrinken/attila) (Ghost), currently tracked against upstream **Attila ~3.9.x** (`package.json` in that repo: `3.9.0`, Ghost `>=5`).
 
-- [Preview](http://hexo.io/hexo-theme-landscape/)
+Upstream Attila remains **maintained**. Re-sync periodically by diffing Ghost’s shipped assets:
 
-## Installation
+| Ghost (clone / release zip) | This theme |
+|---|---|
+| `assets/css/style.css` | `source/css/style.css` |
+| `assets/js/script.js` | `source/js/script.js` |
+| Typography from Ghost `@site` / Portal | Self-hosted **`source/css/fonts-icons.css`** (Cardo, Fira Sans, icon font) loaded before Attila CSS |
+| — | **`source/css/overrides.css`** — Hexo-specific tweaks (not from Ghost); keep when re-syncing `style.css` |
 
-### Install
+Configurable in **`themes/attila/_config.yml`** (`accent_color`, `darkmode_accent_color`, `color_scheme`, `avatar`, menus, RSS). **`color_scheme`** is applied inline in **`head`** (system / light / dark, with optional **`attila_theme`** persistence in **`localStorage`**). **`source/js/pwacompat.min.js`** is a vendored **`pwacompat`** build (no CDN) loaded from **`head`**. **`layout/layout.ejs`** disables Hexo **`partial`** caching on **`header`** / **`footer`** so **`active`** menu classes reflect each page. For site-wide Hexo overrides without editing this repo, prefer the site root **`_config.attila.yml`** ([alternate theme config](https://hexo.io/docs/configuration#Alternate-Theme-Config)).
 
-``` bash
-$ git clone https://github.com/hexojs/hexo-theme-landscape.git themes/landscape
-```
-
-**Landscape requires Hexo 2.4 and above.** If you would like to enable the RSS, the [hexo-generate-feed] plugin is also required.
-
-### Enable
-
-Modify `theme` setting in `_config.yml` to `landscape`.
-
-### Update
-
-``` bash
-cd themes/landscape
-git pull
-```
-
-## Configuration
-
-``` yml
-# Header
-menu:
-  Home: /
-  Archives: /archives
-rss: /atom.xml
-
-# Content
-excerpt_link: Read More
-
-# Sidebar
-sidebar: right
-widgets:
-- category
-- tag
-- tagcloud
-- archives
-- recent_posts
-
-# Miscellaneous
-google_analytics:
-favicon: /favicon.png
-twitter:
-google_plus:
-```
-
-- **menu** - Navigation menu
-- **rss** - RSS link
-- **excerpt_link** - "Read More" link at the bottom of excerpted articles. `false` to hide the link.
-- **sidebar** - Sidebar style. You can choose `left`, `right`, `bottom` or `false`.
-- **widgets** - Widgets displaying in sidebar
-- **google_analytics** - Google Analytics ID
-- **favicon** - Favicon path
-- **twitter** - Twiiter ID
-- **google_plus** - Google+ ID
-
-## Features
-
-### Sidebar
-
-You can put your sidebar in left side, right side or bottom of your site by editing `sidebar` setting.
-
-Landscape provides 5 built-in widgets:
-
-- category
-- tag
-- tagcloud
-- archives
-- recent_posts
-
-All of them are enabled by default. You can edit them in `widget` setting.
-
-## Development
-
-### Requirements
-
-- [Grunt] 0.4+
-- Hexo 2.4+
+Theme build step (`npm run version`) only refreshes **`service-worker.js`** from template + git revision; CSS/JS are vendored intentionally.

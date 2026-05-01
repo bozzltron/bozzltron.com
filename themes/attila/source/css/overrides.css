@@ -1,0 +1,333 @@
+/*
+  Typography (Attila baseline)
+  - Theme sets html { font-size: 62.5% }, so ~10px when the browser default is 16px (user zoom still scales everything).
+  - body defaults to font-size 1em of that root; .post-content is 1.75em → ~17–18px body copy before the comfort bump below.
+  - WCAG 2.x [1.4.4 Resize text](https://www.w3.org/WAI/WCAG22/Understanding/resize-text/) — content must survive up to 200% zoom (no mandated minimum px).
+  - WCAG [1.4.12 Text spacing](https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html) — where authors fix block line-height/spacing, line-height ≥ 1.5 is the reference (Attila’s .post-content line-height is already generous).
+  - Platform / industry norms commonly cited when choosing defaults (still test on real devices + 200% zoom):
+      • Material 3 scales “body” typography around a 14–16sp-style baseline with a modular type scale —
+        https://m3.material.io/styles/typography/overview
+      • Apple HIG emphasizes Dynamic Type–friendly scaling for reading comfort (web should still respect zoom and OS prefs) —
+        https://developer.apple.com/design/human-interface-guidelines/typography
+      • Reader-focused editorial sites often land long-form serif body in roughly the high-teens px at default zoom
+        (breakpoint and subscription chrome move the number); usability testing matters more than a single canonical px.
+  - Do NOT set html { font-size: 100% } here without re-tuning nested em/rem in style.css—it would inflate the whole scale unevenly.
+
+  Comfort bumps below:
+  • body scales em-based chrome (listing meta, post header band, etc.).
+  • .post-content is raised above theme 1.75em for article / excerpt blocks without touching html { 62.5% } rem math.
+*/
+
+body {
+  /* +12.5% vs theme default 1em */
+  font-size: 1.125em;
+}
+
+/*
+  Theme default .post-content { font-size: 1.75em; line-height: 2em } on top of body — second step for readers only (~1.125 × 1.95 ≈ 21.9px at 62.5%/16px UA).
+*/
+.post-content {
+  font-size: 1.95em;
+  /* Attila uses 2em — snugger line box without dipping below usual ~1.5 readability expectation at this size */
+  line-height: 1.72em;
+}
+
+/* Stack spacing: theme uses margin-bottom 4rem on most blocks — ease ~25% (~30px vs ~40px at 62.5% root). */
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6,
+.post-content p,
+.post-content ol,
+.post-content ul,
+.post-content hr,
+.post-content blockquote,
+.post-content dl,
+.post-content pre,
+.post-content table,
+.post-content img,
+.post-content .fluid-width-video-wrapper {
+  margin: 0 0 3rem;
+}
+
+.post-content figure {
+  margin: 0 0 3rem;
+  max-width: 100%;
+}
+
+.post-content figure img {
+  margin-bottom: 0;
+}
+
+.post-content ol ol,
+.post-content ol ul,
+.post-content ul ol,
+.post-content ul ul {
+  margin: 12px 0;
+}
+
+.post-content blockquote * {
+  margin-bottom: 0.88em;
+}
+
+.post-content blockquote *:last-child {
+  margin-bottom: 0;
+}
+
+.post-content ul > li:before,
+.post-content ol > li:before {
+  line-height: 1.72em;
+}
+
+.post-content pre .lines,
+.post-content pre code,
+.post-content pre tt {
+  line-height: 1.72em;
+}
+
+/*
+  Dark mode surfaces — Attila default #222426 / #1D1F20 reads as “dusty charcoal”.
+  Bump main/secondary darker for richer contrast with body text (--color-content-main unchanged).
+  Tweaks: main #141518 (~8% lightness), stripes #0f1012, hairlines/contrast rails #2c2f34.
+*/
+.theme-dark:root {
+  --color-background-main: #141518;
+  --color-background-secondary: #0f1012;
+  --color-background-contrast: #2c2f34;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not(.theme-light):root {
+    --color-background-main: #141518;
+    --color-background-secondary: #0f1012;
+    --color-background-contrast: #2c2f34;
+  }
+}
+
+/* First focus control: jumps keyboard users past header/nav into <main>. */
+.skip-link:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link:focus {
+  position: fixed;
+  left: 0.75rem;
+  top: 0.75rem;
+  width: auto;
+  height: auto;
+  padding: 0.65rem 1.15rem;
+  margin: 0;
+  clip: auto;
+  clip-path: none;
+  overflow: visible;
+  white-space: normal;
+  z-index: 100000;
+  font-family: var(--gh-font-heading, 'Helvetica Neue', Helvetica, Arial, sans-serif);
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: var(--color-background-main, #fff);
+  color: var(--color-content-lead, #000);
+  border: 2px solid var(--ghost-accent-color, #15171a);
+  border-radius: 3px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+
+html.theme-dark .skip-link:focus {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .article-category-link {
+    transition: none;
+  }
+}
+
+/*
+  Responsive (Attila baseline: nav drawer + .inner gutters switch at ~640px; .post-title hyphens at ~480px).
+  Gaps addressed here: oversized 6em/4em headings still feel huge at phone widths; inner padding stays 4rem
+  (= ~40px per side at 62.5% html) down to 480px—we ease gutters and scale headings smoothly.
+*/
+
+@media only screen and (max-width: 640px) {
+  .blog-header .blog-name,
+  .post-header .post-title,
+  #index .post .post-title {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+  }
+
+  /* Ghost defaults use em-based billboard type; clamp keeps long titles fitting without reflowing the viewport. */
+  .blog-header .blog-name {
+    font-size: clamp(2.75rem, 4vw + 2rem, 6em);
+  }
+
+  .post-header .post-title {
+    font-size: clamp(2.75rem, 5vw + 1.75rem, 6em);
+  }
+
+  .blog-header .blog-description {
+    font-size: clamp(1.5rem, 2.5vw + 1rem, 3em);
+  }
+
+  #index .post .post-title {
+    font-size: clamp(2.1rem, 3vw + 1.25rem, 4em);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .page-wrapper .inner {
+    padding-left: clamp(1rem, 4vw + 0.5rem, 2.75rem);
+    padding-right: clamp(1rem, 4vw + 0.5rem, 2.75rem);
+  }
+
+  /* Theme uses padding-left: 4rem for drawer links — scale down slightly on very narrow viewports. */
+  .nav-header li a {
+    padding-left: clamp(2rem, 6vw + 1.35rem, 4rem);
+  }
+}
+
+/* Dates: readable string + relative (moment fromNow at generate time). */
+.dt-relative {
+  opacity: 0.78;
+  font-size: 0.92em;
+  font-weight: 500;
+}
+
+/* Hexo category row: keep Attila typography (.post-info is font-size: 2em in style.css —
+   chips/pills inherit that scale instead of resetting to tiny rem sizes). */
+
+.post-header .post-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* row-gap + column-gap: room for oversized .post-info (2em root) typography */
+  gap: 0.55em 1.15rem;
+  /* preserve theme rhythm from .post-info { margin-bottom: 2rem } */
+  margin-bottom: 2rem;
+}
+
+/* Ghost Attila drew a faux rule between label and taxonomy; left:-2.5rem collides once flex gap replaces margin-left. */
+.post-header .post-info .post-count::after {
+  content: none;
+  display: none;
+}
+
+.post-header .post-info .post-type {
+  flex: 0 0 auto;
+  /* inherits font-size / line-height from theme .post-info (2em) + .post-type (accent colour) */
+  font-weight: 600;
+}
+
+.post-header .post-info .post-count {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin-left: 0; /* flex gap replaces theme’s large margin-left on .post-count */
+}
+
+.post-header .article-category,
+.post-header .post-count .article-category {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 0.95rem;
+  row-gap: 0.42em;
+  margin: 0;
+}
+
+.article-category-link {
+  display: inline-block;
+  padding: 0.18em 0.72em;
+  font-family: var(--gh-font-heading, 'Fira Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif);
+  font-size: inherit;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 2px;
+  border: 1px solid rgba(21, 23, 26, 0.18);
+  background: rgba(21, 23, 26, 0.055);
+  transition:
+    color 0.14s ease,
+    border-color 0.14s ease,
+    background 0.14s ease,
+    box-shadow 0.14s ease;
+}
+
+html.theme-dark .article-category-link {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.article-category-link:hover {
+  border-color: var(--ghost-accent-color, #15171a);
+  color: var(--ghost-accent-color, #15171a);
+}
+
+.article-category-link:focus {
+  outline: none;
+}
+
+.article-category-link:focus-visible {
+  border-color: var(--ghost-accent-color, #15171a);
+  color: var(--ghost-accent-color, #15171a);
+  box-shadow: 0 0 0 2px rgba(21, 23, 26, 0.12);
+}
+
+html.theme-dark .article-category-link:focus-visible {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.15);
+}
+
+/* Post footer: sibling <a.article-tag-link>s (flat list_tags) breathe in existing flex aside.post-tags. */
+.post-tags {
+  gap: 0.35em 0.85rem;
+  align-items: baseline;
+}
+
+/* If list-style output ever returns (<ul.article-tag-list>), strip bullets explicitly. */
+.post-tags ul.article-tag-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35em 0.85rem;
+}
+
+.post-tags ul.article-tag-list > li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Hexo paginator nests controls inside .pagination-info; add breathing room vs Attila defaults. */
+
+.pagination .pagination-info a.extend,
+.pagination .pagination-info a.page-number,
+.pagination .pagination-info span.page-number,
+.pagination .pagination-info span.space {
+  margin: 0.5rem 0.85rem;
+  vertical-align: middle;
+}
+
+@media (max-width: 480px) {
+  .pagination .pagination-info a.extend,
+  .pagination .pagination-info a.page-number,
+  .pagination .pagination-info span.page-number,
+  .pagination .pagination-info span.space {
+    margin: 0.4rem 0.5rem;
+  }
+}

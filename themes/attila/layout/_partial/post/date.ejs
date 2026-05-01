@@ -1,1 +1,15 @@
-<time datetime="<%= date_xml(post.date) %>"><%= date(post.date, date_format) %></time>
+<% 
+var fmt = '';
+if (typeof date_format !== 'undefined' && date_format !== null && date_format !== '') {
+  fmt = date_format;
+} else if (typeof theme !== 'undefined' && theme.article_date_format) {
+  fmt = theme.article_date_format;
+} else {
+  fmt = 'MMMM D, YYYY';
+}
+var showRel = true;
+if (typeof show_relative !== 'undefined' && show_relative === false) {
+  showRel = false;
+}
+%>
+<time<% if (typeof class_name !== 'undefined' && class_name && String(class_name).trim()) { %> class="<%= class_name %>"<% } %> datetime="<%= date_xml(post.date) %>"><span class="dt-absolute"><%= readable_date(post.date, fmt) %></span><% if (showRel) { %><span class="dt-sep" aria-hidden="true"> · </span><span class="dt-relative"><%= time_ago(post.date) %></span><% } %></time>

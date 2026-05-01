@@ -1,5 +1,11 @@
 <!DOCTYPE html>
-<html>
+<%
+var __scheme = ((theme.color_scheme || 'system') + '').toLowerCase();
+if (__scheme !== 'system' && __scheme !== 'light' && __scheme !== 'dark') {
+  __scheme = 'system';
+}
+%>
+<html lang="<%= config.language || 'en' %>">
 <head>
   <meta charset="utf-8">
   <%- partial('google-analytics') %>
@@ -20,23 +26,35 @@
     title = __('tag') + ': ' + page.tag;
   }
   %>
+  <script>
+(function () {
+  var scheme = <%- JSON.stringify(__scheme) %>;
+  if (scheme === 'dark') {
+    document.documentElement.classList.add('theme-dark');
+    try { localStorage.setItem('attila_theme', 'dark'); } catch (e) {}
+  } else if (scheme === 'light') {
+    document.documentElement.classList.add('theme-light');
+    try { localStorage.setItem('attila_theme', 'light'); } catch (e) {}
+  } else {
+    try {
+      var t = localStorage.getItem('attila_theme');
+      if (t === 'dark') document.documentElement.classList.add('theme-dark');
+      else if (t === 'light') document.documentElement.classList.add('theme-light');
+    } catch (e) {}
+  }
+})();
+  </script>
   <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="<%= config.title %>">
   <link rel="apple-touch-icon" sizes="152x152" href="/images/app_icons/ios/152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/app_icons/ios/180.png">
   <link rel="apple-touch-icon" sizes="167x167" href="/images/app_icons/ios/167.png">
   <link rel="manifest" href="/manifest.json">
-  <meta name="theme-color" content="#222426">
-  <meta name="path" content="<%= path %>">
-  <!-- include PWACompat _after_ your manifest -->
-  <script type="module">
-    // detect iOS Safari
-    if (("standalone" in navigator) && (!navigator.standalone)) {
-      import('https://unpkg.com/pwacompat');
-    }
-  </script>
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#141518">
   <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
   <% if (theme.rss){ %>
     <link rel="alternate" href="<%= url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml">
@@ -45,24 +63,58 @@
     <link rel="icon" href="<%- theme.favicon %>">
   <% } %>
   <% if (config.highlight.enable){ %>
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   <% } %>
+  <%
+  var accent = theme.accent_color || '#15171A';
+  if (!/^#[0-9A-Fa-f]{3,8}$/.test(accent)) accent = '#15171A';
+  var accentDark = theme.darkmode_accent_color;
+  if (accentDark && !/^#[0-9A-Fa-f]{3,8}$/.test(accentDark)) accentDark = null;
+  %>
+  <style>:root{
+  --ghost-accent-color: <%= accent %>;
+  --gh-font-body: Cardo, Georgia, serif;
+  --gh-font-heading: 'Fira Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}<%
+  if (accentDark) {
+%>.theme-dark:root {
+  --ghost-accent-color: <%= accentDark %>;
+}
+@media (prefers-color-scheme: dark) {
+  html:not(.theme-light):root {
+    --ghost-accent-color: <%= accentDark %>;
+  }
+}
+<% } %></style>
+  <link rel="stylesheet" href="/css/fonts-icons.css">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/overrides.css">
   <style id="fit-vids-style">
-		.fluid-width-video-wrapper {
-			width: 100%;
-			position: relative;
-			padding: 0;
-		}
-
-		.fluid-width-video-wrapper iframe,
-		.fluid-width-video-wrapper object,
-		.fluid-width-video-wrapper embed {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-		}
-	</style>
+.fluid-width-video-wrapper {
+	width: 100%;
+	position: relative;
+	padding: 0;
+}
+.fluid-width-video-wrapper iframe,
+.fluid-width-video-wrapper object,
+.fluid-width-video-wrapper embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+  </style>
+  <script>
+(function () {
+  if (typeof navigator === 'undefined') return;
+  if (!('standalone' in navigator) || navigator.standalone) return;
+  var s = document.createElement('script');
+  s.src = '<%- url_for("/js/pwacompat.min.js") %>';
+  s.async = true;
+  document.head.appendChild(s);
+})();
+  </script>
 </head>

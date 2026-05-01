@@ -15,7 +15,7 @@ On a still morning in a remote cabin north of Lake Superior, I woke up to someth
 
 I rolled out of the upstairs loft, creaked down the steep wooden stairs, and made breakfast and coffee looking out through a long rectangular window out across a shallow river valley.  It was completely covered with tall pine trees and a 20-inch snow base.  I took my breakfast to the living area and threw out some suet for the birds to munch.  
 
-Sitting for a while, watching the world, and listening to the sound of the river, I picked up my guitar and starting writing *The Observer*.  All of the lyrics came out of what was unfolding on a beautiful mountain morning in Finland, Minnesota.  The song is trying to take you, the listener, to that cabin morning to experience it.  In the background is a recording of the river.
+Sitting for a while, watching the world, and listening to the sound of the river, I picked up my guitar and started writing *The Observer*.  All of the lyrics came out of what was unfolding on a beautiful mountain morning in Finland, Minnesota.  The song is trying to take you, the listener, to that cabin morning to experience it.  In the background is a recording of the river.
 
 {% iframe https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/778569364&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true [100%] [300] %}
 
@@ -27,7 +27,7 @@ Sitting for a while, watching the world, and listening to the sound of the river
 >I'm just watching
 >
 >The trees are reaching
->The rivers flowing
+>The river's flowing
 >My worries fading
 >Time is slowing
 >

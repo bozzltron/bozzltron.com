@@ -1,8 +1,6 @@
-
-
 <div class="nav-footer">
-  <nav class="nav-wrapper">
-    <span class="nav-copy"> &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %></span>
+  <nav class="nav-wrapper" aria-label="Footer">
+    <span class="nav-copy">&copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %></span>
   </nav>
 </div>
 
@@ -10,9 +8,7 @@
 
 
 <script>
-  // Check that service workers are supported
   if ('serviceWorker' in navigator) {
-    // Use the window load event to keep the page load performant
     window.addEventListener('load', () => {
       navigator.serviceWorker.register('/service-worker.js');
     });

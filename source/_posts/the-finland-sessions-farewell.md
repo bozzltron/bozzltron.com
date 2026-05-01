@@ -23,7 +23,7 @@ The writing seemed natural. I tried following ideas as they came.  I let go of t
 
 The recording was a blast because I got to work with the environment.  The natural reverb of the room.  The sound of the river.  The sound of stomping on the wood floor.   The space left its mark on each song.
 
-The time I had to look at life from a different vantage point.  To get a grasp on where things lay and to start anticipating what is to come gave me vision.
+The time gave me perspective to look at life from a different vantage point.  To get a grasp on where things lay and to start anticipating what is to come gave me vision.
 
 This is something I'd like to do annually.  It took discipline to stay all four days.  I wrestled with guilt for being away from family.  Routine has gravity.  It's a fight to truly break away, but it's part of what I need to do to stay on top of perspective and not just let life happen to me.
 

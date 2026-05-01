@@ -5,7 +5,7 @@ categories:
 tags:
   - animals
 hero: https://files.bozzltron.com/hero-chickens.jpg
-hero_title: 'Chicken coupe'
+hero_title: 'Chicken coop'
 date: 2020-07-11 15:33:15
 ---
 
@@ -13,7 +13,7 @@ We are officially chicken owners.
 
 <!-- more -->
 
-We have three barred rock hens and one ayman cemani.  Thanks to our friends Wally and Lauren for helping us set everything up.  We retrofitted an old shed that we were using as a kids clubhouse to be a chicken coop.  The fenced area for them to walk around in is a repurposed dog run.
+We have three barred rock hens and one Ayam Cemani.  Thanks to our friends Wally and Lauren for helping us set everything up.  We retrofitted an old shed that we were using as a kids clubhouse to be a chicken coop.  The fenced area for them to walk around in is a repurposed dog run.
 
 ![Deet](https://files.bozzltron.com/deet.jpg)
 
@@ -25,4 +25,4 @@ Eventually, we will need to run power to the shed to heat water for them in the 
 
 ![Inside the coop](https://files.bozzltron.com/inside-the-coop.jpg)
 
-There are several reasons we chose to get chickens:  Donis grew up on a farm and has a strong desire to raise our kids on a farm,  we want to be more self sustaining,  and our kids love taking care of animals.  So far its been a good time.
+There are several reasons we chose to get chickens:  Donis grew up on a farm and has a strong desire to raise our kids on a farm,  we want to be more self sustaining,  and our kids love taking care of animals.  So far it's been a good time.

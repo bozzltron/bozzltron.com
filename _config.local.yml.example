@@ -1,0 +1,6 @@
+# Copy to _config.local.yml (ignored by git) for local `hexo server`.
+# Hexo merges this file with _config.yml; override only what you need.
+#
+# Example:
+url: http://localhost
+port: 4000

@@ -5,7 +5,7 @@ categories:
 tags:
   - mcclouth sessions
 hero: https://files.bozzltron.com/hero-kansas.jpg
-hero_title: 'Here In Kasas'
+hero_title: 'Here In Kansas'
 date: 2021-05-31 11:04:10
 ---
 
@@ -13,7 +13,7 @@ date: 2021-05-31 11:04:10
 
 <!-- more -->
 
-For my second annual week of seclusion, I wanted to go someplace different. My guiding criteria was to trim down the 7-hour drive that I took the previous year. I found an "artists" cabin in Kansas.  Since songwriting was one of my intentions, I was sold.
+For my second annual week of seclusion, I wanted to go someplace different. My guiding criteria were to trim down the 7-hour drive that I took the previous year. I found an "artists" cabin in Kansas.  Since songwriting was one of my intentions, I was sold.
 
 I started down listening to a bunch of [song exploder podcasts](https://songexploder.net/) to get into a creative mindset.  I felt like I had many ideas going. It was getting me in the right headspace.
 
@@ -21,7 +21,7 @@ My arrival was met with slight discouragement. The cabin was visible to the host
 
 ![tiny house](https://files.bozzltron.com/tiny-house.jpg)
 
-Getting in required opening a fence and led to a bridge over a creek.  The fence held a horse and pony.  The cabin came with surprises.  I crossed over into in the covered porch and through door.  It had been augmented over the years with a bunch of different DIY homemaking materials and techniques. Down below were a fully functional kitchen, shower, and a little cove to sleep. Up top was for kids to sleep and play. Out towards the front was a sitting and reading space. 
+Getting in required opening a fence and led to a bridge over a creek.  The fence held a horse and pony.  The cabin came with surprises.  I stepped onto the covered porch and through the door.  It had been augmented over the years with a bunch of different DIY homemaking materials and techniques. Down below were a fully functional kitchen, shower, and a little cove to sleep. Up top was for kids to sleep and play. Out towards the front was a sitting and reading space. 
 
 <video width="100%" controls muted="muted">
   <source src="https://files.bozzltron.com/cabin-tour.mp4" type="video/mp4">
@@ -43,14 +43,14 @@ As the lyrics progressed, they got more personal.  Being alone has this way of r
 >Verse 1
 >The sun shines spotty
 >and the stream is calling
->Here in kansas
+>Here in Kansas
 >
 >I put a fire in the stove
 >and unpack all that I brought
 >
 >The wet earth walks soft
 >and the cardinals talk
->Here in kansas
+>Here in Kansas
 > 
 >Paper to pen giving everything I got
 >Giving everything I got
@@ -58,7 +58,7 @@ As the lyrics progressed, they got more personal.  Being alone has this way of r
 >Chorus
 >Spring seems like a symphony
 >I'm just joining in
->to all it's got to say
+>to all its got to say
 >are you listening ?
 >The sound builds like an avalanche
 >busting through the trees
@@ -69,14 +69,14 @@ As the lyrics progressed, they got more personal.  Being alone has this way of r
 >Verse 2
 >The rains turn loose
 >but I'm warm in my shoes
->Here in kansas
+>Here in Kansas
 >
 >Pages turn easy
 >As I'm getting out of my head
 >
 >The spider strings silently
->Building it's web
->Here in kansas
+>Building its web
+>Here in Kansas
 >
 >I watch her work quiet
 >as my body finds its bed

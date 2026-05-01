@@ -1,6 +1,9 @@
 <% if (post.tags && post.tags.length){ %>
   <%- list_tags(post.tags, {
     show_count: false,
-    class: 'article-tag'
+    class: 'article-tag',
+    /* style "list" (default) emits <ul><li> discs next to aside.post-tags flex; flat anchors avoid bullets */
+    style: false,
+    separator: ''
   }) %>
 <% } %>

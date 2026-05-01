@@ -1,46 +1,58 @@
+<%
+function authorMetaName() {
+  if (typeof config.author === 'object' && config.author) {
+    return config.author.nick || config.author.default || config.author || config.title || '';
+  }
+  return config.author || config.title || '';
+}
+function authorAvatarAlt() {
+  return authorMetaName() || '';
+}
+function navExcerpt(p) {
+  if (!p || !p.excerpt) return '';
+  return strip_html(String(p.excerpt)).trim();
+}
+var profileImage = typeof theme.avatar === 'string' && theme.avatar.trim() ? theme.avatar : '/images/app_icons/ios/512.png';
+var profileSrc = /^https?:\/\//i.test(profileImage) ? profileImage : url_for(profileImage);
+var metaName = authorMetaName();
+%>
 <div class="progress-container">
 	<span class="progress-bar" style="width: 0%;"></span>
 </div>
 
-<header class="post-header  has-cover ">
+<header class="post-header<% if (post.hero) { %> has-cover<% } %>">
 	<div class="inner">
-		<span class="post-info">
-			<span class="post-type">Category</span>
-			<span class="post-count">
+		<div class="post-info" role="group" aria-labelledby="post-category-label">
+			<span class="post-type" id="post-category-label"><%= __('category') %></span>
+			<div class="post-count">
 				<%- partial('post/category') %>
-			</span>
-		</span>
+			</div>
+		</div>
     <%- partial('post/title', {class_name: 'article-title'}) %>
 		<div class="post-meta">
 			<div class="post-meta-avatars">
 					<figure class="post-meta-avatar avatar">
-						<a href="#" class="author-avatar">
-								<img class="author-profile-image" src="/images/app_icons/ios/512.png" alt="bozzltron">
+						<a href="<%- url_for('/') %>" class="author-avatar">
+								<img class="author-profile-image" src="<%= profileSrc %>" alt="<%= authorAvatarAlt() %>">
 						</a>
 					</figure>
 			</div>
-			<h4 class="post-meta-author">bozzltron</h4>
+			<p class="post-meta-author"><%= metaName %></p>
 			<%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
 		</div>
+		<% if (post.hero) { %>
 		<div class="post-cover cover" style="transform: translate3d(0px, 0px, 0px);">
-			<% if (post.hero){ %>
-				<img srcset="<%= post.hero %> 320w,
+				<img sizes="100vw" srcset="<%= post.hero %> 320w,
 					<%= post.hero %> 640w,
 					<%= post.hero %> 960w,
 					<%= post.hero %> 1920w" src="<%= post.hero %>" alt="<%= post.hero_title || post.title %>">
-			<% } else { %>
-				<img srcset="https://static.ghost.org/v2.0.0/images/welcome-to-ghost.jpg 320w,
-					https://static.ghost.org/v2.0.0/images/welcome-to-ghost.jpg 640w,
-					https://static.ghost.org/v2.0.0/images/welcome-to-ghost.jpg 960w,
-					https://static.ghost.org/v2.0.0/images/welcome-to-ghost.jpg 1920w" src="./article_files/welcome-to-ghost.jpg" alt="Welcome to Ghost">
-			<% } %>
-	
 		</div>
+		<% } %>
 	</div>
 </header>
 
-<main class="content" role="main">
-	<article class="post tag-getting-started">
+<main id="main-content" class="content" tabindex="-1">
+	<article class="post">
 		<div class="inner">
 
 			<section class="post-content">
@@ -60,22 +72,6 @@
 			<% if (!index){ %>
 				<section class="post-footer">
 
-					<div class="post-share">
-						<span class="post-info-label">Share</span>
-						<a title="Twitter" class="twitter" href="https://twitter.com/share?text=<%= post.title %>&amp;url=<%= post.permalink %>" onclick="window.open(this.href, &#39;twitter-share&#39;, &#39;width=550,height=235&#39;);return false;">
-							<i class="icon icon-twitter"></i><span class="hidden">Twitter</span>
-						</a>
-						<a title="Facebook" class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=<%= post.permalink %>" onclick="window.open(this.href, &#39;facebook-share&#39;,&#39;width=580,height=296&#39;);return false;">
-							<i class="icon icon-facebook"></i><span class="hidden">Facebook</span>
-						</a>
-						<a title="LinkedIn" class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=<%= post.permalink %>&amp;title=<%= post.title %>" onclick="window.open(this.href, &#39;linkedin-share&#39;, &#39;width=930,height=720&#39;);return false;">
-							<i class="icon icon-linkedin"></i><span class="hidden">LinkedIn</span>
-						</a>
-						<a title="Email" class="email" href="mailto:?subject=<%= post.title %>&amp;body=<%= post.permalink %>">
-							<i class="icon icon-mail"></i><span class="hidden">Email</span>
-						</a>
-					</div>
-
 					<aside class="post-tags">
 						<span class="post-info-label">Topic</span>
 						<%- partial('post/tag') %>
@@ -92,23 +88,25 @@
 
 				
 				<aside class="post-nav">
-					<% if ( page.next ){ %>
+					<% if ( post.next ){ %>
 						<a class="post-nav-next" href="<%- url_for(post.next.path) %>">
 							<section class="post-nav-teaser">
 								<i class="icon icon-arrow-left"></i>
-								<h2 class="post-nav-title"><%= page.next.title %></h2>
-								<p class="post-nav-excerpt"><%= page.next.excerpt.replace(/<.*?>/g,'') %></p>
-								<p class="post-nav-meta"><time datetime="<%= date_xml(post.next.date) %>"><%= post.next.date %></time></p>
+								<h2 class="post-nav-title"><%= post.next.title %></h2>
+								<% var nx = navExcerpt(post.next); %>
+								<% if (nx) { %><p class="post-nav-excerpt"><%= nx %></p><% } %>
+								<p class="post-nav-meta"><%- partial('post/date', {post: post.next, date_format: 'MMM D, YYYY', show_relative: true}) %></p>
 							</section>
 						</a>
 					<% } %>
-					<% if ( page.prev ){ %>
+					<% if ( post.prev ){ %>
 						<a class="post-nav-prev" href="<%- url_for(post.prev.path) %>">
 							<section class="post-nav-teaser">
 								<i class="icon icon-arrow-right"></i>
-								<h2 class="post-nav-title"><%= page.prev.title %></h2>
-								<p class="post-nav-excerpt"><%= page.prev.excerpt.replace(/<.*?>/g,'') %></p>
-								<p class="post-nav-meta"></p><time datetime="<%= date_xml(post.prev.date) %>"><%= post.prev.date %></time></p>
+								<h2 class="post-nav-title"><%= post.prev.title %></h2>
+								<% var px = navExcerpt(post.prev); %>
+								<% if (px) { %><p class="post-nav-excerpt"><%= px %></p><% } %>
+								<p class="post-nav-meta"><%- partial('post/date', {post: post.prev, date_format: 'MMM D, YYYY', show_relative: true}) %></p>
 							</section>
 						</a>
 					<% } %>

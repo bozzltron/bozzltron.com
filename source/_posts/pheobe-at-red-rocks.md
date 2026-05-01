@@ -13,7 +13,7 @@ A favorite artist in a coveted venue and a profound connection.
 
 <!-- more -->
 
-The drive up north along the mountains to the west was absolutely beautiful. Red rocks being a gorgeous preservation of what nature can be. Even the parking lot was beautiful.
+The drive up north along the mountains to the west was absolutely beautiful. Red Rocks is a gorgeous preservation of what nature can be. Even the parking lot was beautiful.
 
 ![Red Rocks parking lot](https://files.bozzltron.com/red-rocks-parking.jpg)
 
@@ -24,7 +24,7 @@ The opening act was provocative and the venue was everything I had hoped it to b
 
 Each song was like a painting. The background visuals changed as well as the soundscapes. It was quite the contrast to listen to such soft melancholy music in such a gigantic venue, which seemed to call for arena rock bands smashing drums and spitting blood.
 
-Sometimes there is music that resonates with your circumstances. The COVID experience is many things to many people and I know I'm not alone in that experience invoking a reevaluation of life. I felt stuck in Iowa. I was ready for a fresh start elsewhere. A new adventure. Phoebe's music amplified that feeling. Specifically the song Halloween. The lyrics saying "baby it's Halloween, we can be anything" to me we're an anthem about freedom, self-expression, and making yourself. I wanted that freedom and we made the move. A rushed, last minute, move to Colorado Springs.
+Sometimes there is music that resonates with your circumstances. The COVID experience is many things to many people and I know I'm not alone in that experience invoking a reevaluation of life. I felt stuck in Iowa. I was ready for a fresh start elsewhere. A new adventure. Phoebe's music amplified that feeling. Specifically the song Halloween. The lyrics saying "baby it's Halloween, we can be anything" to me were an anthem about freedom, self-expression, and making yourself. I wanted that freedom and we made the move. A rushed, last minute, move to Colorado Springs.
 
 Now fast forward almost a year and I've made the move and now I'm sitting in this venue that I've always wanted to visit watching that very artist perform the song. It was surreal. The prophecy was fulfilled.
 

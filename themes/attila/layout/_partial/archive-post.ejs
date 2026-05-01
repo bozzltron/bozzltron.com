@@ -1,6 +1,14 @@
 
-
-<article class="post tag-getting-started">
+<%
+var excerptText = '';
+if (post.excerpt) {
+ excerptText = strip_html(post.excerpt).trim();
+ excerptText = excerptText.replace(/(\u2026|\.{3})\s*$/, '').trim();
+}
+var authorLabel = typeof config.author === 'object' ? (config.author.nick || config.author.default || '') : (config.author || '');
+if (!authorLabel) authorLabel = config.title;
+%>
+<article class="post">
 	<div class="inner">
 		<div class="box post-box">
       <h2 class="post-title">
@@ -8,12 +16,13 @@
       </h2>
 			<span class="post-meta">
 				By
-				<a href="#">bozzltron</a>
-				<!-- in <a class="post-meta-tag" href="/tag/getting-started/">Getting Started</a> -->
+				<a href="<%- url_for('/') %>"><%= authorLabel %></a>
         on 
-        <%- partial('post/date', {class_name: 'archive-article-date', date_format: 'MMM D'}) %>
+        <%- partial('post/date', {class_name: 'archive-article-date', date_format: 'MMM D, YYYY', show_relative: true}) %>
 			</span>
-			<p class="post-excerpt"><%= post.excerpt.replace(/<.*?>/g,'') %>&hellip;</p>
+			<% if (excerptText) { %>
+			<p class="post-excerpt"><%= excerptText %>…</p>
+			<% } %>
 		</div>
 	</div>
 </article>

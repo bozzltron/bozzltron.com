@@ -15,7 +15,7 @@ Web browsers are our window into the digital realm.  There are many free options
 
 Imagine traveling to a foreign country and hiring a guide to give you a tour.  Without them, you are helpless.  They enable you to navigate this new world, and along the way, you see a bit of their personality.  Perhaps you even make a friend. 
 
-Your web browser is not unlike the guide: the Internet, the foreign country.  Not only is your browser your means of travel, but you also develop a relatively intimate relationship.   Who else would you allow to manage your name, date of birth, social security number, cell phone, credit card information, maybe even your every other thought?  Yet, all that information passes through your browser and lands into the cloud.
+Your web browser is not unlike the guide: the Internet, the foreign country.  Not only is your browser your means of travel, but you also develop a relatively intimate relationship.   Who else would you allow to manage your name, date of birth, social security number, cell phone, credit card information, maybe even your every other thought?  Yet, all that information passes through your browser and lands in the cloud.
 
 Looking at it this way, do you trust your browser?  There are plenty to pick from:  Chrome by Google, Safari by Apple, Edge by Microsoft,  Opera by well, Opera, Brave, and Firefox by Mozilla, among many others.
 
@@ -25,25 +25,25 @@ Why does Microsoft make Edge?
 
 Microsoft is a software company.  They created Internet Explorer in 1995 to compete with Netscape Navigator.  As the Internet took off, it was an obvious value add to Windows to include its own built-in browser.  Recently, it has been rebranded as Edge.
 
-Why does Apple Make Safari?
+Why does Apple make Safari?
 
 Apple's primary income source is selling phones, laptops, and other devices.  These devices run their own Macintosh operating system.  It competes against Microsoft Windows, and Safari is its alternative default browser. 
 
 Why does Google make Chrome?
 
-Google's primary source of revenue is online advertising.  Chrome entered the market to "speed up" our online experience.  Keep a user's attention, keeps them engaged, and exposes them to more advertising.
+Google's primary source of revenue is online advertising.  Chrome entered the market to "speed up" our online experience.  Keeping a user's attention keeps them engaged and exposes them to more advertising.
 
 Why does Opera make Opera?
 
 Opera was created in Norway and released in 1995.  Opera ASA was formed as a company to support it.  It originally got its money from advertising, then from Google, since it adopted Google Search engine, and has since diversified.  Opera is subject to Europe's digital data protection and privacy legislation (GDPR).  
 
-Why was the Brave browser create?
+Why was the Brave browser created?
 
 Brave was created as a business venture to turn the tables on traditional advertising models and pay users for the ads they see.  Brave keeps 30%.  
 
 Why does Mozilla make Firefox?
 
-Firefox was created in 1998 as Netscape Navigators source code was released.  It was an open-source project contributed to by many all over the world, thanks to the Internet.  In 2003 an independent non-profit organization called the Mozilla Foundation was created to support Firefox and organize donations for its funding.  Firefox is made by people for people.
+Firefox was created in 1998 when Netscape Navigator's source code was released.  It was an open-source project contributed to by many all over the world, thanks to the Internet.  In 2003 an independent non-profit organization called the Mozilla Foundation was created to support Firefox and organize donations for its funding.  Firefox is made by people for people.
 
 Clearly, Mozilla has the most integrity when it comes to trust. They're not trying to make money from your data.  They are not trying to sell you something.  They are trying to provide an open and free browser option so that we are not stuck with only browsers with agendas.
 

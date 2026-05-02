@@ -1,12 +1,10 @@
-
 <%
 var excerptText = '';
 if (post.excerpt) {
  excerptText = strip_html(post.excerpt).trim();
  excerptText = excerptText.replace(/(\u2026|\.{3})\s*$/, '').trim();
 }
-var authorLabel = typeof config.author === 'object' ? (config.author.nick || config.author.default || '') : (config.author || '');
-if (!authorLabel) authorLabel = config.title;
+var authorLabel = author_display_name(config, config.title);
 %>
 <article class="post">
 	<div class="inner">

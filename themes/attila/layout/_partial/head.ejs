@@ -43,13 +43,7 @@ if (__scheme !== 'system' && __scheme !== 'light' && __scheme !== 'dark') {
     try { canonicalHref = full_url_for('/'); } catch (eRoot) { canonicalHref = ''; }
   }
 
-  function headAuthor(cfg) {
-    if (!cfg || !cfg.author) return '';
-    var a = cfg.author;
-    if (typeof a === 'object') return (a.name || a.nick || a.default || '').trim();
-    return String(a).trim();
-  }
-  var headAuthorContent = headAuthor(config);
+  var headAuthorContent = author_display_name(config, '');
   var gaIdTrim = theme.google_analytics ? String(theme.google_analytics).trim() : '';
 
   /* Open Graph · https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta#property_maps */

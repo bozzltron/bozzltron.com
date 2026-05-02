@@ -1,6 +1,6 @@
 <div class="nav-footer">
   <nav class="nav-wrapper" aria-label="Footer">
-    <span class="nav-copy">&copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %></span>
+    <span class="nav-copy">&copy; <%= date(new Date(), 'YYYY') %> <%= author_display_name(config, config.title) %></span>
   </nav>
 </div>
 

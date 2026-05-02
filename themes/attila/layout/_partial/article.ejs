@@ -1,12 +1,7 @@
 <%
-function authorMetaName() {
-  if (typeof config.author === 'object' && config.author) {
-    return config.author.nick || config.author.default || config.author || config.title || '';
-  }
-  return config.author || config.title || '';
-}
+var metaName = author_display_name(config, config.title);
 function authorAvatarAlt() {
-  return authorMetaName() || '';
+  return metaName || '';
 }
 function navExcerpt(p) {
   if (!p || !p.excerpt) return '';
@@ -14,7 +9,6 @@ function navExcerpt(p) {
 }
 var profileImage = typeof theme.avatar === 'string' && theme.avatar.trim() ? theme.avatar : '/images/app_icons/ios/512.png';
 var profileSrc = /^https?:\/\//i.test(profileImage) ? profileImage : url_for(profileImage);
-var metaName = authorMetaName();
 %>
 <div class="progress-container">
 	<span class="progress-bar" style="width: 0%;"></span>

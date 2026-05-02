@@ -27,30 +27,30 @@ workbox.routing.registerRoute(
   })
 );
 
+// Specific third-party origins must be registered before any broad matchers.
 workbox.routing.registerRoute(
-  // Third party png cache
-  new RegExp('^https?://', 'i'),
-  new workbox.strategies.NetworkFirst({
-    cacheName: 'html',
-    plugins: [
-      new workbox.cacheableResponse.CacheableResponsePlugin({
-        headers: {
-          'Content-Type': 'text/html',
-        }
-      })
-    ]
-  })
-);
-
-workbox.routing.registerRoute(
-  // Cache api requests if they return 200
-  new RegExp('^https://widget.sndcdn.com', 'i'),
+  new RegExp('^https://widget\\.sndcdn\\.com/', 'i'),
   new workbox.strategies.NetworkFirst({
     cacheName: 'sndcdn',
     plugins: [
       new workbox.cacheableResponse.CacheableResponsePlugin({
         statuses: [0, 200],
-      })
-    ]
+      }),
+    ],
+  })
+);
+
+// HTML documents only — the old ^https?:// pattern matched every cross-origin fetch
+// and prevented the SoundCloud route from ever running.
+workbox.routing.registerRoute(
+  ({ request }) => request.mode === 'navigate',
+  new workbox.strategies.NetworkFirst({
+    cacheName: 'html',
+    networkTimeoutSeconds: 3,
+    plugins: [
+      new workbox.cacheableResponse.CacheableResponsePlugin({
+        statuses: [0, 200],
+      }),
+    ],
   })
 );

@@ -24,6 +24,46 @@ if (__scheme !== 'system' && __scheme !== 'light' && __scheme !== 'dark') {
   } else if (is_tag()){
     title = __('tag') + ': ' + page.tag;
   }
+
+  var docTitleFull = title ? title + ' | ' + config.title : config.title;
+  var descSrc = page.description || page.excerpt || page.content || config.description;
+  var socialDesc = strip_html(descSrc || '').replace(/\s+/g, ' ').trim().substring(0, 200);
+
+  var canonicalHref = '';
+  if (typeof page.permalink === 'string' && page.permalink.trim()) {
+    canonicalHref = page.permalink.trim();
+  } else if (typeof page.path === 'string' && page.path) {
+    try {
+      canonicalHref = full_url_for(page.path === 'index.html' ? '/' : page.path);
+    } catch (eCanon) {
+      canonicalHref = '';
+    }
+  }
+  if (!canonicalHref) {
+    try { canonicalHref = full_url_for('/'); } catch (eRoot) { canonicalHref = ''; }
+  }
+
+  function headAuthor(cfg) {
+    if (!cfg || !cfg.author) return '';
+    var a = cfg.author;
+    if (typeof a === 'object') return (a.name || a.nick || a.default || '').trim();
+    return String(a).trim();
+  }
+  var headAuthorContent = headAuthor(config);
+  var gaIdTrim = theme.google_analytics ? String(theme.google_analytics).trim() : '';
+
+  /* Open Graph · https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta#property_maps */
+  var ogOpts = { fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id };
+  if (theme.twitter && String(theme.twitter).trim()) ogOpts.twitter_id = theme.twitter;
+  if (theme.google_plus && String(theme.google_plus).trim()) ogOpts.google_plus = theme.google_plus;
+  if (theme.twitter_site && String(theme.twitter_site).trim()) ogOpts.twitter_site = String(theme.twitter_site).trim();
+  ogOpts.title = docTitleFull;
+  if (socialDesc) ogOpts.description = socialDesc;
+  if (canonicalHref) ogOpts.url = canonicalHref;
+  if (is_post() && typeof page.hero === 'string' && page.hero.trim()) {
+    ogOpts.image = full_url_for(page.hero.trim());
+    ogOpts.twitter_card = 'summary_large_image';
+  }
   %>
   <script>
 (function () {
@@ -43,30 +83,65 @@ if (__scheme !== 'system' && __scheme !== 'light' && __scheme !== 'dark') {
   }
 })();
   </script>
-  <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title><%= docTitleFull %></title>
+
+  <%# HTML5 Boilerplate / MDN: viewport + referrer + theme hints %>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <%# https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name/referrer %>
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <%# https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name/color-scheme %>
+  <meta name="color-scheme" content="light dark">
+  <%# Common mobile UX pattern (Boilerplate); avoids unintended telephone links %>
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <% if (gaIdTrim.indexOf('G-') === 0) { %>
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <% } %>
+
+  <meta name="application-name" content="<%= config.title %>">
+  <%# https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest/Reference/display %>
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="<%= config.title %>">
+  <%# https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name/apple-mobile-web-app-status-bar-style %>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="apple-touch-icon" sizes="152x152" href="/images/app_icons/ios/152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/app_icons/ios/180.png">
   <link rel="apple-touch-icon" sizes="167x167" href="/images/app_icons/ios/167.png">
   <link rel="manifest" href="/manifest.json">
+
+  <%# Separate theme_color values for UA chrome (PWAs): https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name/theme-color %>
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#141518">
-  <%
-  var ogOpts = { fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id };
-  if (theme.twitter && String(theme.twitter).trim()) ogOpts.twitter_id = theme.twitter;
-  if (theme.google_plus && String(theme.google_plus).trim()) ogOpts.google_plus = theme.google_plus;
-  if (theme.twitter_site && String(theme.twitter_site).trim()) ogOpts.twitter_site = String(theme.twitter_site).trim();
-  if (is_post() && typeof page.hero === 'string' && page.hero.trim()) {
-    ogOpts.image = full_url_for(page.hero.trim());
-    ogOpts.twitter_card = 'summary_large_image';
-  }
-  %>
+
+  <% if (headAuthorContent) { %>
+  <%# https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name/author %>
+  <meta name="author" content="<%= headAuthorContent %>">
+  <% } %>
+  <% var keywordsMeta = config.keywords; %>
+  <% if (keywordsMeta && typeof keywordsMeta === 'string' && keywordsMeta.trim()) { %>
+  <meta name="keywords" content="<%= keywordsMeta.trim() %>">
+  <% } else if (Array.isArray(keywordsMeta) && keywordsMeta.length) { %>
+  <meta name="keywords" content="<%= keywordsMeta.filter(Boolean).join(', ') %>">
+  <% } %>
+
+  <%# Robots directives incl. preview caps (supported by Google, documented on MDN) %>
+  <%# https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag %>
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <%# Progressive Web Apps on Windows pinning %>
+  <%# https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn320426(v=vs.85) %>
+  <meta name="msapplication-TileColor" content="#141518">
+
   <%- open_graph(ogOpts) %>
-  <% if (is_post() && page.permalink) { %>
-  <link rel="canonical" href="<%= page.permalink %>">
+  <% if (canonicalHref) { %>
+  <link rel="canonical" href="<%= canonicalHref %>">
+  <% } %>
+  <%# Twitter consumes these explicitly alongside og:* (see Twitter Cards docs linked from MDN OG article) %>
+  <meta name="twitter:title" content="<%= docTitleFull %>">
+  <% if (socialDesc) { %>
+  <meta name="twitter:description" content="<%= socialDesc %>">
   <% } %>
   <% if (is_post() && typeof page.hero === 'string' && page.hero.trim() && page.hero_width != null && page.hero_height != null) {
     var heroAlt = (page.hero_alt || page.hero_title || page.title || '').replace(/"/g, '&quot;').replace(/</g, '');
@@ -75,12 +150,15 @@ if (__scheme !== 'system' && __scheme !== 'light' && __scheme !== 'dark') {
   <meta property="og:image:height" content="<%= page.hero_height %>">
   <meta property="og:image:alt" content="<%= heroAlt %>">
   <% } %>
+  <%- partial('structured-data-site') %>
   <%- partial('structured-data-post') %>
   <% if (theme.rss){ %>
-    <link rel="alternate" href="<%= url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml">
+    <%# Syndication alternate (Atom feed — correct MIME avoids misleading parsers) %>
+    <link rel="alternate" href="<%= url_for(theme.rss) %>" type="application/atom+xml" title="<%= docTitleFull %>">
   <% } %>
   <% if (theme.favicon){ %>
-    <link rel="icon" href="<%- theme.favicon %>">
+    <%# PNG favicon: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/icon %>
+    <link rel="icon" href="<%- theme.favicon %>" type="image/png">
   <% } %>
   <% if (config.highlight.enable){ %>
   <link rel="preconnect" href="https://fonts.googleapis.com">

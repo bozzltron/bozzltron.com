@@ -1,0 +1,18 @@
+<%
+/** WebSite schema (JSON-LD) — complements BlogPosting on posts (schema.org guidelines). */
+var siteUrl = (config.url || '').replace(/\/?$/, '/');
+var publisherLogo = '';
+try { publisherLogo = full_url_for('/images/app_icons/ios/512.png'); } catch (e) { publisherLogo = ''; }
+var siteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': siteUrl + '#website',
+  name: config.title,
+  description: strip_html(config.description || '').substring(0, 500).trim() || undefined,
+  url: siteUrl,
+  inLanguage: (config.language || 'en').split('-')[0],
+  publisher: { '@type': 'Organization', name: config.title }
+};
+if (publisherLogo) siteSchema.publisher.logo = { '@type': 'ImageObject', url: publisherLogo };
+%>
+<script type="application/ld+json"><%- JSON.stringify(siteSchema) %></script>

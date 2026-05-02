@@ -1,6 +1,7 @@
 {
-  "short_name": "boz",
   "name": "bozzltron",
+  "short_name": "boz",
+  "id": "https://bozzltron.com/",
   "description": "Personal blog.",
   "icons": [
     { "src": "/images/app_icons/android/48.png", "sizes": "48x48", "type": "image/png" },
@@ -14,5 +15,8 @@
   "background_color": "#ffffff",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#ffffff"
+  "theme_color": "#ffffff",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["news", "lifestyle"]
 }

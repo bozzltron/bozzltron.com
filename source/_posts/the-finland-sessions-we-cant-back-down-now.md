@@ -8,7 +8,7 @@ tags:
 hero: https://files.bozzltron.com/hero-lakeside.jpg
 hero_title: "lake superior"
 excerpt: >-
-  Taking time to step out of a routine and put life on paper to weigh its purpose and intentionality and measure its direction is something I do well. I am a processor.
+  Another cabin night with 2019 bruises still fresh: chords that matched the strain became *We Can’t Back Down Now*—a love letter to my wife about staying in the fight without losing the blessings.
 
 ---
 

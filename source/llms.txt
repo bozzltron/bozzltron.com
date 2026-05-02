@@ -11,6 +11,7 @@ Technical notes, commentary, and long-form posts including “Influential music,
 - Home: https://bozzltron.com/
 - Archives: https://bozzltron.com/archives/
 - Atom feed: https://bozzltron.com/atom.xml
+- RSS 2.0 feed: https://bozzltron.com/rss.xml
 
 ## Retrieval guidance
 

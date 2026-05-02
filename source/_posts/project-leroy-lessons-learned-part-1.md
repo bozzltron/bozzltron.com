@@ -8,7 +8,7 @@ hero: https://files.bozzltron.com/hero-leroy.jpg
 hero_title: ''
 date: 2020-09-27 13:19:04
 excerpt: >-
-  Leroy, my first AI project, has presented a number of new technical challenges. Here are my lessons learned presented in a multi-part series.
+  Why classifying whole frames failed, how object detection plus bounding-box cutouts fixed it, and which two Coral models I paired for “is there a bird?” then “which bird?”
 
 ---
 

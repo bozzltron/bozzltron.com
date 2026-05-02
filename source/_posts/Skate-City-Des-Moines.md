@@ -8,7 +8,7 @@ hero: https://files.bozzltron.com/hero-skate-city-des-moines.jpg
 hero_title: ''
 date: 2021-07-05 18:54:56
 excerpt: >-
-  The Dew Tour does Des Moines.
+  Des Moines opened what was then America’s largest skatepark and landed the Dew Tour—four days of Olympic-qualifying skating where the point felt less like scores than shared progression in the sport.
 
 ---
 The Dew Tour does Des Moines.

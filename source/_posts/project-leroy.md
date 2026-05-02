@@ -8,7 +8,7 @@ hero: https://files.bozzltron.com/hero-project-leroy.jpg
 hero_title: ''
 date: 2020-07-25 13:43:15
 excerpt: >-
-  My first Artificial Intelligence project.
+  Named for a grandfather who loved feeders and cuckoo clocks: Raspberry Pi, Google Coral USB, and a camera trying to learn which visitors are actually birds—and which photos are worth posting.
 
 ---
 

@@ -8,7 +8,7 @@ hero: https://files.bozzltron.com/hero-leroy.jpg
 hero_title: ''
 date: 2020-09-27 18:59:37
 excerpt: >-
-  Not too exposed, not too cheap, but just right.
+  Three camera enclosures for a backyard AI rig: fragile bare module, wobbly printable arm, then a proper housing with tripod legs that finally survived kids, pets, and Minnesota weather.
 
 ---
 

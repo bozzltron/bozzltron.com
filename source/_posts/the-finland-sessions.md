@@ -11,7 +11,7 @@ tags:
 hero: https://files.bozzltron.com/hero-finland.jpg
 hero_title: "the shore of lake superior"
 excerpt: >-
-  It began with watching Inside Bill's Brain - Decoding Bill Gates. A documentary focusing on Bill, his life, and his work shares his yearly pilgrimage to a remote cabin to process.
+  Netflix’s Bill Gates documentary made me covet a yearly “go think in a cabin” ritual; a most-wished-for Minnesota Airbnb listing turned that itch into the Finland Sessions songwriting retreat.
 
 ---
 It began with watching [*Inside Bill's Brain - Decoding Bill Gates*](https://www.netflix.com/title/80184771).  A documentary focusing on Bill, his life, and his work shares his yearly pilgrimage to a remote cabin to process.

@@ -8,7 +8,7 @@ hero: https://files.bozzltron.com/hero-farewell.jpg
 hero_title: 'grocery store in finland'
 date: 2020-06-30 14:09:26
 excerpt: >-
-  What was it like to spend time in isolation broken free from my normal routine to process life and make music? It was healing.
+  Closing the Finland arc: stillness, birch pancakes, risky solo drives, and recordings that picked up room reverb, riverbed hiss, and stomps on pine floors—cheap therapy with a metronome.
 
 ---
 

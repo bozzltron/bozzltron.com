@@ -146,9 +146,28 @@ if (__scheme !== 'system' && __scheme !== 'light' && __scheme !== 'dark') {
   <% } %>
   <%- partial('structured-data-site') %>
   <%- partial('structured-data-post') %>
-  <% if (theme.rss){ %>
-    <%# Syndication alternate (Atom feed — correct MIME avoids misleading parsers) %>
-    <link rel="alternate" href="<%= url_for(theme.rss) %>" type="application/atom+xml" title="<%= docTitleFull %>">
+  <%#
+    Syndication discovery: Atom + RSS 2.0 with correct MIME types (WHATWG/HTML + RSS Board practice).
+    When both tags exist, hexo-generator-feed skips injecting duplicates (autodiscovery filter).
+    See root _config.yml `feed`.
+  %>
+  <% if (config.feed && config.feed.enable !== false) {
+      var syndTypes = config.feed.type;
+      var syndPaths = config.feed.path;
+      if (typeof syndTypes === 'string') { syndTypes = [syndTypes]; syndPaths = [syndPaths]; }
+      var syndMime = { atom: 'application/atom+xml', rss2: 'application/rss+xml' };
+      var syndLabel = { atom: 'Atom', rss2: 'RSS 2.0' };
+      if (Array.isArray(syndTypes) && Array.isArray(syndPaths)) {
+        for (var si = 0; si < syndTypes.length; si++) {
+          var st = syndTypes[si];
+          var sp = syndPaths[si];
+          if (!sp) continue;
+  %>
+  <link rel="alternate" href="<%= full_url_for(sp) %>" type="<%= syndMime[st] || 'application/xml' %>" title="<%= config.title %> — <%= syndLabel[st] || st %> feed">
+  <%    }
+      }
+  } else if (theme.rss) { %>
+  <link rel="alternate" href="<%= full_url_for(theme.rss) %>" type="application/rss+xml" title="<%= config.title %> — feed">
   <% } %>
   <% if (theme.favicon){ %>
     <%# PNG favicon: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/icon %>

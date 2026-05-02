@@ -7,6 +7,15 @@
       <span class="blog-description"><%= blogTagline %></span>
       <% } %>
     </div>
+    <% if (typeof is_tag === 'function' && is_tag() && page.tag) { %>
+    <div class="tag-share-toolbar">
+      <%- partial('share-toolbar', {
+        share_url: full_url_for(page.path),
+        share_title: config.title + ' — ' + __('tag') + ': ' + page.tag,
+        share_text: __('share_tag_blurb', page.tag, config.title)
+      }) %>
+    </div>
+    <% } %>
   </div>
 </header>
 

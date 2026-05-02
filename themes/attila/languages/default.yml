@@ -13,6 +13,9 @@ recent_posts: Recent Posts
 newer: Newer
 older: Older
 share: Share
+share_copied: Link copied
+share_failed: Could not copy
+share_tag_blurb: 'Posts tagged «%s» — %s'
 powered_by: Powered by
 rss_feed: RSS Feed
 category: Category

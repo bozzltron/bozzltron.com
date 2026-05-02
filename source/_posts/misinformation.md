@@ -8,7 +8,7 @@ hero: https://files.bozzltron.com/misinformation.jpg
 hero_title: 'Misinformation by Connie Mitchell https://www.inprnt.com/gallery/pri-sm/misinformation/'
 date: 2020-12-30 12:54:56
 excerpt: >-
-  The year has proven that misinformation can degrade and destabilize countries, cities, and families. How do we find truth in the misinformation age?
+  2020 reminded us how fast bad information rots institutions; this is a pragmatic toolkit—notice your biases, map where your outlets sit on Ad Fontes, quit the aggregation apps, and starve the intermediaries.
 
 ---
 

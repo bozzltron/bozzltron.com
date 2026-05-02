@@ -8,7 +8,7 @@ hero: https://files.bozzltron.com/hero-chickens.jpg
 hero_title: 'Chicken coop'
 date: 2020-07-11 15:33:15
 excerpt: >-
-  We are officially chicken owners.
+  Three barred rocks, one Ayam Cemani, and a kids’ clubhouse repurposed into a coop—we’re officially chicken people, with fencing and winter water still on the to-do list.
 
 ---
 

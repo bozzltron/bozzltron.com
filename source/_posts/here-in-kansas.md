@@ -1,14 +1,14 @@
 ---
 title: Here In Kansas
 categories:
-  - Song Writing 
+  - Song Writing
 tags:
   - mcclouth sessions
 hero: https://files.bozzltron.com/hero-kansas.jpg
 hero_title: 'Here In Kansas'
 date: 2021-05-31 11:04:10
 excerpt: >-
-  The sun shines spotty and the stream is calling here in Kansas.
+  Second annual solo writing week, this time in a Kansas tiny-house with a creek under the porch: Song Exploder on the drive up, a fox-eared host, and a new song built from listening to spring like a record.
 
 ---
 

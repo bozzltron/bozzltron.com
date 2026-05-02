@@ -16,14 +16,15 @@ blog_tagline: 'A Message In A Bottle'
 menu:
   Home: /
   Archives: /archives
-rss: /atom.xml
+# Header “RSS” icon target (RSS 2.0 mirrors Atom; paths set in root _config.yml `feed`)
+rss: /rss.xml
 
 # Content
 excerpt_link: Read More
 
 twitter_site: '@bozzltron'
 # Google Analytics 4 Measurement ID (G-xxxxxxxxxx). Omit to disable.
-google_analytics: G-KH712KDL3K G-KH712KDL3K
+google_analytics: G-KH712KDL3K
 gauges_analytics:
 favicon: /favicon.png
 twitter:

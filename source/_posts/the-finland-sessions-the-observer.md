@@ -8,7 +8,7 @@ tags:
 hero: https://files.bozzltron.com/hero-the-observer.jpg
 hero_title: "west branch baptism river"
 excerpt: >-
-  On a still morning in a remote cabin north of Lake Superior, I woke up to something new. The time, space, and the tools to create music.
+  First full morning in Finland, Minnesota: coffee overlooking the Baptism River, suet for the birds, and a new song, *The Observer*, built from listening to the thaw as if it were a record.
 
 ---
 

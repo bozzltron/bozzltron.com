@@ -8,7 +8,7 @@ hero: https://files.bozzltron.com/hero-firefox.jpg
 hero_title: ''
 date: 2021-01-09 15:13:25
 excerpt: >-
-  Web browsers are our window into the digital realm. There are many free options, but their makers have different agendas. Let me tell you why I prefer Firefox.
+  Your browser is closer to a hired guide than a dumb window—so who funds the map? A tour of vendor incentives (Google ads, Apple hardware, Microsoft Windows) and why I still ride with Mozilla.
 
 ---
 

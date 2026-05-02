@@ -314,6 +314,120 @@ html.theme-dark .article-category-link:focus-visible {
   list-style: none;
 }
 
+/* Web Share — in-article (before References or end of body); tag pages in header */
+.post-share-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.post-share-slot--pre-references {
+  margin: 2.75rem 0 3.25rem;
+}
+
+.post-share-slot--after-body {
+  margin: 3rem 0 0;
+}
+
+.post-share-slot .post-share {
+  margin: 0;
+}
+
+/* Web Share Target + clipboard fallback (`source/js/share.js`) */
+.post-share {
+  display: block;
+  text-align: left;
+}
+
+.tag-share-toolbar {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.tag-share-toolbar .post-share {
+  margin-bottom: 0;
+}
+
+button.share-action.article-category-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.52em;
+  cursor: pointer;
+  font-family: var(--gh-font-heading, 'Fira Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif);
+  font-size: clamp(1.05em, 2.6vw, 1.22em);
+  font-weight: 600;
+  font-style: normal;
+  font-variant: normal;
+  letter-spacing: 0.015em;
+  line-height: 1.2;
+  min-height: 2.65em;
+  padding: 0.42em 1.05em;
+  border-radius: 5px;
+  border: 2px solid rgb(255, 255, 255);
+  /* Hairline halo so white edge reads on light article backgrounds */
+  box-shadow: 0 0 0 1px rgba(21, 23, 26, 0.16);
+  appearance: none;
+  -webkit-appearance: none;
+  text-align: left;
+  transition:
+    color 0.14s ease,
+    border-color 0.14s ease,
+    background 0.14s ease,
+    box-shadow 0.14s ease;
+}
+
+button.share-action.article-category-link:hover {
+  border-color: var(--ghost-accent-color, #15171a);
+  color: var(--ghost-accent-color, #15171a);
+  box-shadow: 0 0 0 2px rgba(21, 23, 26, 0.12);
+}
+
+button.share-action.article-category-link:focus {
+  outline: none;
+}
+
+button.share-action.article-category-link:focus-visible {
+  border-color: var(--ghost-accent-color, #15171a);
+  color: var(--ghost-accent-color, #15171a);
+  box-shadow: 0 0 0 2px rgba(21, 23, 26, 0.12);
+}
+
+html.theme-dark button.share-action.article-category-link:not(:hover):not(:focus-visible) {
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+html.theme-dark button.share-action.article-category-link:hover,
+html.theme-dark button.share-action.article-category-link:focus-visible {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.15);
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not(.theme-light) button.share-action.article-category-link:not(:hover):not(:focus-visible) {
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12);
+  }
+
+  html:not(.theme-light) button.share-action.article-category-link:hover,
+  html:not(.theme-light) button.share-action.article-category-link:focus-visible {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.15);
+  }
+}
+
+button.share-action .share-action-icon {
+  display: inline-flex;
+  line-height: 0;
+}
+
+button.share-action .share-action-icon svg {
+  display: block;
+  width: 1.15em;
+  height: 1.15em;
+}
+
+button.share-action .share-action-label {
+  line-height: 1.15;
+}
+
 /* Hexo paginator lives inside .pagination-info (numbered links + Prev/Next). Attila’s base
  * .pagination a rule uses tall block-level flex pills meant for Ghost’s paired prev/next ribbons,
  * which stacks Hexo controls vertically. Reset to one horizontal row (wrap when needed).

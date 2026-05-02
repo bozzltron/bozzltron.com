@@ -8,7 +8,7 @@ hero: https://files.bozzltron.com/hero-halloween.jpg
 hero_title: 'Phoebe Bridgers Credit: Frank Ockenfels'
 date: 2020-07-14 14:11:35
 excerpt: >-
-  Baby, it's Halloween. We can be anything.
+  Phoebe Bridgers’ “Halloween,” from Punisher, nails the thrill of trying on a new self; for us it became an anthem for molting old routines and chasing a more adventurous geography.
 
 ---
 

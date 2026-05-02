@@ -100,7 +100,20 @@ theme: attila
 deploy:
   type: ''
 
-# Feed
+# Feed · hexo-generator-feed — Atom + RSS 2.0 for broad reader compatibility
+# https://github.com/hexojs/hexo-generator-feed
 feed:
-  type: atom
-  path: atom.xml
+  type:
+    - atom
+    - rss2
+  path:
+    - atom.xml
+    - rss.xml
+  limit: 0
+  order_by: -date
+  icon: /favicon.png
+  # Full HTML in Atom <content> / RSS <content:encoded>; summaries still come from excerpt/description.
+  content: true
+  content_limit: 400
+  content_limit_delim: ' '
+  autodiscovery: true

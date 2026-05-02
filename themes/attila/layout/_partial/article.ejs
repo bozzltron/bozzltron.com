@@ -62,9 +62,38 @@ var profileSrc = /^https?:\/\//i.test(profileImage) ? profileImage : url_for(pro
               <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %></a>
             </p>
           <% } %>
+        <% } else if (is_post()) {
+            var shareTextPost = strip_html(post.excerpt || post.description || '').replace(/\s+/g, ' ').trim().substring(0, 400);
+            var shareUrlPost = typeof post.permalink === 'string' && post.permalink.trim()
+              ? post.permalink.trim()
+              : full_url_for(post.path);
+            var __body = post.content || '';
+            var __refAt = __body.indexOf('<h3 id="References"');
+            if (__refAt === -1) __refAt = __body.indexOf('<h2 id="References"');
+        %>
+          <% if (__refAt !== -1) { %>
+            <%- __body.substring(0, __refAt) %>
+            <div class="post-share-slot post-share-slot--pre-references">
+              <%- partial('share-toolbar', {
+                share_url: shareUrlPost,
+                share_title: post.title,
+                share_text: shareTextPost
+              }) %>
+            </div>
+            <%- __body.substring(__refAt) %>
+          <% } else { %>
+            <%- __body %>
+            <div class="post-share-slot post-share-slot--after-body">
+              <%- partial('share-toolbar', {
+                share_url: shareUrlPost,
+                share_title: post.title,
+                share_text: shareTextPost
+              }) %>
+            </div>
+          <% } %>
         <% } else { %>
           <%- post.content %>
-        <% } %>        
+        <% } %>
 			</section>
 
 

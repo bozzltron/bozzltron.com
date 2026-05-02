@@ -8,7 +8,7 @@ hero: https://files.bozzltron.com/hero-leroy.jpg
 hero_title: ''
 date: 2020-09-27 18:48:37
 excerpt: >-
-  How to not crash a Raspberry Pi.
+  Survival tactics for a Pi 3 running OpenCV in a tight loop: swallow exceptions with logging, refuse saves when disk crosses 95%, resize frames for inference while mapping boxes back to full-res captures, and wire it up as a systemd service.
 
 ---
 

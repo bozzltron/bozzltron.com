@@ -8,7 +8,7 @@ hero: https://files.bozzltron.com/hero-vacation-2020.jpg
 hero_title: ''
 date: 2020-08-21 15:30:14
 excerpt: >-
-  My family loves wilderness and narrative.
+  Three tent nights off the grid with the kids: black widows safely avoided, daddy longlegs dramatized, and a cold stream that became “our” hideout away from screens.
 
 ---
 

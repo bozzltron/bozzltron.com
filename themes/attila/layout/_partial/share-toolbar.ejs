@@ -1,0 +1,26 @@
+<%# Web Share API where available; otherwise copy URL (+ optional text) to clipboard %>
+<%
+  var shareUrl = typeof share_url === 'string' ? share_url : '';
+  var shareTitle = typeof share_title === 'string' ? share_title : '';
+  var shareText = typeof share_text === 'string' ? share_text : '';
+  function escAttr(v) {
+    return String(v == null ? '' : v)
+      .replace(/&/g, '&amp;')
+      .replace(/"/g, '&quot;')
+      .replace(/</g, '&lt;')
+      .replace(/\r?\n/g, ' ');
+  }
+%>
+<aside class="post-share">
+  <button type="button"
+    class="share-action article-category-link"
+    data-share-url="<%= escAttr(shareUrl) %>"
+    data-share-title="<%= escAttr(shareTitle) %>"
+    data-share-text="<%= escAttr(shareText) %>"
+    data-label-default="<%= escAttr(__('share')) %>"
+    data-label-copied="<%= escAttr(__('share_copied')) %>"
+    data-label-failed="<%= escAttr(__('share_failed')) %>">
+    <span class="share-action-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg></span>
+    <span class="share-action-label" aria-live="polite"><%= __('share') %></span>
+  </button>
+</aside>

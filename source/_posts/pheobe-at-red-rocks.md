@@ -8,7 +8,7 @@ hero: https://files.bozzltron.com/hero-phoebe-at-red-rocks.jpg
 hero_title: 'Phoebe Bridgers live at Red Rocks'
 date: 2022-06-23 13:25:53
 excerpt: >-
-  A favorite artist in a coveted venue and a profound connection.
+  Red Rocks lived up to every photo, but the emotional core was hearing Phoebe Bridgers perform “Halloween” after it had already soundtracked our break with Iowa—proof-of-life for a move we’d rushed to make.
 
 ---
 

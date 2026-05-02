@@ -8,7 +8,7 @@ hero: https://files.bozzltron.com/hero-simon_and_garfunkel.jpg
 hero_title: '(Nancy Kaye/AP)'
 date: 2020-11-03 19:26:42
 excerpt: >-
-  They've all come to look for America
+  On Election Day 2020 I rewrote Simon & Garfunkel’s “America” verse by verse—the same road-trip frame, a much darker 2020 mirror—after reading Daniel Levitin on songs that force us to humanize instead of demonize.
 
 ---
 

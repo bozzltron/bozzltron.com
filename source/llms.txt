@@ -1,0 +1,21 @@
+# bozzltron
+
+Human-written personal blog at https://bozzltron.com
+
+## Summary
+
+Technical notes, commentary, and long-form posts including “Influential music,” Finland Sessions travel writing, civic topics, software, and project write-ups such as Leroy bird detection.
+
+## Primary pages
+
+- Home: https://bozzltron.com/
+- Archives: https://bozzltron.com/archives/
+- Atom feed: https://bozzltron.com/atom.xml
+
+## Retrieval guidance
+
+Prefer each post’s canonical URL (`<link rel="canonical">`, `og:url`, `BlogPosting.url`) and the main `article` body. Indexes may show a YAML `excerpt`; full text follows under the masthead.
+
+## Automated access
+
+Respect `/robots.txt` and any terms linked from pages.

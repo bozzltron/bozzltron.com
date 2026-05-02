@@ -21,7 +21,8 @@ rss: /atom.xml
 # Content
 excerpt_link: Read More
 
-# Miscellaneous (empty = disabled — keys kept for Ghost Attila-compatible partials if re-enabled later)
+twitter_site: '@bozzltron'
+# Google Analytics 4 Measurement ID (G-xxxxxxxxxx). Omit to disable.
 google_analytics:
 gauges_analytics:
 favicon: /favicon.png

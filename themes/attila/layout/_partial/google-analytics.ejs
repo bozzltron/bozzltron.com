@@ -1,14 +1,10 @@
-<% if (theme.google_analytics){ %>
-<!-- Google Analytics -->
-<script type="text/javascript">
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', '<%= theme.google_analytics %>', 'auto');
-ga('send', 'pageview');
-
+<%# GA4 Measurement ID (themes/attila/_config.yml `google_analytics: G-xxxx`). Loaded via after-footer. %>
+<% var __gaId = theme.google_analytics && String(theme.google_analytics).trim(); if (__gaId && __gaId.indexOf('G-') === 0) { %>
+<script async src="https://www.googletagmanager.com/gtag/js?id=<%= __gaId %>"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '<%= __gaId %>');
 </script>
-<!-- End Google Analytics -->
 <% } %>

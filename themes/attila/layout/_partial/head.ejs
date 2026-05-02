@@ -8,7 +8,6 @@ if (__scheme !== 'system' && __scheme !== 'light' && __scheme !== 'dark') {
 <html lang="<%= config.language || 'en' %>">
 <head>
   <meta charset="utf-8">
-  <%- partial('google-analytics') %>
   <%
   var title = page.title;
 
@@ -55,7 +54,28 @@ if (__scheme !== 'system' && __scheme !== 'light' && __scheme !== 'dark') {
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#141518">
-  <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
+  <%
+  var ogOpts = { fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id };
+  if (theme.twitter && String(theme.twitter).trim()) ogOpts.twitter_id = theme.twitter;
+  if (theme.google_plus && String(theme.google_plus).trim()) ogOpts.google_plus = theme.google_plus;
+  if (theme.twitter_site && String(theme.twitter_site).trim()) ogOpts.twitter_site = String(theme.twitter_site).trim();
+  if (is_post() && typeof page.hero === 'string' && page.hero.trim()) {
+    ogOpts.image = full_url_for(page.hero.trim());
+    ogOpts.twitter_card = 'summary_large_image';
+  }
+  %>
+  <%- open_graph(ogOpts) %>
+  <% if (is_post() && page.permalink) { %>
+  <link rel="canonical" href="<%= page.permalink %>">
+  <% } %>
+  <% if (is_post() && typeof page.hero === 'string' && page.hero.trim() && page.hero_width != null && page.hero_height != null) {
+    var heroAlt = (page.hero_alt || page.hero_title || page.title || '').replace(/"/g, '&quot;').replace(/</g, '');
+  %>
+  <meta property="og:image:width" content="<%= page.hero_width %>">
+  <meta property="og:image:height" content="<%= page.hero_height %>">
+  <meta property="og:image:alt" content="<%= heroAlt %>">
+  <% } %>
+  <%- partial('structured-data-post') %>
   <% if (theme.rss){ %>
     <link rel="alternate" href="<%= url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml">
   <% } %>

@@ -40,15 +40,26 @@ npm run server:drafts # includes source/_drafts
 |------|--------|
 | `_config.yml` | Site URL, **`root`**, permalinks (`root: /` assumes theme asset paths) |
 | `_config.local.yml` | Local preview only — **gitignored**; copy from `_config.local.yml.example` |
-| `themes/attila/_config.yml` | Menu, avatar, colors |
+| `themes/attila/_config.yml` | Menu, avatar, colors, **`google_analytics`** (GA4 **`G-`…** IDs only), **`twitter_site`** |
 
 ## Theme overrides (where to edit)
 
 **Primary:** **`themes/attila/source/css/overrides.css`** — body / `.post-content` size (Attila uses `html { font-size: 62.5% }`; don’t flip `html` to `100%` without rebalancing `em` in bundled `style.css`). **Clamp**/gutters, skip link, category row, pagination layout, **reduced-motion**. **Dates:** `themes/attila/scripts/date-helpers.js` (relative phrases are **generate-time**, not live).
 
-**Layouts:** `layout/_partial/article.ejs` (post, hero, nav), `archive.ejs`, `header.ejs`, `head.ejs` (meta, viewport).
+**Layouts:** `layout/_partial/article.ejs` (post, hero, nav), `archive.ejs`, `header.ejs`, **`head.ejs`** (viewport, OG/Twitter, canonical **`BlogPosting` JSON-LD** — see **Sharing**).
 
 **Checks before deploy:** tab order (skip → main `#main-content`), ~200% zoom, contrast if accents change; Lighthouse/axe on **`public/**/*.html`** optional.
+
+## Sharing, analytics, lightweight PWA
+
+- **Social previews.** Post **`hero:`** (site-root path **`/images/...`**) becomes **`og:image`** and **`twitter:image`** with **`twitter:card: summary_large_image`**. **`hero_width`** / **`hero_height`** / **`hero_alt`** (with matching real dimensions) populate **`og:image:width`** / **`height`** / **`alt`**. **`twitter_site`** defaults **`@bozzltron`** in **`themes/attila/_config.yml`**. Canonical: **`<link rel="canonical">`** on posts.
+- **Structured data.** **`BlogPosting`** JSON-LD includes headline, URL, publisher (+ logo), optional author/image/keywords.
+
+**Analytics.** **`themes/attila/_config.yml`** → **`google_analytics: G-xxxxxxxxxx`**. Scripts load from **`after-footer.ejs`** (deferred).
+
+**Bots / LLMs.** **`source/llms.txt`** ships as **`/llms.txt`** (site overview + retrieval hints).
+
+**PWA vs Hexo.** You already have **`manifest.json`** (tracked under **`source/`**), **`service-worker.js`**, **`pwacompat`**, and large icons—“add to home screen” lite. A heavier offline-first PWA (wide precaching) overlaps **Cloudflare CDN** with limited benefit for a read-mostly blog. Keep Hexo static output + CDN unless you explicitly need offline reading.
 
 ## Repository hygiene
 

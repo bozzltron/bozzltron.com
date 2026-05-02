@@ -1,0 +1,35 @@
+<% if (is_post() && page.permalink && page.title) {
+  function authorName(cfg) {
+    if (!cfg.author) return null;
+    if (typeof cfg.author === 'object') return cfg.author.nick || cfg.author.default || cfg.author.name || null;
+    return cfg.author;
+  }
+  var authorStr = authorName(config);
+  var img = '';
+  if (typeof page.hero === 'string' && page.hero.trim()) {
+    img = full_url_for(page.hero.trim());
+  }
+  var publisherLogo = '';
+  try { publisherLogo = full_url_for('/images/app_icons/ios/512.png'); } catch (e) { publisherLogo = ''; }
+  var pub = { '@type': 'Organization', name: config.title || 'bozzltron' };
+  if (publisherLogo) pub.logo = { '@type': 'ImageObject', url: publisherLogo };
+  var schema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: page.title,
+    url: page.permalink,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': page.permalink },
+    datePublished: page.date ? page.date.toISOString() : undefined,
+    dateModified: page.updated ? page.updated.toISOString() : undefined,
+    publisher: pub
+  };
+  var desc = (page.description || '').toString().trim();
+  if (desc) schema.description = desc;
+  if (authorStr) schema.author = { '@type': 'Person', name: authorStr };
+  if (img) schema.image = [img];
+  if (page.tags && page.tags.length) {
+    schema.keywords = page.tags.map(function (t) { return t.name; }).join(', ');
+  }
+%>
+<script type="application/ld+json"><%- JSON.stringify(schema) %></script>
+<% } %>

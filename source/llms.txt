@@ -1,6 +1,6 @@
 # bozzltron
 
-Human-written personal blog at https://bozzltron.com
+Human-written personal blog at https://www.bozzltron.com
 
 ## Summary
 
@@ -8,10 +8,10 @@ Technical notes, commentary, and long-form posts including “Influential music,
 
 ## Primary pages
 
-- Home: https://bozzltron.com/
-- Archives: https://bozzltron.com/archives/
-- Atom feed: https://bozzltron.com/atom.xml
-- RSS 2.0 feed: https://bozzltron.com/rss.xml
+- Home: https://www.bozzltron.com/
+- Archives: https://www.bozzltron.com/archives/
+- Atom feed: https://www.bozzltron.com/atom.xml
+- RSS 2.0 feed: https://www.bozzltron.com/rss.xml
 
 ## Retrieval guidance
 

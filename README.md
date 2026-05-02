@@ -1,6 +1,6 @@
 # bozzltron.com
 
-Personal site and blog ([bozzltron.com](https://bozzltron.com)). Markdown in `source/` → Hexo → static **`public/`**. Host on **[Cloudflare Pages](https://pages.cloudflare.com/)** with **`npm run lint && npm run build`** publishing **`public/`**.
+Personal site and blog ([www.bozzltron.com](https://www.bozzltron.com)). Markdown in `source/` → Hexo → static **`public/`**. Host on **[Cloudflare Pages](https://pages.cloudflare.com/)** with **`npm run lint && npm run build`** publishing **`public/`**.
 
 ## Goals
 

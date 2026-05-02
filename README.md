@@ -55,7 +55,7 @@ npm run server:drafts # includes source/_drafts
 
 **CSS:** **`themes/attila/source/css/overrides.css`** — typography, clamp/gutters, skip link, category row, pagination, reduced-motion *(Attila uses `html { font-size: 62.5% }`; don’t set `html` to `100%` without rebasing `em`).*
 
-**Head & metadata:** **`themes/attila/layout/_partial/head.ejs`** (+ **`structured-data-site.ejs`**, **`structured-data-post.ejs`**, **`google-analytics.ejs`**) — viewport/referrer/color-scheme, platform meta (PWA/App Store hints), **`msapplication-TileColor`**, favicon, feeds, manifests link.
+**Head & metadata:** **`themes/attila/layout/_partial/head.ejs`** (+ **`structured-data-site.ejs`**, **`structured-data-post.ejs`**, **`google-analytics.ejs`**). **`themes/attila/scripts/open-graph-override.js`** replaces Hexo’s **`open_graph`** so **`article:*`** tags exist only when **`og:type`** is **`article`**. **`author-helpers.js`** supplies **`author_display_name`**. Favicon, feeds, manifest link.
 
 **Post UI:** **`article.ejs`**, **`archive*.ejs`**, **`header.ejs`**.
 

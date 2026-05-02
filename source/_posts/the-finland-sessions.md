@@ -10,10 +10,11 @@ tags:
 - finland-sessions
 hero: https://files.bozzltron.com/hero-finland.jpg
 hero_title: "the shore of lake superior"
+excerpt: >-
+  It began with watching Inside Bill's Brain - Decoding Bill Gates. A documentary focusing on Bill, his life, and his work shares his yearly pilgrimage to a remote cabin to process.
+
 ---
 It began with watching [*Inside Bill's Brain - Decoding Bill Gates*](https://www.netflix.com/title/80184771).  A documentary focusing on Bill, his life, and his work shares his yearly pilgrimage to a remote cabin to process.
-
-<!-- more -->
 
 ![Inside Bill's Brain \<Decoding Bill Gates\>!](https://files.bozzltron.com/inside-bills-brain.jpg "Inside Bill's Brain \<Decoding Bill Gates\>")
 

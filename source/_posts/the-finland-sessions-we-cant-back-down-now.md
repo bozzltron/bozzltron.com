@@ -7,11 +7,12 @@ tags:
 - finland-sessions
 hero: https://files.bozzltron.com/hero-lakeside.jpg
 hero_title: "lake superior"
+excerpt: >-
+  Taking time to step out of a routine and put life on paper to weigh its purpose and intentionality and measure its direction is something I do well. I am a processor.
+
 ---
 
 Taking time to step out of a routine and put life on paper to weigh its purpose and intentionality and measure its direction is something I do well.  I am a processor.
-
-<!-- more -->
 
 Looking back over 2019, it was a rough year for many reasons. It forced us to decide if we wanted to live in a world where we were part of the problem or part of the solution.  To leave the world better than how we found it.  2020 is no different.  It has broken me in the best way.  
 

@@ -7,12 +7,13 @@ tags:
 hero: https://files.bozzltron.com/hero-leroy.jpg
 hero_title: ''
 date: 2020-09-27 18:59:37
+excerpt: >-
+  Not too exposed, not too cheap, but just right.
+
 ---
 
 
 Not too exposed, not too cheap, but just right.
-
-<!-- more -->
 
 ## The Right Case
 The Raspberry Pi camera module is pretty stripped down.  It doesn't come in its own case.  My first case was a simple plastic around the camera lens.  This was extremely fragile.  Especially with kids and pets that inevitably bump into it.

@@ -7,11 +7,12 @@ tags:
 hero: https://files.bozzltron.com/hero-leroy.jpg
 hero_title: ''
 date: 2020-09-27 13:19:04
+excerpt: >-
+  Leroy, my first AI project, has presented a number of new technical challenges. Here are my lessons learned presented in a multi-part series.
+
 ---
 
 Leroy, my first AI project, has presented a number of new technical challenges.  Here are my lessons learned presented in a multi-part series.
-
-<!-- more -->
 
 ## Object detection versus classification
 My first iteration of Project Leroy started with classification.  Classification for Leroy was taking an entire frame from his camera's video stream and trying to classify it as a type of bird.  The results were very inconsistent.

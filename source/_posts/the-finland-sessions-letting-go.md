@@ -7,11 +7,12 @@ tags:
 hero: https://files.bozzltron.com/hero-letting-go.jpg
 hero_title: 'palisade head'
 date: 2020-06-27 11:21:08
+excerpt: >-
+  Sometimes a dream is just as inspiring as its corresponding reality. I was so excited to have my first vision quest in the wilderness of Minnesota that I wrote a song in advance.
+
 ---
 
 Sometimes a dream is just as inspiring as its corresponding reality. I was so excited to have my first vision quest in the wilderness of Minnesota that I wrote a song in advance.
-
-<!-- more -->
 
 I'm a 90's kid.  Grunge, Alternative, and mainstream Punk all thrown in a pot and brought to a boil.  It's foundational.  Weezer's Blue Album, Green Day's Dookie, Soundgarden's Superunknown, Silverchair's Frogstomp, the Smashing Pumpkins' Siamese Dream, and Nirvana's In Utero are not just great albums but inform my creations.
 

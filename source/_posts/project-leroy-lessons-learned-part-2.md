@@ -7,12 +7,13 @@ tags:
 hero: https://files.bozzltron.com/hero-leroy.jpg
 hero_title: ''
 date: 2020-09-27 18:48:37
+excerpt: >-
+  How to not crash a Raspberry Pi.
+
 ---
 
 
 How to not crash a Raspberry Pi.
-
-<!-- more -->
 
 ## Resilience on Raspberry Pi
 Currently, I'm running Leroy on a Raspberry Pi 3.  The compute power needed for computer vision is demanding for a small device.  I found there were many fail safes I needed to put in place to ensure Leroy would not crash and potentially miss visitations. 

@@ -7,11 +7,12 @@ tags:
 hero: https://files.bozzltron.com/hero-firefox.jpg
 hero_title: ''
 date: 2021-01-09 15:13:25
+excerpt: >-
+  Web browsers are our window into the digital realm. There are many free options, but their makers have different agendas. Let me tell you why I prefer Firefox.
+
 ---
 
 Web browsers are our window into the digital realm.  There are many free options, but their makers have different agendas.  Let me tell you why I prefer Firefox. 
-
-<!-- more -->
 
 Imagine traveling to a foreign country and hiring a guide to give you a tour.  Without them, you are helpless.  They enable you to navigate this new world, and along the way, you see a bit of their personality.  Perhaps you even make a friend. 
 

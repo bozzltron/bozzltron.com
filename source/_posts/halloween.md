@@ -7,11 +7,12 @@ tags:
 hero: https://files.bozzltron.com/hero-halloween.jpg
 hero_title: 'Phoebe Bridgers Credit: Frank Ockenfels'
 date: 2020-07-14 14:11:35
+excerpt: >-
+  Baby, it's Halloween. We can be anything.
+
 ---
 
 > Baby, it's Halloween.  We can be anything.
-
-<!-- more -->
 
 I first heard of Phoebe Bridgers via Pitchfork's Best New Albums feed and later discovered that I'd already been listening to her as part of Better Oblivion Community Center.  Her latest album _Punisher_ deserves the accolades that it's been receiving.  
 

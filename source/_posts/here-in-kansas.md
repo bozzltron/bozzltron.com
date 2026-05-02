@@ -7,11 +7,12 @@ tags:
 hero: https://files.bozzltron.com/hero-kansas.jpg
 hero_title: 'Here In Kansas'
 date: 2021-05-31 11:04:10
+excerpt: >-
+  The sun shines spotty and the stream is calling here in Kansas.
+
 ---
 
 >The sun shines spotty and the stream is calling here in Kansas.
-
-<!-- more -->
 
 For my second annual week of seclusion, I wanted to go someplace different. My guiding criteria were to trim down the 7-hour drive that I took the previous year. I found an "artists" cabin in Kansas.  Since songwriting was one of my intentions, I was sold.
 

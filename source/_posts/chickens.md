@@ -7,11 +7,12 @@ tags:
 hero: https://files.bozzltron.com/hero-chickens.jpg
 hero_title: 'Chicken coop'
 date: 2020-07-11 15:33:15
+excerpt: >-
+  We are officially chicken owners.
+
 ---
 
 We are officially chicken owners.
-
-<!-- more -->
 
 We have three barred rock hens and one Ayam Cemani.  Thanks to our friends Wally and Lauren for helping us set everything up.  We retrofitted an old shed that we were using as a kids clubhouse to be a chicken coop.  The fenced area for them to walk around in is a repurposed dog run.
 

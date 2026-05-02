@@ -7,11 +7,12 @@ tags:
 hero: https://files.bozzltron.com/hero-phoebe-at-red-rocks.jpg
 hero_title: 'Phoebe Bridgers live at Red Rocks'
 date: 2022-06-23 13:25:53
+excerpt: >-
+  A favorite artist in a coveted venue and a profound connection.
+
 ---
 
 A favorite artist in a coveted venue and a profound connection. 
-
-<!-- more -->
 
 The drive up north along the mountains to the west was absolutely beautiful. Red Rocks is a gorgeous preservation of what nature can be. Even the parking lot was beautiful.
 

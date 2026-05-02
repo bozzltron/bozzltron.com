@@ -7,11 +7,12 @@ tags:
 hero: https://files.bozzltron.com/hero-vacation-2020.jpg
 hero_title: ''
 date: 2020-08-21 15:30:14
+excerpt: >-
+  My family loves wilderness and narrative.
+
 ---
 
 My family loves wilderness and narrative.
-
-<!-- more -->
 
 This is what I learned spending three days with my wife and kids living in a tent, cooking over the fire, far from the distractions of our regular routine.  
 

@@ -7,11 +7,12 @@ tags:
 hero: https://files.bozzltron.com/hero-farewell.jpg
 hero_title: 'grocery store in finland'
 date: 2020-06-30 14:09:26
+excerpt: >-
+  What was it like to spend time in isolation broken free from my normal routine to process life and make music? It was healing.
+
 ---
 
 What was it like to spend time in isolation broken free from my normal routine to process life and make music?  It was healing.  
-
-<!-- more -->
 
 Stillness,  quiet, natural beauty, and creating recharge me.  The location could not have been more perfect. It was intimidating flying solo into the wilderness, but I adjusted.  The same area in the summer would be amazing for hiking.
 

@@ -7,11 +7,12 @@ tags:
 hero: https://files.bozzltron.com/hero-project-leroy.jpg
 hero_title: ''
 date: 2020-07-25 13:43:15
+excerpt: >-
+  My first Artificial Intelligence project.
+
 ---
 
 My first Artificial Intelligence project.
-
-<!-- more -->
 
 I've had the idea for Project Leroy for some time.  The pandemic has provided the time.  The inspiration came from my Grandfather Leroy.  He and my Grandmother loved birds.  I remember visiting Grandma and Grandpa's house and seeing bird-watching books by the window.  Just outside was a collection of different feeders.  They also enjoyed cuckoo clocks.  They had one in their home that sang a different song every hour.
 

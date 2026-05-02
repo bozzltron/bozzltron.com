@@ -7,11 +7,12 @@ tags:
 hero: https://files.bozzltron.com/misinformation.jpg
 hero_title: 'Misinformation by Connie Mitchell https://www.inprnt.com/gallery/pri-sm/misinformation/'
 date: 2020-12-30 12:54:56
+excerpt: >-
+  The year has proven that misinformation can degrade and destabilize countries, cities, and families. How do we find truth in the misinformation age?
+
 ---
 
 The year has proven that misinformation can degrade and destabilize countries, cities, and families. How do we find truth in the misinformation age?
-
-<!-- more -->
 
 ## The problem
 The internet has provided unprecedented access to information and the ability to add your voice into the mix. Most people now consume their news online. Given the variety of services that provide this, it becomes confusing as to what is a reliable source or not. There currently exist many intermediaries online that feed people news rather than consuming directly from a source. All of this has led to the misinformation age.

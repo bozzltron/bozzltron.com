@@ -7,10 +7,12 @@ tags:
 hero: https://files.bozzltron.com/hero-simon_and_garfunkel.jpg
 hero_title: '(Nancy Kaye/AP)'
 date: 2020-11-03 19:26:42
----
-"They've all come to look for America"
+excerpt: >-
+  They've all come to look for America
 
-<!-- more -->
+---
+
+"They've all come to look for America"
 
 It's election day 2020 in the United States of America.  I had the idea to do my own version of Simon & Garfunkel's classic "America", released in 1968 on the [Bookends album](https://open.spotify.com/album/3bzgbgiytguTDnwzflAZr2).  The inspiration came from a book I'm reading by [Daniel Levitin called *The World in Six Songs*](https://www.thriftbooks.com/w/the-world-in-six-songs-how-the-musical-brain-created-human-nature_daniel-j-levitin/306309/item/1493393/).  In the book he describes a song by Sting that challenged people's thinking about their "enemies" during the Cold War.  In the song he asks the listener to think about how much the "others" love their children as compared to themselves.  In so doing, the listener is forced to humanize rather than demonize.  It's such a great example of how powerful music can be and I love the idea of helping people see themselves in the mirror rather than argue.
 

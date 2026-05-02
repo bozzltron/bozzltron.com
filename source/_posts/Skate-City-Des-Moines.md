@@ -7,10 +7,12 @@ tags:
 hero: https://files.bozzltron.com/hero-skate-city-des-moines.jpg
 hero_title: ''
 date: 2021-07-05 18:54:56
+excerpt: >-
+  The Dew Tour does Des Moines.
+
 ---
 The Dew Tour does Des Moines.
 
-<!-- more -->
 It was the convergence of two things.  Des Moines had been working on a public skatepark for over ten years.  It wasn't just any park.  It was designed by California Skateparks and finished being the largest park in the US. With that, they attracted one of the most prominent skateboarding competitions: The Dew Tour.  I've enjoyed watching competitions over the years but never thought I would witness one in my backyard.  Riders, the world over, trickled into the capital city of Iowa to compete and score points for potential Olympic qualification.  
 
 Tickets were free as long as they lasted.  I scored two days of qualifying and the finals.  Qualifiers were expectedly low-key.  Much of my attention was drawn to what you don't see on television.  The competition crews and their interaction with the athletes.  Some of the crew seemed to know the athletes.  It made me wonder whether that familiarity was unique to the Dew Tour or whether this crew also worked other events.  Either way, it showed a side of skateboarding I had not seen.  It became a common theme over the weekend.  **The competition was less about competing and more about the progression of the sport.**

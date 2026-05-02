@@ -7,11 +7,12 @@ tags:
 - finland-sessions
 hero: https://files.bozzltron.com/hero-the-observer.jpg
 hero_title: "west branch baptism river"
+excerpt: >-
+  On a still morning in a remote cabin north of Lake Superior, I woke up to something new. The time, space, and the tools to create music.
+
 ---
 
 On a still morning in a remote cabin north of Lake Superior, I woke up to something new.  The time, space, and the tools to create music. 
-
-<!-- more -->
 
 I rolled out of the upstairs loft, creaked down the steep wooden stairs, and made breakfast and coffee looking out through a long rectangular window out across a shallow river valley.  It was completely covered with tall pine trees and a 20-inch snow base.  I took my breakfast to the living area and threw out some suet for the birds to munch.  
 

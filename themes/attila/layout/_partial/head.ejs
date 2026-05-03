@@ -101,10 +101,15 @@ if (__scheme !== 'system' && __scheme !== 'light' && __scheme !== 'dark') {
   <meta name="apple-mobile-web-app-title" content="<%= config.title %>">
   <%# https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name/apple-mobile-web-app-status-bar-style %>
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="/images/app_icons/ios/180.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/app_icons/ios/120.png">
   <link rel="apple-touch-icon" sizes="152x152" href="/images/app_icons/ios/152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/app_icons/ios/180.png">
   <link rel="apple-touch-icon" sizes="167x167" href="/images/app_icons/ios/167.png">
-  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/app_icons/ios/180.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="/images/app_icons/ios/192.png">
+  <%# Larger icon covers iPad / splash-style contexts where launchers fetch a hi-res bitmap %>
+  <link rel="apple-touch-icon" sizes="512x512" href="/images/app_icons/ios/512.png">
+  <link rel="manifest" href="/manifest.json" crossorigin="anonymous">
 
   <%# Separate theme_color values for UA chrome (PWAs): https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name/theme-color %>
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
@@ -124,9 +129,10 @@ if (__scheme !== 'system' && __scheme !== 'light' && __scheme !== 'dark') {
   <%# Robots directives incl. preview caps (supported by Google, documented on MDN) %>
   <%# https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag %>
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  <%# Progressive Web Apps on Windows pinning %>
+  <%# Progressive Web Apps on Windows pinning (tile matches light avatar background) %>
   <%# https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/dn320426(v=vs.85) %>
-  <meta name="msapplication-TileColor" content="#141518">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="<%= full_url_for('/images/app_icons/android/512.png') %>">
 
   <%- open_graph(ogOpts) %>
   <% if (canonicalHref) { %>

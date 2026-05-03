@@ -4,19 +4,92 @@
   "id": "https://www.bozzltron.com/",
   "description": "Personal blog.",
   "icons": [
-    { "src": "/images/app_icons/android/48.png", "sizes": "48x48", "type": "image/png" },
-    { "src": "/images/app_icons/android/72.png", "sizes": "72x72", "type": "image/png" },
-    { "src": "/images/app_icons/android/96.png", "sizes": "96x96", "type": "image/png" },
-    { "src": "/images/app_icons/android/144.png", "sizes": "144x144", "type": "image/png" },
-    { "src": "/images/app_icons/android/192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "/images/app_icons/ios/512.png", "type": "image/png", "sizes": "512x512" }
+    {
+      "src": "/images/app_icons/android/48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/app_icons/android/72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/app_icons/android/96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/app_icons/android/144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/app_icons/android/192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/app_icons/android/512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/app_icons/android/192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/images/app_icons/android/512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Home",
+      "short_name": "Home",
+      "description": "Latest posts",
+      "url": "/",
+      "icons": [
+        {
+          "src": "/images/app_icons/android/96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Archives",
+      "short_name": "Archive",
+      "description": "All posts by date",
+      "url": "/archives/",
+      "icons": [
+        {
+          "src": "/images/app_icons/android/96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
   ],
   "start_url": "/",
   "background_color": "#ffffff",
   "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
   "scope": "/",
   "theme_color": "#ffffff",
+  "orientation": "any",
   "lang": "en",
   "dir": "ltr",
-  "categories": ["news", "lifestyle", "music"]
+  "prefer_related_applications": false,
+  "categories": ["blogs", "lifestyle", "music"]
 }

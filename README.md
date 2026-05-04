@@ -39,6 +39,8 @@ npm run server:drafts # includes source/_drafts
 5. **URLs** — outbound links open and point at the right place; no accidental `localhost` or broken anchors.
 6. **Excerpt** — **`excerpt:`** (or **`<!-- more -->`**) is **verbatim** from the post body, not a new summary.
 7. **Build** — **`npm run lint && npm run build`** passes; new images show up under **`public/images/`** after generate.
+8. **Accessibility** — sensible heading order; link text that stands on its own; **`hero_alt`** matches the hero; embeds (e.g. YouTube) have a descriptive **`title`** on the iframe.
+9. **Web Share** — on the built post, **Share** uses **`navigator.share`** where the browser supports it (URL, title, excerpt **`text`**); elsewhere clipboard copy still includes URL (and text when present). Re-check after changing **`permalink`**, **`excerpt:`**, or **`share-toolbar`**.
 
 ### Length and series
 
@@ -60,6 +62,7 @@ Crawlers resolve **`og:image`** from **`full_url_for`**, so production **`url`**
 | Typography, a11y, dark surfaces, footer, theme picker | **`themes/attila/source/css/overrides.css`** |
 | Head, canonical, OG, JSON-LD | **`themes/attila/layout/_partial/head.ejs`** (+ structured-data partials) |
 | Post chrome, author avatar | **`themes/attila/layout/_partial/article.ejs`** |
+| Share (**`navigator.share`**, clipboard fallback) | **`themes/attila/layout/_partial/share-toolbar.ejs`**, **`themes/attila/source/js/share.js`** |
 | OG **`article:*`** behavior | **`themes/attila/scripts/open-graph-override.js`** |
 | Bundled post images / heroes | **`themes/attila/source/images/`** → **`/images/…`** |
 

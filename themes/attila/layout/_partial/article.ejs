@@ -65,7 +65,6 @@ var profileBust = (!/^https?:\/\//i.test(profileImage) && bustRaw && /^[a-zA-Z0-
             </p>
           <% } %>
         <% } else if (is_post()) {
-            var shareTextPost = strip_html(post.excerpt || post.description || '').replace(/\s+/g, ' ').trim().substring(0, 400);
             var shareUrlPost = typeof post.permalink === 'string' && post.permalink.trim()
               ? post.permalink.trim()
               : full_url_for(post.path);
@@ -79,7 +78,7 @@ var profileBust = (!/^https?:\/\//i.test(profileImage) && bustRaw && /^[a-zA-Z0-
               <%- partial('share-toolbar', {
                 share_url: shareUrlPost,
                 share_title: post.title,
-                share_text: shareTextPost
+                share_text: ''
               }) %>
             </div>
             <%- __body.substring(__refAt) %>
@@ -89,7 +88,7 @@ var profileBust = (!/^https?:\/\//i.test(profileImage) && bustRaw && /^[a-zA-Z0-
               <%- partial('share-toolbar', {
                 share_url: shareUrlPost,
                 share_title: post.title,
-                share_text: shareTextPost
+                share_text: ''
               }) %>
             </div>
           <% } %>

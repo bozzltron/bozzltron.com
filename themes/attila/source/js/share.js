@@ -51,12 +51,11 @@
     var text = (btn.getAttribute('data-share-text') || '').trim();
 
     if (navigator.share) {
+      var shareData = { url: url };
+      if (title) shareData.title = title;
+      if (text) shareData.text = text;
       navigator
-        .share({
-          title: title,
-          text: text || title,
-          url: url
-        })
+        .share(shareData)
         .catch(function (err) {
           if (err && err.name === 'AbortError') return;
           copyToClipboard(clipPayload(url, text))

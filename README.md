@@ -40,7 +40,7 @@ npm run server:drafts # includes source/_drafts
 6. **Excerpt** — **`excerpt:`** (or **`<!-- more -->`**) is **verbatim** from the post body, not a new summary.
 7. **Build** — **`npm run lint && npm run build`** passes; new images show up under **`public/images/`** after generate.
 8. **Accessibility** — sensible heading order; link text that stands on its own; **`hero_alt`** matches the hero; embeds (e.g. YouTube) have a descriptive **`title`** on the iframe.
-9. **Web Share** — on the built post, **Share** uses **`navigator.share`** where the browser supports it (URL, title, excerpt **`text`**); elsewhere clipboard copy still includes URL (and text when present). Re-check after changing **`permalink`**, **`excerpt:`**, or **`share-toolbar`**.
+9. **Web Share** — on the built post, **Share** uses **`navigator.share`** where supported (**`url`** + **`title`**; no body **`text`** on posts—link previews use **`og:description`**). Tag pages may still pass a short blurb. Clipboard fallback copies **URL** only when **`text`** is empty. Re-check after **`permalink`** or **`share-toolbar`** changes.
 
 ### Length and series
 

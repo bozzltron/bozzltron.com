@@ -35,7 +35,7 @@ npm run server:drafts # includes source/_drafts
 1. **Spelling and grammar** — read aloud or pass through an editor; fix typos and clunky sentences.
 2. **Reference quality** — every substantive claim that needs one has a source; hero art has credit, source URL, and local path called out where applicable.
 3. **Fact check** — names, dates, numbers, chart/certification claims, and quotes match the sources.
-4. **Meta** — **`title`**, **`date`**, category/tags; **`hero`** + **`hero_width`** / **`hero_height`** + **`hero_alt`** when the post should unfurl with an image; root **`_config.yml`** **`url`** matches production.
+4. **Meta** — **`title`**, **`date`**, category/tags; **`hero`** + **`hero_width`** / **`hero_height`** + **`hero_alt`** when the post should unfurl with an image; root **`_config.yml`** **`url`** matches production. **Title** and **excerpt** should read well as the tab label and as the search/social snippet (excerpt feeds **`meta`/`og` description** unless you set **`description:`** separately).
 5. **URLs** — outbound links open and point at the right place; no accidental `localhost` or broken anchors.
 6. **Excerpt** — **`excerpt:`** (or **`<!-- more -->`**) is **verbatim** from the post body, not a new summary.
 7. **Build** — **`npm run lint && npm run build`** passes; new images show up under **`public/images/`** after generate.

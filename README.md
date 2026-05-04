@@ -30,8 +30,25 @@ npm run server:drafts # includes source/_drafts
 
 ## Editorial
 
+### Excerpts
+
 - **Length:** ~**900–1,200 words**; **`<!-- more -->`** for excerpts unless **`excerpt:`** is set.
-- **Series “Influential music”:** category **Influential music**, tag **`influential-music`**; filename **`<band>-<song>.md`**; Tweedy acknowledgement + **`excerpt:`** (no **`<!-- more -->`** when excerpt is set).
+- **Series “Influential music”:** category **Influential music**, tag **`influential-music`**; filename **`<band>-<song>.md`**; Tweedy acknowledgement + **`excerpt:`** (no **`<!-- more -->`** when excerpt is set). Use **verbatim** sentences from the post body, not a separate paraphrase (listings, **`og:description`**, and share dialogs pull from **`excerpt:`**).
+
+### Link preview (Open Graph / Twitter / etc.)
+
+Posts pick up social cards from front matter; crawlers need an **absolute** image URL, which depends on root **`_config.yml`** **`url`** matching production (e.g. `https://www.bozzltron.com`).
+
+- **`hero`:** Path served as **`/images/…`** (asset in **`themes/attila/source/images/`** or site **`source/images/`** so the build copies it into **`public/images/`**).
+- **`hero_width`** / **`hero_height`:** Pixel dimensions of that file (enables **`og:image:width`** / **`og:image:height`**).
+- **`hero_alt`:** Short accessible description of the image (also **`og:image:alt`** and **`twitter:image:alt`**). **`hero_title`** is the on-page caption under the hero.
+
+With **`hero`** set, the theme emits **`og:image`**, **`og:image:secure_url`**, **`og:image:type`**, **`twitter:card`** (**`summary_large_image`**), **`twitter:image`**, plus alt and size metadata when dimensions exist. JSON-LD **`BlogPosting`** **`image`** uses the same URL.
+
+If a preview looks wrong after deploy, the platform may be serving a cached scrape; use that platform’s sharing debugger or “fetch again” tool after the live **`url` + image** both resolve.
+
+### Other
+
 - **References:** cite sources; hero images: credit + original URL + local derivative path when applicable.
 - **Drafts:** **`source/_drafts/`** excluded from production builds unless **`--draft`**.
 

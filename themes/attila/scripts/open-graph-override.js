@@ -118,6 +118,16 @@ function openGraphHelper(options = {}) {
     .filter((u) => !u.startsWith('data:'));
   images.forEach((path) => {
     result += og('og:image', path, false);
+    if (path && String(path).startsWith('https://')) {
+      result += og('og:image:secure_url', path, false);
+    }
+    const lower = String(path).toLowerCase();
+    let mime = '';
+    if (lower.endsWith('.jpg') || lower.endsWith('.jpeg')) mime = 'image/jpeg';
+    else if (lower.endsWith('.png')) mime = 'image/png';
+    else if (lower.endsWith('.webp')) mime = 'image/webp';
+    else if (lower.endsWith('.gif')) mime = 'image/gif';
+    if (mime) result += og('og:image:type', mime, false);
   });
 
   /** Open Graph article namespace is for articles only (not indexes/archives). */
@@ -156,6 +166,10 @@ function openGraphHelper(options = {}) {
     result += meta('twitter:image', twitterImage, false);
   } else if (images.length) {
     result += meta('twitter:image', images[0], false);
+  }
+  if (options.twitter_image_alt) {
+    const twAlt = stripHTML(String(options.twitter_image_alt)).substring(0, 420).trim();
+    if (twAlt) result += meta('twitter:image:alt', twAlt);
   }
   if (options.twitter_id) {
     let twitterId = options.twitter_id;

@@ -30,27 +30,28 @@ npm run server:drafts # includes source/_drafts
 
 ## Editorial
 
-### Excerpts
+### Before publishing
 
-- **Length:** ~**900–1,200 words**; **`<!-- more -->`** for excerpts unless **`excerpt:`** is set.
-- **Series “Influential music”:** category **Influential music**, tag **`influential-music`**; filename **`<band>-<song>.md`**; Tweedy acknowledgement + **`excerpt:`** (no **`<!-- more -->`** when excerpt is set). Use **verbatim** sentences from the post body, not a separate paraphrase (listings, **`og:description`**, and share dialogs pull from **`excerpt:`**).
+1. **Spelling and grammar** — read aloud or pass through an editor; fix typos and clunky sentences.
+2. **Reference quality** — every substantive claim that needs one has a source; hero art has credit, source URL, and local path called out where applicable.
+3. **Fact check** — names, dates, numbers, chart/certification claims, and quotes match the sources.
+4. **Meta** — **`title`**, **`date`**, category/tags; **`hero`** + **`hero_width`** / **`hero_height`** + **`hero_alt`** when the post should unfurl with an image; root **`_config.yml`** **`url`** matches production.
+5. **URLs** — outbound links open and point at the right place; no accidental `localhost` or broken anchors.
+6. **Excerpt** — **`excerpt:`** (or **`<!-- more -->`**) is **verbatim** from the post body, not a new summary.
+7. **Build** — **`npm run lint && npm run build`** passes; new images show up under **`public/images/`** after generate.
 
-### Link preview (Open Graph / Twitter / etc.)
+### Length and series
 
-Posts pick up social cards from front matter; crawlers need an **absolute** image URL, which depends on root **`_config.yml`** **`url`** matching production (e.g. `https://www.bozzltron.com`).
+- ~**900–1,200 words**; **`<!-- more -->`** unless **`excerpt:`** is set.
+- **Influential music:** category **Influential music**, tag **`influential-music`**, filename **`<band>-<song>.md`**, Tweedy acknowledgement, **`excerpt:`** (no **`<!-- more -->`** when using it).
 
-- **`hero`:** Path served as **`/images/…`** (asset in **`themes/attila/source/images/`** or site **`source/images/`** so the build copies it into **`public/images/`**).
-- **`hero_width`** / **`hero_height`:** Pixel dimensions of that file (enables **`og:image:width`** / **`og:image:height`**).
-- **`hero_alt`:** Short accessible description of the image (also **`og:image:alt`** and **`twitter:image:alt`**). **`hero_title`** is the on-page caption under the hero.
+### Link preview (detail)
 
-With **`hero`** set, the theme emits **`og:image`**, **`og:image:secure_url`**, **`og:image:type`**, **`twitter:card`** (**`summary_large_image`**), **`twitter:image`**, plus alt and size metadata when dimensions exist. JSON-LD **`BlogPosting`** **`image`** uses the same URL.
-
-If a preview looks wrong after deploy, the platform may be serving a cached scrape; use that platform’s sharing debugger or “fetch again” tool after the live **`url` + image** both resolve.
+Crawlers resolve **`og:image`** from **`full_url_for`**, so production **`url`** must be correct. After deploy, if a card is stale, use the platform’s “scrape again” / debugger. Theme tags: **`og:image`**, **`og:image:secure_url`**, **`og:image:type`**, dimensions, alt, **`twitter:card`** (**`summary_large_image`**), **`twitter:image`**, **`twitter:image:alt`**.
 
 ### Other
 
-- **References:** cite sources; hero images: credit + original URL + local derivative path when applicable.
-- **Drafts:** **`source/_drafts/`** excluded from production builds unless **`--draft`**.
+- **Drafts:** **`source/_drafts/`** excluded from production unless **`--draft`**.
 
 ## Theme overrides (where to edit)
 

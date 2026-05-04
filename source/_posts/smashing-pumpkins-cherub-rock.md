@@ -15,7 +15,7 @@ hero_alt: 'The Smashing Pumpkins as a four-piece in London, July 1993—color ph
 hero_width: 1548
 hero_height: 1024
 excerpt: >-
-  I’d only ever heard cassettes. I slid *Siamese Dream* into my first CD boombox—no clue what the band had survived to make it—and *Cherub Rock* hit like color after black and white.
+  I put the disc awkwardly into the player—like a first encounter with alien technology. I pressed play. WOW. I had only listened to cassettes up until that point. I didn’t need to know the technical details. I felt them. It was truly a Wizard of Oz moment: going from black-and-white to color.
 
 ---
 

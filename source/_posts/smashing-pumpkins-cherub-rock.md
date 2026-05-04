@@ -49,7 +49,7 @@ What I love about *Cherub Rock* is **everything**. The **slow build** to start�
   <iframe src="https://www.youtube-nocookie.com/embed/q-KE9lvU810" title="The Smashing Pumpkins — Cherub Rock (official remastered video, SmashingPumpkinsVEVO)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
 </div>
 
-### References
+## References
 
 1. **Wikipedia:** [*Siamese Dream*](https://en.wikipedia.org/wiki/Siamese_Dream), [Recording and production](https://en.wikipedia.org/wiki/Siamese_Dream#Recording_and_production); U.S. **RIAA** (album **4× Platinum**); [“Cherub Rock” (song)](https://en.wikipedia.org/wiki/Cherub_Rock), [Charts](https://en.wikipedia.org/wiki/Cherub_Rock#Charts).
 2. **Hero image** — William Goodman, [*Smashing Pumpkins’ Beautiful, Grand ‘Siamese Dream’ Turns 25*](https://www.billboard.com/music/rock/smashing-pumpkins-siamese-dream-album-8467431/), *Billboard*, **27 July 2018** — **Smashing Pumpkins photographed in London, July 1993**; **photo: Paul Bergen / Redferns**. Source JPEG: `https://www.billboard.com/wp-content/uploads/media/smashing-pumpkings-portrait-1993-billboard-1548.jpg`. Local WebP: **`/images/smashing-pumpkins-billboard-london-1993-hero.webp`**. © as credited on *Billboard*; not an implied licence beyond personal use.

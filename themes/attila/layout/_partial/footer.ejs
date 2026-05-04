@@ -1,6 +1,12 @@
 <div class="nav-footer">
   <nav class="nav-wrapper" aria-label="Footer">
     <span class="nav-copy">&copy; <%= date(new Date(), 'YYYY') %> <%= author_display_name(config, config.title) %></span>
+    <div class="theme-scheme-picker" id="theme-scheme-picker" role="group" aria-label="Site color theme">
+      <span class="theme-scheme-label" id="theme-scheme-label">Theme</span>
+      <button type="button" class="theme-scheme-btn" data-theme-choice="system" aria-pressed="false" aria-labelledby="theme-scheme-label">Auto</button>
+      <button type="button" class="theme-scheme-btn" data-theme-choice="light" aria-pressed="false" aria-labelledby="theme-scheme-label">Light</button>
+      <button type="button" class="theme-scheme-btn" data-theme-choice="dark" aria-pressed="false" aria-labelledby="theme-scheme-label">Dark</button>
+    </div>
   </nav>
 </div>
 

@@ -5,7 +5,7 @@ if (__scheme !== 'system' && __scheme !== 'light' && __scheme !== 'dark') {
   __scheme = 'system';
 }
 %>
-<html lang="<%= config.language || 'en' %>">
+<html lang="<%= config.language || 'en' %>" data-server-scheme="<%= __scheme %>">
 <head>
   <meta charset="utf-8">
   <%
@@ -59,24 +59,8 @@ if (__scheme !== 'system' && __scheme !== 'light' && __scheme !== 'dark') {
     ogOpts.twitter_card = 'summary_large_image';
   }
   %>
-  <script>
-(function () {
-  var scheme = <%- JSON.stringify(__scheme) %>;
-  if (scheme === 'dark') {
-    document.documentElement.classList.add('theme-dark');
-    try { localStorage.setItem('attila_theme', 'dark'); } catch (e) {}
-  } else if (scheme === 'light') {
-    document.documentElement.classList.add('theme-light');
-    try { localStorage.setItem('attila_theme', 'light'); } catch (e) {}
-  } else {
-    try {
-      var t = localStorage.getItem('attila_theme');
-      if (t === 'dark') document.documentElement.classList.add('theme-dark');
-      else if (t === 'light') document.documentElement.classList.add('theme-light');
-    } catch (e) {}
-  }
-})();
-  </script>
+  <%# Theme classes: set in js/theme-scheme.js (loaded early; picker in footer) %>
+  <%- js('js/theme-scheme') %>
   <title><%= docTitleFull %></title>
 
   <%# HTML5 Boilerplate / MDN: viewport + referrer + theme hints %>

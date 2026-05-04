@@ -2,11 +2,13 @@
 # Upstream Ghost theme: https://github.com/zutrinken/attila — still maintained as of sync.
 accent_color: '#15171A'
 darkmode_accent_color: '#ff6633'
-# system | light | dark — persists via localStorage in head (there is no footer theme toggle UI)
+# system | light | dark — site default when the reader has not chosen Auto/Light/Dark in the footer
 color_scheme: system
 
 # Post header avatar (same-site asset path preferred; omit to use bundled default)
-avatar: '/images/app_icons/ios/512.png'
+avatar: '/images/bozzltron-avatar.webp'
+# Bust caches when the avatar file changes (query string on author img only)
+avatar_cache_bust: '20260504'
 
 # Listing header (.blog-header on index/archives; falls back to site title / description when unset)
 blog_name: '@bozzltron'

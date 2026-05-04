@@ -1,70 +1,56 @@
 # bozzltron.com
 
-Personal site and blog ([www.bozzltron.com](https://www.bozzltron.com)). Markdown in `source/` → Hexo → static **`public/`**. Host on **[Cloudflare Pages](https://pages.cloudflare.com/)** with **`npm run lint && npm run build`** publishing **`public/`**.
+Personal blog ([www.bozzltron.com](https://www.bozzltron.com)): Markdown in **`source/`** → Hexo → static **`public/`**. Deploy on **[Cloudflare Pages](https://pages.cloudflare.com/)** with **`npm run lint && npm run build`**, publishing **`public/`**.
 
-## Goals
-
-- **Writing & UX:** Readable type, sensible a11y (skip link, focus, contrast checks when changing accents), ~900–1,200-word posts unless a series dictates otherwise *(see Editorial)*.
-- **Stack:** Hexo 8 + vendored **[Attila](https://github.com/zutrinken/hexo-theme-attila)-style** theme, Node **`engines`** in `package.json`; same **`lint`** + **`build`** in CI/Pages.
-
-**Discovery & previews:** Canonical URL on every page; Open Graph + Twitter Card from **`open_graph`** and explicit **`twitter:title`** / **`twitter:description`**; post **`hero:`** (+ optional **`hero_width`**, **`hero_height`**, **`hero_alt`**) drives large-image previews. **Structured data:** **`BlogPosting`** (posts) and **`WebSite`** (sitewide) JSON-LD in theme partials. **Syndication:** **`atom.xml`** + **`rss.xml`** from **`_config.yml`** **`feed`** (**hexo-generator-feed**); **`head.ejs`** **`rel="alternate"`** with **`application/atom+xml`** / **`application/rss+xml`**; nav RSS icon → **`themes/attila/_config.yml`** **`rss`** (**`/rss.xml`**). **Crawlers:** `robots` preview hints where supported; **`source/llms.txt`** → **`/llms.txt`**. **`themes/attila/_config.yml`:** **`google_analytics`** (GA4 **`G-…`** only, loaded in **`after-footer.ejs`**) and **`twitter_site`**.
-
-This file is the single map for humans and agents.
-
-## Editorial guidelines
-
-**Length.** ~**900–1,200 words** (~5 min read) as a soft target. Use `<!-- more -->` for excerpts on **non-series** posts unless you set **`excerpt:`** (below).
-
-**Series: Influential music** — category **Influential music**, tag **`influential-music`**. Open with the **Jeff Tweedy / *World Within a Song*** acknowledgement, then the song hook. Filename: **`<band>-<song>.md`** (kebab-case); do **not** put the series slug in the filename.
-
-**Teasers (required for this series).** For each post add **`excerpt:`** in front matter so listings are not identical. **When `excerpt:` is set, do not use `<!-- more -->`**. Arc: (1) scene/facts (2) the music (3) why it sticks.
-
-**References.** Cite dates, charts, quotes, rights; one consistent style per post. Prefer credible sources; Wikipedia only with spot-checks; avoid unreliable forums for factual claims.
-
-**Dictation.** Copy-desk pass (spelling/grammar/punctuation — not voice rewrites).
-
-**Posts vs drafts.** **`source/_posts/`** shipped; **`source/_drafts/`** omitted from builds.
-
-## Stack and commands
+## Stack
 
 | Piece | Role |
 |--------|------|
-| [Hexo](https://hexo.io/) 8 | Generator |
-| `themes/attila/` | Active theme (`theme:` in `_config.yml`) |
-| Node | ≥ 20.19 per `package.json` **`engines`** |
+| [Hexo](https://hexo.io/) 8 | Static generator |
+| **`themes/attila/`** | Theme (`theme:` in **`_config.yml`**) |
+| Node | ≥ **20.19** (`package.json` **`engines`**) |
 
 ```bash
 npm install
 npm run lint          # eslint + stylelint (theme)
 npm run build         # → public/
-npm run server        # local; `_config.local.yml` if present
+npm run server        # local; optional _config.local.yml
 npm run server:drafts # includes source/_drafts
 ```
 
-**.github/workflows/hexo-build.yml** mirrors Pages: **`lint`** then **`build`**, dir **`public`**.
+**CI:** `.github/workflows/hexo-build.yml` — **lint** then **build**, output **`public/`**.
 
-| Config | Purpose |
-|--------|---------|
-| `_config.yml` | Site **`url`**, **`root`**, permalinks |
-| `_config.local.yml` | Local only — gitignored; see `_config.local.yml.example` |
-| `themes/attila/_config.yml` | Menu, colors, **`google_analytics`**, **`twitter_site`**, etc. |
+**Config:** **`_config.yml`** (site **`url`**, feeds); **`_config.local.yml`** (local only, gitignored); **`themes/attila/_config.yml`** (nav, accents, **`color_scheme`**, **`avatar`**, analytics).
 
-## Theme overrides
+## Light and dark mode
 
-**CSS:** **`themes/attila/source/css/overrides.css`** — typography, clamp/gutters, skip link, category row, pagination, reduced-motion *(Attila uses `html { font-size: 62.5% }`; don’t set `html` to `100%` without rebasing `em`).*
+- **Reader choice:** footer **Auto** (default: match OS when **`color_scheme: system`**), **Light**, or **Dark**. Preference is stored in **`localStorage`** (`attila_color_scheme`; cleared for Auto). **Auto** follows **`prefers-color-scheme`** while the effective mode is **system**.
+- **Site default:** **`themes/attila/_config.yml`** **`color_scheme`**: **`system`** | **`light`** | **`dark`** (used when the reader has not forced Light/Dark).
+- **Implementation:** **`themes/attila/source/js/theme-scheme.js`**, **`data-server-scheme`** on **`<html>`** in **`head.ejs`**, overrides in **`overrides.css`**. **`meta name="color-scheme"`** and **`<meta name="theme-color" media="(prefers-color-scheme: …)">`** stay in **`head.ejs`**.
 
-**Head & metadata:** **`themes/attila/layout/_partial/head.ejs`** (+ **`structured-data-site.ejs`**, **`structured-data-post.ejs`**, **`google-analytics.ejs`**). **`themes/attila/scripts/open-graph-override.js`** replaces Hexo’s **`open_graph`** so **`article:*`** tags exist only when **`og:type`** is **`article`**. **`author-helpers.js`** supplies **`author_display_name`**. Favicon, feeds, manifest link.
+## Editorial
 
-**Post UI:** **`article.ejs`**, **`archive*.ejs`**, **`header.ejs`**.
+- **Length:** ~**900–1,200 words**; **`<!-- more -->`** for excerpts unless **`excerpt:`** is set.
+- **Series “Influential music”:** category **Influential music**, tag **`influential-music`**; filename **`<band>-<song>.md`**; Tweedy acknowledgement + **`excerpt:`** (no **`<!-- more -->`** when excerpt is set).
+- **References:** cite sources; hero images: credit + original URL + local derivative path when applicable.
+- **Drafts:** **`source/_drafts/`** excluded from production builds unless **`--draft`**.
 
-**Dates:** **`themes/attila/scripts/date-helpers.js`** (generate-time relative phrases).
+## Theme overrides (where to edit)
 
-## Repository hygiene
+| Area | Path |
+|------|------|
+| Typography, a11y, dark surfaces, footer, theme picker | **`themes/attila/source/css/overrides.css`** |
+| Head, canonical, OG, JSON-LD | **`themes/attila/layout/_partial/head.ejs`** (+ structured-data partials) |
+| Post chrome, author avatar | **`themes/attila/layout/_partial/article.ejs`** |
+| OG **`article:*`** behavior | **`themes/attila/scripts/open-graph-override.js`** |
+| Bundled post images / heroes | **`themes/attila/source/images/`** → **`/images/…`** |
 
-`public/`, `node_modules/`, `db.json`, `.deploy_*`, **`_config.local.yml`** are gitignored. **`npm run lint && npm run build`** must pass locally, CI, and Pages.
+**Avatar:** **`themes/attila/_config.yml`** **`avatar`** (path under **`/images/…`**). Bump **`avatar_cache_bust`** when replacing the file so browsers refetch **`author-profile-image`**.
 
-**Optional:** `cd themes/attila && npm run version` — Grunt step for **`service-worker.js`** templating/version tag if you use it.
+## Hygiene
+
+**`public/`**, **`node_modules/`**, **`db.json`**, **`_config.local.yml`** are gitignored. **`npm run lint && npm run build`** must pass locally, in CI, and on Pages.
 
 ---
 
-**Audience:** Maintainers and automation. Update when deploy mechanics, **`_config`**, or theme override behavior changes.
+**Audience:** Maintainers and automation. Update when deploy paths, **`_config`**, or theme behavior changes.

@@ -9,6 +9,8 @@ function navExcerpt(p) {
 }
 var profileImage = typeof theme.avatar === 'string' && theme.avatar.trim() ? theme.avatar : '/images/app_icons/ios/512.png';
 var profileSrc = /^https?:\/\//i.test(profileImage) ? profileImage : url_for(profileImage);
+var bustRaw = (typeof theme.avatar_cache_bust === 'string' && theme.avatar_cache_bust.trim()) ? theme.avatar_cache_bust.trim() : '';
+var profileBust = (!/^https?:\/\//i.test(profileImage) && bustRaw && /^[a-zA-Z0-9._-]+$/.test(bustRaw)) ? ('?' + bustRaw) : '';
 %>
 <div class="progress-container">
 	<span class="progress-bar" style="width: 0%;"></span>
@@ -27,7 +29,7 @@ var profileSrc = /^https?:\/\//i.test(profileImage) ? profileImage : url_for(pro
 			<div class="post-meta-avatars">
 					<figure class="post-meta-avatar avatar">
 						<a href="<%- url_for('/') %>" class="author-avatar">
-								<img class="author-profile-image" src="<%= profileSrc %>" alt="<%= authorAvatarAlt() %>">
+								<img class="author-profile-image" src="<%= profileSrc %><%= profileBust %>" alt="<%= authorAvatarAlt() %>">
 						</a>
 					</figure>
 			</div>

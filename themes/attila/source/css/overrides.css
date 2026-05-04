@@ -149,6 +149,61 @@ html.theme-dark .skip-link:focus {
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
 }
 
+/* Footer: copyright + color theme (see js/theme-scheme.js). */
+.nav-footer .nav-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 1.5rem;
+}
+
+.theme-scheme-picker {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+  font-family: var(--gh-font-heading, 'Helvetica Neue', Helvetica, Arial, sans-serif);
+  font-size: 1.3rem;
+}
+
+.theme-scheme-label {
+  margin-right: 0.25rem;
+  opacity: 0.85;
+  font-weight: 600;
+}
+
+.theme-scheme-btn {
+  margin: 0;
+  padding: 0.35em 0.65em;
+  cursor: pointer;
+  font: inherit;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-content-secondary, #5d6369);
+  background: var(--color-background-secondary, #f4f5f7);
+  border: 1px solid var(--color-background-contrast, #dcddde);
+  border-radius: 4px;
+}
+
+.theme-scheme-btn:hover,
+.theme-scheme-btn:focus-visible {
+  color: var(--color-content-lead, #121417);
+  border-color: var(--ghost-accent-color, #15171a);
+  outline: none;
+}
+
+.theme-scheme-btn:focus-visible {
+  box-shadow: 0 0 0 2px var(--color-background-main, #fff), 0 0 0 4px var(--ghost-accent-color, #15171a);
+}
+
+.theme-scheme-btn--active {
+  color: var(--color-content-lead, #fff);
+  background: var(--ghost-accent-color, #15171a);
+  border-color: var(--ghost-accent-color, #15171a);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .article-category-link {
     transition: none;

@@ -9,9 +9,9 @@ tags:
   - presidents-of-the-united-states-of-america
   - pusa
   - peaches
-hero: /images/pusa-pinkpop-2005-hero.webp
-hero_title: 'The Presidents of the United States of America at Pinkpop, Netherlands, May 2005 — Danny Lechanteur / Wikimedia Commons (CC BY 3.0)'
-hero_alt: 'The Presidents of the United States of America trio performing live outdoors at Pinkpop in 2005—Chris Ballew, Jason Finn, and Dave Dederer on stage.'
-hero_width: 1368
-hero_height: 1158
+hero: /images/pusa-tvtropes-pub-hero.webp
+hero_title: 'The Presidents of the United States of America, L–R Chris Ballew, Jason Finn, Dave Dederer — TV Tropes `PUSA_7327.jpg` (JPEG via Internet Archive; converted to WebP for this site).'
+hero_alt: 'The Presidents of the United States of America as a three-piece, left to right Chris Ballew, Jason Finn, and Dave Dederer—cropped promo-style photograph.'
+hero_width: 350
+hero_height: 308
 ---

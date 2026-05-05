@@ -32,7 +32,7 @@ npm run server:drafts # includes source/_drafts
 
 ### Before publishing
 
-1. **Spelling and grammar** — read aloud or pass through an editor; fix typos and clunky sentences. For a **voice-preserving** structured pass (scope boundaries, journalistic defaults, **clean edit + change log** for assistants), use **`docs/blog-copy-editing.md`**.
+1. **Spelling and grammar** — read aloud or run a quick pass; for a **voice-preserving** edit with explicit scope and **clean edit + change log**, see **`docs/blog-copy-editing.md`**.
 2. **Reference quality** — every substantive claim that needs one has a source; hero art has credit, source URL, and local path called out where applicable.
 3. **Fact check** — names, dates, numbers, chart/certification claims, and quotes match the sources.
 4. **Meta** — **`title`**, **`date`**, category/tags; **`hero`** + **`hero_width`** / **`hero_height`** + **`hero_alt`** when the post should unfurl with an image; root **`_config.yml`** **`url`** matches production. **Title** and **excerpt** should read well as the tab label and as the search/social snippet (excerpt feeds **`meta`/`og` description** unless you set **`description:`** separately).

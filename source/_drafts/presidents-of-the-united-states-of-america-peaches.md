@@ -15,3 +15,7 @@ hero_alt: 'The Presidents of the United States of America as a three-piece, left
 hero_width: 350
 hero_height: 308
 ---
+
+## References
+
+1. **Hero image** — TV Tropes, [Music / The Presidents of the United States of America](https://tvtropes.org/pmwiki/pmwiki.php/Music/ThePresidentsOfTheUnitedStatesOfAmerica). On-page asset **`PUSA_7327.jpg`** — `https://static.tvtropes.org/pmwiki/pub/images/PUSA_7327.jpg`. Local WebP: **`/images/pusa-tvtropes-pub-hero.webp`** (JPEG recovered via Internet Archive, [17 July 2020 memento](https://web.archive.org/web/20200717204358/https://static.tvtropes.org/pmwiki/pub/images/PUSA_7327.jpg); converted to WebP). Photographer and original rights not identified on TV Tropes; use is personal-blog attribution, not an implied licence to redistribute the JPEG broadly.

@@ -1,5 +1,29 @@
 <%# GA4 Measurement ID (themes/attila/_config.yml `google_analytics: G-xxxx`). Loaded via after-footer. %>
-<% var __gaId = theme.google_analytics && String(theme.google_analytics).trim(); if (__gaId && __gaId.indexOf('G-') === 0) { %>
+<%# Skip on local dev: _config.local.yml uses url: http://localhost — avoids polluting GA. Optional: root `google_analytics_disable: true`. %>
+<%
+var __gaId = theme.google_analytics ? String(theme.google_analytics).trim() : '';
+var __gaOk = __gaId && __gaId.indexOf('G-') === 0;
+if (__gaOk) {
+  try {
+    var __host = String(new URL(config.url).hostname || '').toLowerCase();
+    if (
+      __host === 'localhost' ||
+      __host === '127.0.0.1' ||
+      __host === '0.0.0.0' ||
+      __host === '::1' ||
+      __host === '[::1]'
+    ) {
+      __gaOk = false;
+    }
+  } catch (eGaUrl) {
+    /* malformed config.url — keep __gaOk */
+  }
+}
+if (__gaOk && config.google_analytics_disable === true) {
+  __gaOk = false;
+}
+%>
+<% if (__gaOk) { %>
 <script async src="https://www.googletagmanager.com/gtag/js?id=<%= __gaId %>"></script>
 <script>
 window.dataLayer = window.dataLayer || [];

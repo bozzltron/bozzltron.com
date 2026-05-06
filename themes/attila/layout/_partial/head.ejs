@@ -45,6 +45,26 @@ if (__scheme !== 'system' && __scheme !== 'light' && __scheme !== 'dark') {
 
   var headAuthorContent = author_display_name(config, '');
   var gaIdTrim = theme.google_analytics ? String(theme.google_analytics).trim() : '';
+  var gaDnsPrefetch = gaIdTrim.indexOf('G-') === 0;
+  if (gaDnsPrefetch) {
+    try {
+      var gaHostCheck = String(new URL(config.url).hostname || '').toLowerCase();
+      if (
+        gaHostCheck === 'localhost' ||
+        gaHostCheck === '127.0.0.1' ||
+        gaHostCheck === '0.0.0.0' ||
+        gaHostCheck === '::1' ||
+        gaHostCheck === '[::1]'
+      ) {
+        gaDnsPrefetch = false;
+      }
+    } catch (eGaHost) {
+      /* keep gaDnsPrefetch */
+    }
+  }
+  if (gaDnsPrefetch && config.google_analytics_disable === true) {
+    gaDnsPrefetch = false;
+  }
 
   /* Open Graph · https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta#property_maps */
   var ogOpts = { fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id };
@@ -76,7 +96,7 @@ if (__scheme !== 'system' && __scheme !== 'light' && __scheme !== 'dark') {
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <% if (gaIdTrim.indexOf('G-') === 0) { %>
+  <% if (gaDnsPrefetch) { %>
   <link rel="dns-prefetch" href="https://www.googletagmanager.com">
   <link rel="dns-prefetch" href="https://www.google-analytics.com">
   <% } %>

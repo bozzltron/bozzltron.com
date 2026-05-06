@@ -1,13 +1,39 @@
 /**
  * High-res poster for `.youtube-wrap` embeds: loads `i.ytimg.com/.../maxresdefault.jpg`
- * (fallback hq/mq) until the reader clicks, then sets the iframe src (optional autoplay).
- * YouTube iframe embeds do not support configuring preview thumbnail quality.
+ * (fallback hq/mq) until the reader clicks, then sets the iframe src.
+ * YouTube does not expose iframe parameters for preview/still image quality; see
+ * https://developers.google.com/youtube/player_parameters
+ *
+ * Markup should use Privacy-Enhanced Mode (`youtube-nocookie.com`) per
+ * https://support.google.com/youtube/answer/171780
  */
 (function () {
   'use strict';
 
   var SEL_WRAP = '.post-content .youtube-wrap';
   var SEL_IFRAME = 'iframe[src*="youtube"]';
+
+  /**
+   * After an explicit play click, merge optional player parameters documented at
+   * https://developers.google.com/youtube/player_parameters — preserves any
+   * query string already in the post (e.g. start=, cc_load_policy=).
+   * - autopoplay=1 — user gesture; avoids loading player until then (autoplay on
+   *   page load has stronger privacy/data implications per that doc).
+   * - playsinline=1 — inline playback on iOS where supported.
+   * - rel=0 — same-channel related videos only (post–2018 `rel` behavior).
+   */
+  function finalizeEmbedUrl(raw) {
+    try {
+      var u = new URL(raw, window.location.href);
+      if (!u.searchParams.has('autoplay')) u.searchParams.set('autoplay', '1');
+      if (!u.searchParams.has('playsinline')) u.searchParams.set('playsinline', '1');
+      if (!u.searchParams.has('rel')) u.searchParams.set('rel', '0');
+      return u.toString();
+    } catch (err) {
+      var sep = raw.indexOf('?') === -1 ? '?' : '&';
+      return raw + sep + 'autoplay=1&playsinline=1&rel=0';
+    }
+  }
 
   function extractEmbedId(src) {
     if (!src || typeof src !== 'string') return '';
@@ -73,13 +99,7 @@
     function activate() {
       var raw = iframe.getAttribute('data-src');
       if (!raw) return;
-      try {
-        var u = new URL(raw, window.location.href);
-        if (!u.searchParams.has('autoplay')) u.searchParams.set('autoplay', '1');
-        iframe.setAttribute('src', u.toString());
-      } catch (err) {
-        iframe.setAttribute('src', raw + (raw.indexOf('?') === -1 ? '?' : '&') + 'autoplay=1');
-      }
+      iframe.setAttribute('src', finalizeEmbedUrl(raw));
       iframe.removeAttribute('data-src');
       btn.remove();
       wrap.removeAttribute('data-youtube-facade');

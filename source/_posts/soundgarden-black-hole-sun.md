@@ -38,7 +38,7 @@ This song **broke my definition of rock**. It’s **unmistakably rock** as a who
 Official video:
 
 <div class="youtube-wrap">
-  <iframe src="https://www.youtube-nocookie.com/embed/3mbBbFH9fAg" title="Soundgarden — Black Hole Sun (official music video)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/3mbBbFH9fAg" title="Soundgarden — Black Hole Sun (official music video)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
 </div>
 
 ### References

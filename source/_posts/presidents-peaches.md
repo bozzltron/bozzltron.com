@@ -35,7 +35,7 @@ The lyric idea for the song *Peaches*, the way **Chris Ballew** tells it in inte
 The video below is the **official HD music video** (YouTube upload **Feb 2023** remaster).
 
 <div class="youtube-wrap">
-  <iframe src="https://www.youtube-nocookie.com/embed/3GCrzjVdmSg" title="The Presidents of the United States of America — Peaches (official HD music video)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/3GCrzjVdmSg" title="The Presidents of the United States of America — Peaches (official HD music video)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
 </div>
 
 This song means a lot to me because of the **accessibility** of it. The lead line can be played on a **single string** on the guitar. If you have an ear for music, you can easily pick this song out. This happened to me in my parents’ basement picking up my dad’s acoustic guitar. *Peaches* was one of the very first songs that I learned. The relay continued from a stranger’s overheard phrase, to real chart success for an unsuspecting band, to the acoustic guitar I held in my hand. Music weaves a strange and beautiful thread through our lives and finds us a community we didn’t know we needed.

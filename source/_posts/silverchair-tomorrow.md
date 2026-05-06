@@ -31,7 +31,7 @@ Ultimately, for me as a musician and as a human, it gave me **permission** to tr
 The video below is the US official upload on YouTube. The Australian official video is [here](https://www.youtube.com/watch?v=RZD982yrmx4).
 
 <div class="youtube-wrap">
-  <iframe src="https://www.youtube-nocookie.com/embed/PjsMnvqL7eY" title="Silverchair — Tomorrow (US version, official music video)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/PjsMnvqL7eY" title="Silverchair — Tomorrow (US version, official music video)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
 </div>
 
 ### References

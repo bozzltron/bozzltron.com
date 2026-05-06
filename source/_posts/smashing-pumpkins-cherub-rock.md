@@ -46,7 +46,7 @@ What I love about *Cherub Rock* is **everything**. The **slow build** to start�
 *Siamese Dream* **laid out all the brushes** and showed me **what rock guitar could be**.
 
 <div class="youtube-wrap">
-  <iframe src="https://www.youtube-nocookie.com/embed/q-KE9lvU810" title="The Smashing Pumpkins — Cherub Rock (official remastered video, SmashingPumpkinsVEVO)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/q-KE9lvU810" title="The Smashing Pumpkins — Cherub Rock (official remastered video, SmashingPumpkinsVEVO)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
 </div>
 
 ## References

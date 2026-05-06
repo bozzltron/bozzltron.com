@@ -617,3 +617,78 @@ button.share-action .share-action-label {
   border: none;
   display: block;
 }
+
+/* Deferred YouTube: high-res poster (`youtube-poster-facade.js`) until play */
+.post-content .youtube-wrap .youtube-poster-facade {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  background: #0f0f0f;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.post-content .youtube-wrap .youtube-poster-facade:focus {
+  outline: 2px solid var(--color-primary, #ff6633);
+  outline-offset: 2px;
+}
+
+.post-content .youtube-wrap .youtube-poster-facade:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.post-content .youtube-wrap .youtube-poster-facade:focus-visible {
+  outline: 2px solid var(--color-primary, #ff6633);
+  outline-offset: 2px;
+}
+
+.post-content .youtube-wrap .youtube-poster-facade img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.post-content .youtube-wrap .youtube-poster-facade__play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 4.25rem;
+  height: 3rem;
+  background: rgba(15, 15, 15, 0.72);
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.post-content .youtube-wrap .youtube-poster-facade__play::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: 0.15rem;
+  transform: translate(-50%, -50%);
+  border-style: solid;
+  border-width: 0.55rem 0 0.55rem 0.95rem;
+  border-color: transparent transparent transparent #fff;
+}
+
+.post-content .youtube-wrap .youtube-poster-facade:hover .youtube-poster-facade__play,
+.post-content .youtube-wrap .youtube-poster-facade:focus-visible .youtube-poster-facade__play {
+  background: rgba(200, 0, 0, 0.88);
+  transform: translate(-50%, -50%) scale(1.04);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .post-content .youtube-wrap .youtube-poster-facade__play {
+    transition: none;
+  }
+}

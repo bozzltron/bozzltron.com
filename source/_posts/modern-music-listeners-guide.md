@@ -159,7 +159,7 @@ Sony WF-1000XM5 are the rock stars of wireless earbuds.
 
 ## After the amp: rooms, speakers, and vehicles
 
-**PEAQ / BS.1387** compares a **test** signal to a **reference** under conditions the model was built for—typically **codec** or **electrical** paths **before** the **listening room** takes over. Put anothe way, it's not intended to measure how your environment affects what you are hearing. You just need to know that it does.
+**PEAQ / BS.1387** compares a **test** signal to a **reference** under conditions the model was built for—typically **codec** or **electrical** paths **before** the **listening room** takes over. Put another way, it's not intended to measure how your environment affects what you are hearing. You just need to know that it does.
 
 ---
 
